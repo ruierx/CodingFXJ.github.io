@@ -1,0 +1,90 @@
+@media screen and (max-width:800px) {
+    #page-header {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% auto;
+    }
+    #page-header.full_page #site-info {
+        top: 30%;
+    }
+    #site-name {
+        font-size: 0.85em;
+    }
+    #page-header #site-title {
+        margin: -0.4em 0 0.6em 0 !important;
+        font-size: 2em !important;
+    }
+    #page-header.full_page {
+        min-height: 30%;
+        background-attachment: fixed;
+    }
+    #page-header.not-home-page {
+        min-height: 13rem;
+    }
+    #page-header.not-home-page {
+        min-height: 11rem;
+    }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+        left: 150px;
+    }
+    @media screen and (max-width:800px) {
+        .myvedio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+        left: 100px;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time {
+        left: 120px;
+    }
+}
+
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2682419 */
+    src: url('//at.alicdn.com/t/font_2682419_w30jqp5yrlq.woff2?t=1627053017860') format('woff2'), url('//at.alicdn.com/t/font_2682419_w30jqp5yrlq.woff?t=1627053017860') format('woff'), url('//at.alicdn.com/t/font_2682419_w30jqp5yrlq.ttf?t=1627053017860') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-image:before {
+    content: "\e602";
+}
+
+.icon-Path378:before {
+    content: "\e603";
+}
+
+.icon-gitee:before {
+    content: "\e601";
+}
+
+.icon-fengche:before {
+    content: "\e600";
+}
+
+@font-face {
+    font-family: 'GoodVibrationsROB';
+    src: url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.gif?r=175094485952');
+    src: url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.gif?r=175094485952?#iefix') format('embedded-opentype'), url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.png?r=175094485952') format('woff2'), url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.bmp?r=175094485952') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-info-avatar {
+    background: transparent;
+}
+
+.card-info-avatar:hover {
+    background: transparent;
+}

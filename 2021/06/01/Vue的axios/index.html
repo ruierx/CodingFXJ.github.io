@@ -1,0 +1,376 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vue的axios | CodingFXJ'Blog</title><meta name="keywords" content="Vue"><meta name="author" content="FXJ"><meta name="copyright" content="FXJ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="# Axios # Promise 对象 # Promise 简介 Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息，可以解决地狱回调，并可以异步处理和观察任务进度。  1、主要用于异步计算  2、可以将异步操作队列化，按照期望的顺序执行，返回符合预期的结果  3、可以在对象之间传递和操作 promise，帮助我们处理队列  # Promise 状态 一个 Promise 必然">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue的axios">
+<meta property="og:url" content="https://codingfxj.github.io/2021/06/01/Vue%E7%9A%84axios/index.html">
+<meta property="og:site_name" content="CodingFXJ&#39;Blog">
+<meta property="og:description" content="# Axios # Promise 对象 # Promise 简介 Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息，可以解决地狱回调，并可以异步处理和观察任务进度。  1、主要用于异步计算  2、可以将异步操作队列化，按照期望的顺序执行，返回符合预期的结果  3、可以在对象之间传递和操作 promise，帮助我们处理队列  # Promise 状态 一个 Promise 必然">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621094127.png">
+<meta property="article:published_time" content="2021-05-31T16:15:37.000Z">
+<meta property="article:modified_time" content="2021-07-19T10:57:37.186Z">
+<meta property="article:author" content="FXJ">
+<meta property="article:tag" content="Vue">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621094127.png"><link rel="shortcut icon" href="/img/study.png"><link rel="canonical" href="https://codingfxj.github.io/2021/06/01/Vue%E7%9A%84axios/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="http://cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#777","position":"bottom-right"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Vue的axios',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-19 18:57:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async></script><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css"><link rel="stylesheet" href="http://cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.css "><link rel="stylesheet" href="/css/pageheader.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">31</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/colorpalette/"><i class="fa-fw fas fa-palette"></i><span> 调色板</span></a></li><li><a class="site-page child" href="/carousel/"><i class="fa-fw iconfont icon-image"></i><span> 轮播图</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw far fa-address-card"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621094127.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CodingFXJ'Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/colorpalette/"><i class="fa-fw fas fa-palette"></i><span> 调色板</span></a></li><li><a class="site-page child" href="/carousel/"><i class="fa-fw iconfont icon-image"></i><span> 轮播图</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw far fa-address-card"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Vue的axios</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-31T16:15:37.000Z" title="发表于 2021-06-01 00:15:37">2021-06-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-19T10:57:37.186Z" title="更新于 2021-07-19 18:57:37">2021-07-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Vue/">Vue</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.6k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Vue的axios"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="axios"><a class="markdownIt-Anchor" href="#axios">#</a> Axios</h2>
+<h3 id="promise对象"><a class="markdownIt-Anchor" href="#promise对象">#</a> Promise 对象</h3>
+<h4 id="promise-简介"><a class="markdownIt-Anchor" href="#promise-简介">#</a> Promise 简介</h4>
+<p>Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息，可以解决地狱回调，并可以异步处理和观察任务进度。</p>
+<blockquote>
+<p>1、主要用于异步计算<br>
+ 2、可以将异步操作队列化，按照期望的顺序执行，返回符合预期的结果<br>
+ 3、可以在对象之间传递和操作 promise，帮助我们处理队列</p>
+</blockquote>
+<h4 id="promise-状态"><a class="markdownIt-Anchor" href="#promise-状态">#</a> Promise 状态</h4>
+<p>一个 Promise 必然处于以下几种状态之一：</p>
+<blockquote>
+<p>待定（pending）: 初始状态，既没有被兑现，也没有被拒绝。<br>
+已兑现（fulfilled）: 意味着操作成功完成。<br>
+已拒绝（rejected）: 意味着操作失败。</p>
+</blockquote>
+<h4 id="promise-优缺点"><a class="markdownIt-Anchor" href="#promise-优缺点">#</a> Promise 优缺点</h4>
+<blockquote>
+<p><strong>优</strong>：将异步操作以同步操作的流程表达出来，避免了层层嵌套的回调函数。</p>
+<p>​		提供统一的接口，使得控制异步操作更加方便。</p>
+</blockquote>
+<blockquote>
+<p><strong>缺</strong>：无法取消 Promise，一旦新建它就会立即执行，无法中途取消。</p>
+<p>​		如果不设置回调函数，Promise 内部抛出的错误，不会反应到外部。</p>
+<p>​		当处于 Pending 状态时，无法得知目前进展到哪一个阶段</p>
+</blockquote>
+<h4 id="promise-创建"><a class="markdownIt-Anchor" href="#promise-创建">#</a> Promise 创建</h4>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// resolve 和 reject 是回调函数</span></span><br><span class="line">    <span class="comment">//异步代码执行成功时，调用resolve(...), 失败时调用reject(...)</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="resolve与reject"><a class="markdownIt-Anchor" href="#resolve与reject">#</a> resolve 与 reject</h4>
+<blockquote>
+<p><strong>resolve</strong>：将 Promise 对象的状态从 “未完成” 变为 “成功”（即从 pending 变为 resolved），</p>
+<p>​				在异步操作成功时调用，并将异步操作的结果，作为参数传递出去。<br>
+<strong>reject</strong>：将 Promise 对象的状态从 “未完成” 变为 “失败”（即从 pending 变为 rejected），</p>
+<p>​			 在异步操作失败时调用，并将异步操作报出的错误，作为参数传递出去。</p>
+</blockquote>
+<p>栗子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(</span><br><span class="line">  <span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 一段耗时的异步操作</span></span><br><span class="line">    resolve(<span class="string">&#x27;成功&#x27;</span>) <span class="comment">// 数据处理完成</span></span><br><span class="line">    <span class="comment">// reject(&#x27;失败&#x27;) // 数据处理出错</span></span><br><span class="line">  &#125;</span><br><span class="line">).then(</span><br><span class="line">  <span class="function">(<span class="params">res</span>) =&gt;</span> &#123;<span class="built_in">console</span>.log(res)&#125;,  <span class="comment">// 成功</span></span><br><span class="line">  <span class="function">(<span class="params">err</span>) =&gt;</span> &#123;<span class="built_in">console</span>.log(err)&#125; <span class="comment">// 失败</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<h4 id="then方法"><a class="markdownIt-Anchor" href="#then方法">#</a> then 方法</h4>
+<blockquote>
+<p>接收两个函数作为参数，分别代表 fulfilled（成功）和 rejected（失败）</p>
+<p>then () 返回一个新的 Promise 实例，所以它可以链式调用</p>
+</blockquote>
+<h4 id="catch方法"><a class="markdownIt-Anchor" href="#catch方法">#</a> catch 方法</h4>
+<blockquote>
+<p>then 方法第二个回调函数的语法糖，catch 也会返回一个 promise 实例，并且是 resolved 状态</p>
+</blockquote>
+<p><strong>错误处理两种做法：</strong><br>
+第一种：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">promise.then(<span class="function">() =&gt;</span> &#123;成功处理逻辑&#125;, <span class="function">() =&gt;</span> &#123;错误处理逻辑&#125;)</span><br></pre></td></tr></table></figure>
+<p>第二种：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">promise.then(<span class="function">() =&gt;</span> &#123;成功处理逻辑&#125;) .catch( <span class="function">() =&gt;</span> &#123;错误处理逻辑&#125;)<span class="comment">//推荐</span></span><br></pre></td></tr></table></figure>
+<h4 id="promise链式调用"><a class="markdownIt-Anchor" href="#promise链式调用">#</a> Promise 链式调用</h4>
+<p>避免了地狱回调</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">sendRequest(<span class="string">&#x27;test1.html&#x27;</span>, <span class="string">&#x27;&#x27;</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params">data1</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;第一次请求成功, 这是返回的数据:&#x27;</span>, data1);</span><br><span class="line">    <span class="keyword">return</span> sendRequest(<span class="string">&#x27;test2.html&#x27;</span>, data1);</span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">data2</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;第二次请求成功, 这是返回的数据:&#x27;</span>, data2);</span><br><span class="line">    <span class="keyword">return</span> sendRequest(<span class="string">&#x27;test3.html&#x27;</span>, data2);</span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">data3</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;第三次请求成功, 这是返回的数据:&#x27;</span>, data3);</span><br><span class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="comment">//用catch捕捉前面的错误</span></span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&#x27;sorry, 请求失败了, 这是失败信息:&#x27;</span>, error);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="axios-2"><a class="markdownIt-Anchor" href="#axios-2">#</a> Axios</h3>
+<p>Axios 是一个基于 promise 的 HTTP 库</p>
+<h4 id="优点"><a class="markdownIt-Anchor" href="#优点">#</a> <strong>优点</strong></h4>
+<blockquote>
+<p>支持浏览器和 node.js<br>
+ 支持 promise<br>
+ 能拦截请求和响应<br>
+能转换请求和响应数据<br>
+能取消请求<br>
+自动转换 JSON 数据<br>
+浏览器端支持防止 CSRF (跨站请求伪造)</p>
+</blockquote>
+<h4 id="安装"><a class="markdownIt-Anchor" href="#安装">#</a> 安装</h4>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios --save</span><br></pre></td></tr></table></figure>
+<h4 id="使用"><a class="markdownIt-Anchor" href="#使用">#</a> 使用</h4>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//参数</span></span><br><span class="line">axios(&#123;</span><br><span class="line">    <span class="attr">url</span>: <span class="string">&#x27;连接地址 path参数直接放里面&#x27;</span>,</span><br><span class="line">    <span class="attr">method</span>: <span class="string">&#x27;post 默认是 get&#x27;</span>,</span><br><span class="line">    <span class="attr">params</span>: <span class="string">&#x27;必须是一个无格式对象 query参数&#x27;</span>,</span><br><span class="line">    <span class="attr">data</span>: <span class="string">&#x27;是作为请求主体被发送的数据 body参数&#x27;</span>,</span><br><span class="line">    <span class="attr">timeout</span>: <span class="number">1000</span>,</span><br><span class="line">    <span class="attr">headers</span>: <span class="string">&#x27;object 发送的自定义请求头&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="get请求"><a class="markdownIt-Anchor" href="#get请求">#</a> get 请求</h4>
+<p><strong>方式一</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">axios(&#123;</span><br><span class="line">	<span class="attr">method</span>:<span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">	<span class="attr">url</span>:<span class="string">&#x27;你的地址&#x27;</span>,</span><br><span class="line">        <span class="attr">params</span>:&#123;<span class="attr">b</span>:<span class="number">2</span>&#125;;</span><br><span class="line">   		 headers:&#123;</span><br><span class="line">        <span class="comment">//内容格式: 上传文件或普通请求</span></span><br><span class="line">        <span class="comment">// &#x27;Content-Type&#x27;: &#x27;multipart/form-data&#x27;,</span></span><br><span class="line"> </span><br><span class="line">        <span class="comment">//自定义头部</span></span><br><span class="line">        <span class="string">&#x27;X-Custom-Header&#x27;</span>: <span class="string">&#x27;123456789132456789&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;).then(<span class="function">(<span class="params">data</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">//输出返回数据</span></span><br><span class="line">    <span class="built_in">console</span>.log(data.data)</span><br><span class="line">&#125;).catch(<span class="function">(<span class="params">error</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">//输出错误信息</span></span><br><span class="line">    <span class="built_in">console</span>.log(error)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>方式二</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">axios.get(<span class="string">&#x27;url地址&#x27;</span>,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">params</span>:&#123;<span class="attr">b</span>:<span class="number">2</span>&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">headers</span>:&#123;</span><br><span class="line">        <span class="comment">//自定义头部</span></span><br><span class="line">        <span class="string">&#x27;X-Custom-Header&#x27;</span>: <span class="string">&#x27;123456789132456789&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;).then(<span class="function">(<span class="params">data</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="comment">//输出返回数据</span></span><br><span class="line">        <span class="built_in">console</span>.log(data.data)</span><br><span class="line">    &#125;).catch(<span class="function">(<span class="params">error</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="comment">//输出错误信息</span></span><br><span class="line">        <span class="built_in">console</span>.log(error)</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="post请求"><a class="markdownIt-Anchor" href="#post请求">#</a> post 请求</h4>
+<p><strong>方式一</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> post_data = &#123;...&#125;;</span><br><span class="line">post_data.append(<span class="string">&#x27;a&#x27;</span>,<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">axios(&#123;</span><br><span class="line">	<span class="attr">method</span>:<span class="string">&#x27;post&#x27;</span>,</span><br><span class="line">	<span class="attr">url</span>:<span class="string">&#x27;url地址&#x27;</span>,</span><br><span class="line">	<span class="attr">data</span>:post_data,</span><br><span class="line">    <span class="comment">//post可以混用get的传参</span></span><br><span class="line">    <span class="comment">//params:&#123;b:2&#125;;</span></span><br><span class="line">    <span class="attr">headers</span>:&#123;</span><br><span class="line">        <span class="comment">//普通请求</span></span><br><span class="line">        <span class="string">&#x27;Content-Type&#x27;</span>: <span class="string">&#x27;application/x-www-form-urlencoded&#x27;</span>,</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//上传文件或普通请求</span></span><br><span class="line">        <span class="comment">// &#x27;Content-Type&#x27;: &#x27;multipart/form-data&#x27;,</span></span><br><span class="line"> </span><br><span class="line">        <span class="comment">//自定义头部</span></span><br><span class="line">        <span class="string">&#x27;X-Custom-Header&#x27;</span>: <span class="string">&#x27;123456789132456789&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;).then(<span class="function">(<span class="params">data</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">//输出返回数据</span></span><br><span class="line">    <span class="built_in">console</span>.log(data.data)</span><br><span class="line">&#125;).catch(<span class="function">(<span class="params">error</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="comment">//输出错误信息</span></span><br><span class="line">    <span class="built_in">console</span>.log(error)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>方式二</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">axios.post(<span class="string">&#x27;url地址&#x27;</span>,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">data</span>:post_data</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">headers</span>:&#123;</span><br><span class="line">        <span class="comment">//自定义头部</span></span><br><span class="line">        <span class="string">&#x27;X-Custom-Header&#x27;</span>: <span class="string">&#x27;123456789132456789&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;).then(<span class="function">(<span class="params">data</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="comment">//输出返回数据</span></span><br><span class="line">        <span class="built_in">console</span>.log(data.data)</span><br><span class="line">    &#125;).catch(<span class="function">(<span class="params">error</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="comment">//输出错误信息</span></span><br><span class="line">        <span class="built_in">console</span>.log(error)</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
+<p><strong>axios 方法</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">axios(config)</span><br><span class="line"></span><br><span class="line">axios.request(config)</span><br><span class="line"></span><br><span class="line">axios.get(url[, config])</span><br><span class="line"></span><br><span class="line">axios.delete(url[, config])</span><br><span class="line"></span><br><span class="line">axios.head(url[, config])</span><br><span class="line"></span><br><span class="line">axios.post(url[, data[, config]])</span><br><span class="line"></span><br><span class="line">axios.put(url[, data[, config]])</span><br><span class="line"></span><br><span class="line">axios.patch(url[, data[, config]])</span><br></pre></td></tr></table></figure>
+<p><strong>公共配置</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">axios.defaults.baseURL = <span class="string">&quot;公共的url&quot;</span></span><br><span class="line">axios.defaults.timtout = <span class="number">5000</span>      <span class="comment">//请求超时时间，毫秒单位</span></span><br></pre></td></tr></table></figure>
+<h4 id="创建axios实例"><a class="markdownIt-Anchor" href="#创建axios实例">#</a> 创建 axios 实例</h4>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> instance1 = axios.create(&#123;</span><br><span class="line">  <span class="attr">baseURL</span>: <span class="string">&quot;https://www.baidu.com/&quot;</span>,</span><br><span class="line">  <span class="attr">timeout</span>: <span class="number">5000</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">instance1(&#123;</span><br><span class="line">  <span class="attr">url</span>: <span class="string">&quot;/home&quot;</span>,</span><br><span class="line">  <span class="attr">params</span>:&#123;&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="axios模块封装"><a class="markdownIt-Anchor" href="#axios模块封装">#</a> axios 模块封装</h4>
+<blockquote>
+<p>网络封装原因：部署环境切换以后，方便改域名（开发环境，测试环境，生成环境）</p>
+</blockquote>
+<p><strong>封装实例一</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&#x27;axios&#x27;</span></span><br><span class="line">axios.defaults.baseURL = <span class="string">&#x27;http://127.0.0.1:8888/api/private/v1/&#x27;</span></span><br><span class="line"></span><br><span class="line">axios.interceptors.request.use(<span class="function"><span class="params">config</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// console.log(config);</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 取本地token</span></span><br><span class="line">    config.headers.Authorization = <span class="built_in">window</span>.sessionStorage.getItem(<span class="string">&#x27;token&#x27;</span>)</span><br><span class="line">    <span class="keyword">return</span> config</span><br><span class="line">&#125;)</span><br><span class="line">Vue.prototype.$http = axios</span><br></pre></td></tr></table></figure>
+<p><strong>使用：</strong></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span> <span class="function"><span class="title">getUserList</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">const</span> &#123;<span class="attr">data</span> : res&#125;  = <span class="keyword">await</span>  <span class="built_in">this</span>.$http.get(<span class="string">&#x27;users&#x27;</span>)</span><br><span class="line">	<span class="comment">//...</span></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p><strong>封装实例二</strong></p>
+<blockquote>
+<p><strong>在 network/request.js 下 axios 的封装</strong></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">&quot;axios&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">request</span>(<span class="params">config</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">const</span> instance = axios.create(&#123;</span><br><span class="line">    <span class="attr">baseURL</span>: <span class="string">&quot;http://www.baidu.com/&quot;</span>,</span><br><span class="line">    <span class="attr">timeout</span>: <span class="number">5000</span></span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> instance(config)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>调用 axios 模块的组件中</strong></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;request&#125; <span class="keyword">from</span> <span class="string">&quot;network/request.js&quot;</span></span><br><span class="line">request(&#123;</span><br><span class="line">  <span class="attr">url</span>: <span class="string">&quot;/home&quot;</span>,</span><br><span class="line">  <span class="attr">params</span>:&#123;</span><br><span class="line">    <span class="attr">id</span>:<span class="number">1</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;).then(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(res)</span><br><span class="line">&#125;).catch(<span class="function"><span class="params">err</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(err)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">FXJ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://codingfxj.github.io/2021/06/01/Vue%E7%9A%84axios/">https://codingfxj.github.io/2021/06/01/Vue%E7%9A%84axios/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://CodingFXJ.github.io" target="_blank">CodingFXJ'Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Vue/">Vue</a></div><div class="post_share"><div class="social-share" data-image="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621094127.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/06/01/Vue%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621001822.png" onerror="onerror=null;src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vue基础语法</div></div></a></div><div class="next-post pull-right"><a href="/2021/06/01/VueX/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621001822.png" onerror="onerror=null;src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">VueX</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/06/01/VueRouter/" title="VueRouter"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621025255.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-01</div><div class="title">VueRouter</div></div></a></div><div><a href="/2021/06/01/Vue基础语法/" title="Vue基础语法"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621001822.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-01</div><div class="title">Vue基础语法</div></div></a></div><div><a href="/2021/06/01/VueX/" title="VueX"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621001822.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-01</div><div class="title">VueX</div></div></a></div><div><a href="/2021/06/02/Vue属性/" title="Vue属性"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621025255.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-02</div><div class="title">Vue属性</div></div></a></div><div><a href="/2021/06/02/Vue生命周期/" title="Vue生命周期"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621001822.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-02</div><div class="title">Vue生命周期</div></div></a></div><div><a href="/2021/06/02/Vue组件/" title="Vue组件"><img class="cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621025255.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-06-02</div><div class="title">Vue组件</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="avatar"/><div class="author-info__name">FXJ</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">31</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="http://codingfxj.3vhost.net/"><i class="iconfont icon-Path378"></i><span>My WebStack</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/CodingFXJ" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/GiteeFXJ" target="_blank" title="Gitee"><i class="iconfont icon-gitee"></i></a><a class="social-icon" href="/3010099292@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3010099292&amp;site=qq&amp;menu=yes&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=2:3010099292:53" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">Welcome to my blog !</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#axios"><span class="toc-number">1.</span> <span class="toc-text"> Axios</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#promise%E5%AF%B9%E8%B1%A1"><span class="toc-number">1.1.</span> <span class="toc-text"> Promise 对象</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#promise-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.1.</span> <span class="toc-text"> Promise 简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#promise-%E7%8A%B6%E6%80%81"><span class="toc-number">1.1.2.</span> <span class="toc-text"> Promise 状态</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#promise-%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">1.1.3.</span> <span class="toc-text"> Promise 优缺点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#promise-%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.4.</span> <span class="toc-text"> Promise 创建</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#resolve%E4%B8%8Ereject"><span class="toc-number">1.1.5.</span> <span class="toc-text"> resolve 与 reject</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#then%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.6.</span> <span class="toc-text"> then 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#catch%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.7.</span> <span class="toc-text"> catch 方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#promise%E9%93%BE%E5%BC%8F%E8%B0%83%E7%94%A8"><span class="toc-number">1.1.8.</span> <span class="toc-text"> Promise 链式调用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#axios-2"><span class="toc-number">1.2.</span> <span class="toc-text"> Axios</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%98%E7%82%B9"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 使用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#get%E8%AF%B7%E6%B1%82"><span class="toc-number">1.2.4.</span> <span class="toc-text"> get 请求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#post%E8%AF%B7%E6%B1%82"><span class="toc-number">1.2.5.</span> <span class="toc-text"> post 请求</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAaxios%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.2.6.</span> <span class="toc-text"> 创建 axios 实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#axios%E6%A8%A1%E5%9D%97%E5%B0%81%E8%A3%85"><span class="toc-number">1.2.7.</span> <span class="toc-text"> axios 模块封装</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/23/%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3Vue%E9%A1%B9%E7%9B%AE/" title="快速了解Vue项目"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235513.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="快速了解Vue项目"/></a><div class="content"><a class="title" href="/2021/07/23/%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3Vue%E9%A1%B9%E7%9B%AE/" title="快速了解Vue项目">快速了解Vue项目</a><time datetime="2021-07-23T13:16:58.000Z" title="发表于 2021-07-23 21:16:58">2021-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/18/%E6%AD%BB%E9%94%81/" title="死锁"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235636.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="死锁"/></a><div class="content"><a class="title" href="/2021/07/18/%E6%AD%BB%E9%94%81/" title="死锁">死锁</a><time datetime="2021-07-18T13:17:17.000Z" title="发表于 2021-07-18 21:17:17">2021-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/16/JS%E9%9A%BE%E7%82%B9%E5%A4%8D%E4%B9%A0/" title="JS难点复习"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235645.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="JS难点复习"/></a><div class="content"><a class="title" href="/2021/07/16/JS%E9%9A%BE%E7%82%B9%E5%A4%8D%E4%B9%A0/" title="JS难点复习">JS难点复习</a><time datetime="2021-07-16T15:48:04.000Z" title="发表于 2021-07-16 23:48:04">2021-07-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/16/LeetCode%E7%AE%97%E6%B3%95%E9%A2%980-5/" title="LeetCode算法题0-5"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235514.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="LeetCode算法题0-5"/></a><div class="content"><a class="title" href="/2021/07/16/LeetCode%E7%AE%97%E6%B3%95%E9%A2%980-5/" title="LeetCode算法题0-5">LeetCode算法题0-5</a><time datetime="2021-07-16T15:44:23.000Z" title="发表于 2021-07-16 23:44:23">2021-07-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724234953.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="排序算法"/></a><div class="content"><a class="title" href="/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法">排序算法</a><time datetime="2021-07-16T15:41:41.000Z" title="发表于 2021-07-16 23:41:41">2021-07-16</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621094127.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By FXJ</div><div class="footer_custom_text">捡起一片小代码，堆起一座大前端！</div><div id="workboard"></div><script async="async" src="/js/runtime.js"></script></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script></div><script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src="https://myhkw.cn/api/player/162672702069" id="myhk" key="162672702069" m="1"></script><script src="/js/calendar.js"></script><script src="/js/languages.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="100" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener toc scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --><script src="/live2d/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"right"},"mobile":{"show":false},"model":{"scale":0.6,"jsonPath":"/live2d/assets/weier.model.json"},"react":{"opacity":0.7},"log":false});</script></body></html>
