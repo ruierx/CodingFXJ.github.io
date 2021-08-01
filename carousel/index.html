@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsCarousel </title>
+    <link rel="stylesheet" href="my.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        @font-face {
+            font-family: 'iconfont';
+            /* Project id 2587587 */
+            src: url('https://at.alicdn.com/t/font_2587587_416doaws527.woff2?t=1623426664646') format('woff2'), url('https://at.alicdn.com/t/font_2587587_416doaws527.woff?t=1623426664646') format('woff'), url('https://at.alicdn.com/t/font_2587587_416doaws527.ttf?t=1623426664646') format('truetype');
+        }
+        
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        a {
+            text-decoration: none;
+            display: block;
+        }
+        
+        li {
+            list-style-type: none;
+        }
+        
+        .wrap {
+            width: 50%;
+            height: 60%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .wrap .list {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .wrap .list .item {
+            position: absolute;
+            opacity: 0;
+            transition: all 1s;
+        }
+        
+        .wrap .list .item>a>img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-position: center;
+        }
+        
+        .wrap .btn {
+            width: 4%;
+            height: 12%;
+            position: absolute;
+            top: 50%;
+            color: #fff;
+            font-weight: 400;
+            background-color: rgba(0, 0, 0, .1);
+            transform: translate(0, -50%);
+            font-family: 'iconfont';
+            font-size: 28px;
+            border: none;
+            z-index: 999;
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        #goPre {
+            left: 0px;
+        }
+        
+        #goNext {
+            right: 0px;
+        }
+        
+        .wrap .list .active {
+            z-index: 1;
+            opacity: 1;
+        }
+        
+        .wrap .pointList {
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 1;
+        }
+        
+        .wrap .pointList .point {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 12px;
+            border: 2px solid #fff;
+            background-color: #fff;
+            cursor: pointer;
+            transition: all 1s;
+        }
+        
+        .wrap .pointList .current {
+            background-color: coral;
+            transform: scale(1.5);
+        }
+        
+        @media screen and (max-width:800px) {
+            .wrap {
+                width: 95%;
+                height: 30%;
+            }
+            .wrap .btn {
+                width: 8%;
+                height: 18%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <button class="btn" id="goPre"> &#xe667;</button>
+        <button class="btn" id="goNext"> &#xe610;</button>
+        <ul class="list">
+
+            <li class="item">
+                <a><img src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210612144103.jpg" /></a>
+            </li>
+            <li class="item">
+                <a><img src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210612144102.jpg" /></a>
+            </li>
+            <li class="item">
+                <a><img src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210612144104.jpg" /></a>
+            </li>
+            <li class="item">
+                <a><img src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210612144105.jpg" /></a>
+            </li>
+            <li class="item">
+                <a><img src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210612144101.jpg" /></a>
+            </li>
+        </ul>
+
+        <ul class="pointList">
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+            <li class="point"></li>
+        </ul>
+
+    </div>
+
+    <script>
+        var items = document.querySelectorAll('.item');
+
+        var goPreBtn = document.querySelector('#goPre');
+
+        var goNextBtn = document.querySelector('#goNext');
+
+        var pointLists = document.querySelectorAll('.point');
+
+        var wrap = document.querySelector('.wrap');
+
+        var index = 0;
+        var time = 0;
+        var timer = null;
+        var lock = true;
+
+        function clearIndex() {
+            for (var i = 0; i < items.length; i++) {
+                items[i].className = 'item';
+                pointLists[i].className = 'point';
+            }
+        }
+
+        function goIndex() {
+            clearIndex();
+            items[index].className = 'item active';
+            pointLists[index].className = 'point current';
+        }
+        goIndex();
+
+        function goNext() {
+            index++;
+            if (index > 4) {
+                index = 0;
+            }
+            goIndex();
+        }
+
+        function goPre() {
+            index--;
+            if (index < 0) {
+                index = 4;
+            }
+            goIndex();
+        }
+
+        function rest() {
+            time++;
+
+            if (time == 20) {
+                time = 0;
+                goNext();
+            }
+        }
+
+        function openLock() {
+            lock = true;
+        }
+
+        goNextBtn.addEventListener('click', function() {
+            if (!lock) return;
+            goNext();
+            time = 0;
+            lock = false;
+            setTimeout(openLock, 800)
+
+        });
+        goPreBtn.addEventListener('click', function() {
+            if (!lock) return;
+            goPre();
+            lock = false;
+            time = 0;
+
+            setTimeout(openLock, 800);
+        });
+
+        for (var j = 0; j < pointLists.length; j++) {
+            pointLists[j].setAttribute('pointIndex', j);
+
+            pointLists[j].addEventListener('click', function() {
+                var pIndex = this.getAttribute('pointIndex');
+                index = pIndex;
+                goIndex();
+                time = 0;
+            })
+        }
+
+
+        wrap.addEventListener('mouseover', function() {
+            clearInterval(timer);
+            time = 0;
+        })
+        wrap.addEventListener('mouseout', function() {
+            time = 0;
+            timer = setInterval(rest, 150);
+        })
+        timer = setInterval(rest, 150)
+    </script>
+
+</body>
+
+</html>

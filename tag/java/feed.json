@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "CodingFXJ'Blog • All posts by \"java\" tag",
+    "description": "",
+    "home_page_url": "https://CodingFXJ.github.io",
+    "items": [
+        {
+            "id": "https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/",
+            "url": "https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/",
+            "title": "死锁",
+            "date_published": "2021-06-18T13:17:17.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\css\\APlayer.min.css\"><script src=\"\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><script class=\"meting-secondary-script-marker\" src=\"\\js\\Meting.min.js\"></script><h3 id=\"生活中的死锁\"><a class=\"markdownIt-Anchor\" href=\"#生活中的死锁\">#</a> 生活中的死锁</h3>\n<div class=\"note warning flat\"><p>情景一：找工作中的我，工作要先有工作经验才能工作，但是我需要先有工作才能有工作经验。怎么破？</p>\n</div>\n<div class=\"note primary flat\"><p>情景二：出门忘带钥匙，要开门就需要拿到房间里的钥匙，要拿到钥匙就得把门打开。心态崩了呀！</p>\n</div>\n<h3 id=\"产生死锁的四个条件\"><a class=\"markdownIt-Anchor\" href=\"#产生死锁的四个条件\">#</a> 产生死锁的四个条件</h3>\n<ol>\n<li><strong>互斥条件</strong>：即当资源被一个线程使用 (占有) 时，别的线程不能使用</li>\n<li><strong>不可剥夺条件</strong>：资源请求者不能强制从资源占有者手中夺取资源，资源只能由资源占有者主动释放</li>\n<li><strong>请求与保持条件</strong>：当资源请求者在请求其他的资源的同时保持对原有资源的占有</li>\n<li><strong>循环等待条件</strong>：即存在一个等待队列：P1 占有 P2 需要的资源，P2 占有 P3 需要的资源，P3 占有 P1 需要的资源。这样就形成了一个等待环路。</li>\n</ol>\n<h3 id=\"避免死锁的四种方式\"><a class=\"markdownIt-Anchor\" href=\"#避免死锁的四种方式\">#</a> 避免死锁的四种方式</h3>\n<ol>\n<li><strong>破坏互斥使用</strong>，比如拷贝一份资源（但由于生产上开销太大，几乎不会采用这种方式）</li>\n<li><strong>破坏请求和保持</strong>，一次性申请所有资源</li>\n<li><strong>破坏不可剥夺</strong>，设置优先级或者规定时间内无法获取所需资源，主动让出已持有的资源</li>\n<li><strong>破坏循环等待</strong>，按一定顺序获取资源</li>\n</ol>\n<div class=\"note info flat\"><p><strong>四个条件是死锁的必要条件，只要系统发生死锁，这些条件必然成立，而只要上述条件之一不满足，就不会发生死锁</strong></p>\n</div>\n<hr></hr>\n<h3 id=\"处理死锁的方法\"><a class=\"markdownIt-Anchor\" href=\"#处理死锁的方法\">#</a> 处理死锁的方法</h3>\n<div class=\"note success flat\"><p>预防死锁：通过设置某些限制条件，去破坏产生死锁的四个必要条件中的一个或几个条件，来防止死锁的发生。</p>\n</div>\n<div class=\"note primary flat\"><p>解除死锁：当检测出死锁后，便采取适当措施将进程从死锁状态中解脱出来。</p>\n</div>\n<div class=\"note success flat\"><p>避免死锁：在资源的动态分配过程中，用某种方法去防止系统进入不安全状态，从而避免死锁的发生。</p>\n</div>\n<div class=\"note primary flat\"><p>检测死锁：允许系统在运行过程中发生死锁，但可设置检测机构及时检测死锁的发生，并采取适当措施加以清除。</p>\n</div>\n",
+            "tags": [
+                "JAVA"
+            ]
+        }
+    ]
+}
