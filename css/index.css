@@ -2280,7 +2280,8 @@ template {
                 }
                 
                 .icon-gitee {
-                    color: #c71d23
+                    color: #c71d23;
+                    display: inline-block;
                 }
                 
                 .icon-Path378 {

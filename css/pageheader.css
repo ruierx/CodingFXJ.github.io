@@ -91,3 +91,7 @@
 .card-info-avatar:hover {
     background: transparent;
 }
+
+#site-subtitle {
+    font-family: Poem, KaiTi, sans-serif!important;
+}
