@@ -8,9 +8,9 @@
     <category term="jQuery" />
     <category term="CSS" />
     <category term="css" />
+    <category term="flex布局" />
     <category term="JS" />
     <category term="Git" />
-    <category term="flex布局" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
@@ -20,8 +20,8 @@
     <category term="数组" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="高阶函数" />
     <category term="闭包" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -30,8 +30,8 @@
     <category term="算法" />
     <category term="扁平化" />
     <category term="复杂度" />
-    <category term="JAVA" />
     <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Typora" />
     <category term="Markdown" />

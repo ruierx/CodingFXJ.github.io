@@ -11,9 +11,9 @@
         <category>jQuery</category>
         <category>CSS</category>
         <category>css</category>
+        <category>flex布局</category>
         <category>JS</category>
         <category>Git</category>
-        <category>flex布局</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
@@ -23,8 +23,8 @@
         <category>数组</category>
         <category>时间</category>
         <category>懒加载</category>
-        <category>高阶函数</category>
         <category>闭包</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
@@ -33,8 +33,8 @@
         <category>算法</category>
         <category>扁平化</category>
         <category>复杂度</category>
-        <category>JAVA</category>
         <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Typora</category>
         <category>Markdown</category>
