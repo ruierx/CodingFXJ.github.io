@@ -50,14 +50,19 @@
 @font-face {
     font-family: "iconfont";
     /* Project id 2682419 */
-    src: url('//at.alicdn.com/t/font_2682419_w30jqp5yrlq.woff2?t=1627053017860') format('woff2'), url('//at.alicdn.com/t/font_2682419_w30jqp5yrlq.woff?t=1627053017860') format('woff'), url('//at.alicdn.com/t/font_2682419_w30jqp5yrlq.ttf?t=1627053017860') format('truetype');
+    src: url('//at.alicdn.com/t/font_2682419_d6vkt2lgv.woff2?t=1629645380332') format('woff2'), url('//at.alicdn.com/t/font_2682419_d6vkt2lgv.woff?t=1629645380332') format('woff'), url('//at.alicdn.com/t/font_2682419_d6vkt2lgv.ttf?t=1629645380332') format('truetype');
 }
 
 .iconfont {
     font-family: "iconfont" !important;
+    font-size: 16px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xuni:before {
+    content: "\e604";
 }
 
 .icon-image:before {
@@ -74,14 +79,6 @@
 
 .icon-fengche:before {
     content: "\e600";
-}
-
-@font-face {
-    font-family: 'GoodVibrationsROB';
-    src: url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.gif?r=175094485952');
-    src: url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.gif?r=175094485952?#iefix') format('embedded-opentype'), url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.png?r=175094485952') format('woff2'), url('//cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.bmp?r=175094485952') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }
 
 .card-info-avatar {
