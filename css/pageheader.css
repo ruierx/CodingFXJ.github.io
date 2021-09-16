@@ -63,10 +63,14 @@
 
 .icon-xuni:before {
     content: "\e604";
+    font-size: 14px;
+    color: rgb(233, 68, 219)
 }
 
 .icon-image:before {
     content: "\e602";
+    font-size: 18px;
+    color: rgb(62, 190, 100)
 }
 
 .icon-Path378:before {

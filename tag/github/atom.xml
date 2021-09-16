@@ -6,58 +6,79 @@
     <updated>2021-04-10T14:46:32.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="css" />
     <category term="CSS" />
-    <category term="JS" />
-    <category term="flex布局" />
+    <category term="css" />
     <category term="Git" />
-    <category term="this指向" />
+    <category term="flex布局" />
+    <category term="JS" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
+    <category term="this指向" />
     <category term="ES6" />
-    <category term="时间" />
     <category term="数组" />
     <category term="懒加载" />
+    <category term="时间" />
+    <category term="高阶函数" />
     <category term="闭包" />
     <category term="LeetCode" />
-    <category term="高阶函数" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
     <category term="算法" />
+    <category term="扁平化" />
     <category term="手写高阶函数" />
     <category term="复杂度" />
-    <category term="扁平化" />
     <category term="JAVA" />
     <category term="HTTP网络请求" />
     <category term="设计模式" />
+    <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
         <id>https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</id>
         <title>HEXO搭建博客笔记</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;前言&#34;&gt;&lt;a href=&#34;#前言&#34; class=&#34;headerlink&#34; title=&#34;前言&#34;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;​                    经过了这两天的折腾，作为菜鸟的我，也终于搭好了一个自己的个人博客（Github与Hexo的结合）。&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h3&gt;
+&lt;p&gt;​					经过了这两天的折腾，作为菜鸟的我，也终于搭好了一个自己的个人博客（Github 与 Hexo 的结合）。&lt;/p&gt;
 &lt;p&gt;然后今天想着，趁着把之昨天的操作、那些踩过的坑等等再整理一下，免得到时候忘了，又得去找教程。&lt;/p&gt;
-&lt;h3 id=&#34;所需的软件和平台&#34;&gt;&lt;a href=&#34;#所需的软件和平台&#34; class=&#34;headerlink&#34; title=&#34;所需的软件和平台&#34;&gt;&lt;/a&gt;所需的软件和平台&lt;/h3&gt;&lt;h4 id=&#34;必须的软件：&#34;&gt;&lt;a href=&#34;#必须的软件：&#34; class=&#34;headerlink&#34; title=&#34;必须的软件：&#34;&gt;&lt;/a&gt;必须的软件：&lt;/h4&gt;&lt;h6 id=&#34;NODE-JS&#34;&gt;&lt;a href=&#34;#NODE-JS&#34; class=&#34;headerlink&#34; title=&#34;NODE.JS&#34;&gt;&lt;/a&gt;NODE.JS&lt;/h6&gt;&lt;h6 id=&#34;GIT&#34;&gt;&lt;a href=&#34;#GIT&#34; class=&#34;headerlink&#34; title=&#34;GIT&#34;&gt;&lt;/a&gt;GIT&lt;/h6&gt;&lt;h4 id=&#34;可选的软件：&#34;&gt;&lt;a href=&#34;#可选的软件：&#34; class=&#34;headerlink&#34; title=&#34;可选的软件：&#34;&gt;&lt;/a&gt;可选的软件：&lt;/h4&gt;&lt;h6 id=&#34;Visual-Studio-Code&#34;&gt;&lt;a href=&#34;#Visual-Studio-Code&#34; class=&#34;headerlink&#34; title=&#34;Visual Studio Code&#34;&gt;&lt;/a&gt;Visual Studio Code&lt;/h6&gt;&lt;h6 id=&#34;TYPORA&#34;&gt;&lt;a href=&#34;#TYPORA&#34; class=&#34;headerlink&#34; title=&#34;TYPORA&#34;&gt;&lt;/a&gt;TYPORA&lt;/h6&gt;&lt;h3 id=&#34;要用到的框架或平台：&#34;&gt;&lt;a href=&#34;#要用到的框架或平台：&#34; class=&#34;headerlink&#34; title=&#34;要用到的框架或平台：&#34;&gt;&lt;/a&gt;要用到的框架或平台：&lt;/h3&gt;&lt;h5 id=&#34;HEXO&#34;&gt;&lt;a href=&#34;#HEXO&#34; class=&#34;headerlink&#34; title=&#34;HEXO&#34;&gt;&lt;/a&gt;HEXO&lt;/h5&gt;&lt;h5 id=&#34;Github&#34;&gt;&lt;a href=&#34;#Github&#34; class=&#34;headerlink&#34; title=&#34;Github&#34;&gt;&lt;/a&gt;Github&lt;/h5&gt;&lt;h3 id=&#34;安装说明&#34;&gt;&lt;a href=&#34;#安装说明&#34; class=&#34;headerlink&#34; title=&#34;安装说明&#34;&gt;&lt;/a&gt;安装说明&lt;/h3&gt;&lt;h5 id=&#34;node-js和Typoro、Git，一路选-next-就行了。&#34;&gt;&lt;a href=&#34;#node-js和Typoro、Git，一路选-next-就行了。&#34; class=&#34;headerlink&#34; title=&#34;node.js和Typoro、Git，一路选 next 就行了。&#34;&gt;&lt;/a&gt;node.js和Typoro、Git，一路选 next 就行了。&lt;/h5&gt;&lt;h5 id=&#34;VsCode安装好之后默认是英文界面，可以在插件市场里搜索chinese，安装之后重启软件，变成中文版。&#34;&gt;&lt;a href=&#34;#VsCode安装好之后默认是英文界面，可以在插件市场里搜索chinese，安装之后重启软件，变成中文版。&#34; class=&#34;headerlink&#34; title=&#34;VsCode安装好之后默认是英文界面，可以在插件市场里搜索chinese，安装之后重启软件，变成中文版。&#34;&gt;&lt;/a&gt;VsCode安装好之后默认是英文界面，可以在插件市场里搜索chinese，安装之后重启软件，变成中文版。&lt;/h5&gt;&lt;h3 id=&#34;检验是否成功安装&#34;&gt;&lt;a href=&#34;#检验是否成功安装&#34; class=&#34;headerlink&#34; title=&#34;检验是否成功安装&#34;&gt;&lt;/a&gt;检验是否成功安装&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;用 Win + R 打开运行，输入 cmd 并进入cmd窗口，或者在右键打开Git bash，输入命令。能看到版本号就表示成功啦。&lt;/strong&gt;    &lt;/p&gt;
+&lt;h3 id=&#34;所需的软件和平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#所需的软件和平台&#34;&gt;#&lt;/a&gt; 所需的软件和平台&lt;/h3&gt;
+&lt;h4 id=&#34;必须的软件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#必须的软件&#34;&gt;#&lt;/a&gt; 必须的软件：&lt;/h4&gt;
+&lt;h6 id=&#34;nodejs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs&#34;&gt;#&lt;/a&gt; NODE.JS&lt;/h6&gt;
+&lt;h6 id=&#34;git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git&#34;&gt;#&lt;/a&gt; GIT&lt;/h6&gt;
+&lt;h4 id=&#34;可选的软件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#可选的软件&#34;&gt;#&lt;/a&gt; 可选的软件：&lt;/h4&gt;
+&lt;h6 id=&#34;visual-studio-code&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#visual-studio-code&#34;&gt;#&lt;/a&gt; Visual Studio Code&lt;/h6&gt;
+&lt;h6 id=&#34;typora&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#typora&#34;&gt;#&lt;/a&gt; TYPORA&lt;/h6&gt;
+&lt;h3 id=&#34;要用到的框架或平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#要用到的框架或平台&#34;&gt;#&lt;/a&gt; 要用到的框架或平台：&lt;/h3&gt;
+&lt;h5 id=&#34;hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo&#34;&gt;#&lt;/a&gt; HEXO&lt;/h5&gt;
+&lt;h5 id=&#34;github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github&#34;&gt;#&lt;/a&gt; Github&lt;/h5&gt;
+&lt;h3 id=&#34;安装说明&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装说明&#34;&gt;#&lt;/a&gt; 安装说明&lt;/h3&gt;
+&lt;h5 id=&#34;nodejs和typoro-git一路选-next-就行了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nodejs和typoro-git一路选-next-就行了&#34;&gt;#&lt;/a&gt; node.js 和 Typoro、Git，一路选 next 就行了。&lt;/h5&gt;
+&lt;h5 id=&#34;vscode安装好之后默认是英文界面可以在插件市场里搜索chinese安装之后重启软件变成中文版&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vscode安装好之后默认是英文界面可以在插件市场里搜索chinese安装之后重启软件变成中文版&#34;&gt;#&lt;/a&gt; VsCode 安装好之后默认是英文界面，可以在插件市场里搜索 chinese，安装之后重启软件，变成中文版。&lt;/h5&gt;
+&lt;h3 id=&#34;检验是否成功安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#检验是否成功安装&#34;&gt;#&lt;/a&gt; 检验是否成功安装&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;用 Win + R 打开运行，输入 cmd 并进入 cmd 窗口，或者在右键打开 Git bash，输入命令。能看到版本号就表示成功啦。&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;node.js 的检查&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;node.js 的检查&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;node -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;npm的检查(NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题)。&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;npm 的检查 (NPM 是随同 NodeJS 一起安装的包管理工具，能解决 NodeJS 代码部署上的很多问题)。&lt;/strong&gt;&lt;/p&gt;
   &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Git 的检查&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Git 的检查&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git --version&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&#34;/images/image-20210521124138671.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;/images/image-20210521124138671.png&#34;&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;HEXO的安装&#34;&gt;&lt;a href=&#34;#HEXO的安装&#34; class=&#34;headerlink&#34; title=&#34;HEXO的安装&#34;&gt;&lt;/a&gt;HEXO的安装&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;在Git bash或者CMD界面执行命令&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hexo的安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo的安装&#34;&gt;#&lt;/a&gt; HEXO 的安装&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;在 Git bash 或者 CMD 界面执行命令&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;安装之前可以先设置一下淘宝镜像加速器&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -79,11 +100,12 @@
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;安装Hexo部署插件&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安装 Hexo 部署插件&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;请在博客的目录下启动Git bash，再执行以下代码&lt;/p&gt;
+&lt;p&gt;请在博客的目录下启动 Git bash，再执行以下代码&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-deployer-git --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;GIT的配置&#34;&gt;&lt;a href=&#34;#GIT的配置&#34; class=&#34;headerlink&#34; title=&#34;GIT的配置&#34;&gt;&lt;/a&gt;GIT的配置&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&#34;git的配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git的配置&#34;&gt;#&lt;/a&gt; GIT 的配置&lt;/h3&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;设置用户名称&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global user.name &lt;span class=&#34;string&#34;&gt;&amp;quot;用户名&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -96,90 +118,119 @@
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;ssh-keygen -t rsa -C &lt;span class=&#34;string&#34;&gt;&amp;quot;用户邮箱&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;以上代码执行之后，会让你设置密码，推荐全都不要设置，直接连按三次回车键。&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;Github配置&#34;&gt;&lt;a href=&#34;#Github配置&#34; class=&#34;headerlink&#34; title=&#34;Github配置&#34;&gt;&lt;/a&gt;Github配置&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;创建一个仓库，名为：自己用户名+ .github.io&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;github配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github配置&#34;&gt;#&lt;/a&gt; Github 配置&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;创建一个仓库，名为：自己用户名 + .github.io&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/223E7A465293.png.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;配置SSH key，复制生成的密钥（在C:\Users\admin\.ssh\id_rsa.pub文件里），&lt;/strong&gt;&lt;/p&gt;
-&lt;h6 id=&#34;Github—-gt-Setting—-gt-SSH-and-GPG-keys-—-gt-new-SSH-keys，粘贴并添加SSH-keys。&#34;&gt;&lt;a href=&#34;#Github—-gt-Setting—-gt-SSH-and-GPG-keys-—-gt-new-SSH-keys，粘贴并添加SSH-keys。&#34; class=&#34;headerlink&#34; title=&#34;Github—&amp;gt;Setting—&amp;gt;SSH and GPG keys —&amp;gt;new SSH keys，粘贴并添加SSH keys。&#34;&gt;&lt;/a&gt;Github—&amp;gt;Setting—&amp;gt;SSH and GPG keys —&amp;gt;new SSH keys，粘贴并添加SSH keys。&lt;/h6&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;配置 SSH key，复制生成的密钥（在 C:\Users\admin\.ssh\id_rsa.pub 文件里），&lt;/strong&gt;&lt;/p&gt;
+&lt;h6 id=&#34;githubsettingssh-and-gpg-keys-new-ssh-keys粘贴并添加ssh-keys&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#githubsettingssh-and-gpg-keys-new-ssh-keys粘贴并添加ssh-keys&#34;&gt;#&lt;/a&gt; Github—&amp;gt;Setting—&amp;gt;SSH and GPG keys —&amp;gt;new SSH keys，粘贴并添加 SSH keys。&lt;/h6&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;博客-config-yml-文件的配置&#34;&gt;&lt;a href=&#34;#博客-config-yml-文件的配置&#34; class=&#34;headerlink&#34; title=&#34;博客 _config.yml 文件的配置&#34;&gt;&lt;/a&gt;博客 _config.yml 文件的配置&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;打开博客根目录的 _config.yml 文件，将一下信息添加到里面去。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;博客-_configyml-文件的配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#博客-_configyml-文件的配置&#34;&gt;#&lt;/a&gt; 博客 _config.yml 文件的配置&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;打开博客根目录的 _config.yml 文件，将一下信息添加到里面去。&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;url: https://CodingFXJ.github.io&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;img src=&#34;/images/image-20210521130458570.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;【注意】+博客根目录的 _config.yml 文件，和主题根目录的 _config.yml 文件，冒号后面有个空格！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;【注意】+ 博客根目录的 _config.yml 文件，和主题根目录的 _config.yml 文件，冒号后面有个空格！&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;deploy:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt;: git&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  repo: https://github.com/CodingFXJ/CodingFXJ.github.io.git &lt;span class=&#34;comment&#34;&gt;#替换成自己仓库的HTTP URL地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  branch: main&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;HEXO常用代码&#34;&gt;&lt;a href=&#34;#HEXO常用代码&#34; class=&#34;headerlink&#34; title=&#34;HEXO常用代码&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://hexo.io/zh-cn/docs/configuration.html&#34;&gt;HEXO常用代码&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;清理缓存，会自动删除博客目录下得public文件。(hexo cl 是 hexo clean 的简写)&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hexo常用代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo常用代码&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://hexo.io/zh-cn/docs/configuration.html&#34;&gt;HEXO 常用代码&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;清理缓存，会自动删除博客目录下得 public 文件。(hexo cl 是 hexo clean 的简写)&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo cl &lt;span class=&#34;comment&#34;&gt;#或者hexo clean&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;img src=&#34;/images/image-20210521131113813.png&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;/images/image-20210521131113813.png&#34;&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;生成静态页面，重新生成public文件。（hexo g 是 hexo generate 的简写)&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;生成静态页面，重新生成 public 文件。（hexo g 是 hexo generate 的简写)&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;&lt;strong&gt;启动本地服务，在 &lt;a href=&#34;http://localhost:4000/&#34;&gt;http://localhost:4000/&lt;/a&gt; 预览效果。（hexo s 是 hexo server 的简写）&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;部署推送，部署到github。（hexo d 是 hexo deploy 的简写）&lt;/strong&gt;&lt;/li&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;部署推送，部署到 github。（hexo d 是 hexo deploy 的简写）&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;&lt;strong&gt;以上连写示例一（清理缓存 + 生成静态页面 + 在本地预览）&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;6&#34;&gt;
 &lt;li&gt;&lt;strong&gt;以上连写示例二（清理缓存 + 生成静态页面 + 部署推送）&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;主题更换&#34;&gt;&lt;a href=&#34;#主题更换&#34; class=&#34;headerlink&#34; title=&#34;主题更换&#34;&gt;&lt;/a&gt;主题更换&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;挑选主题，hexo官网或github下载主题。&lt;a href=&#34;https://hexo.io/themes/&#34;&gt;（HEXO theme）&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;主题更换&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#主题更换&#34;&gt;#&lt;/a&gt; 主题更换&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;挑选主题，hexo 官网或 github 下载主题。&lt;a href=&#34;https://hexo.io/themes/&#34;&gt;（HEXO theme）&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;下载解压，放到自己博客目录下的themes文件夹。&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;下载解压，放到自己博客目录下的 themes 文件夹。&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://hexo.io/zh-cn/docs/configuration&#34;&gt;主题配置&lt;/a&gt;，修改_config.yml参数。&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://hexo.io/zh-cn/docs/configuration&#34;&gt;主题配置&lt;/a&gt;，修改_config.yml 参数。&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;theme:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;shoka&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#更换主题名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Site修改网站标题、副标题、作者、语言等&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;title:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;CodingFXJ&amp;#x27;Blog&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;subtitle:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;description:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;keywords:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;author:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;FXJ&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;language:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;zh-CN&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;timezone:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;其余基本配置 、依赖插件、界面显示、特殊功能配置等，需要查看自己主题的使用说明，按要求设置。&lt;/strong&gt;&lt;/li&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;其余基本配置 、依赖插件、界面显示、特殊功能配置等，需要查看自己主题的使用说明，按要求设置。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;超好看主题收藏&lt;/strong&gt;&lt;/p&gt;
+&lt;h6 id=&#34;matery&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#matery&#34;&gt;#&lt;/a&gt; matery&lt;/h6&gt;
+&lt;h6 id=&#34;butterfly&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#butterfly&#34;&gt;#&lt;/a&gt; butterfly&lt;/h6&gt;
+&lt;h6 id=&#34;minhow&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#minhow&#34;&gt;#&lt;/a&gt; MinHow&lt;/h6&gt;
+&lt;h6 id=&#34;yunyoujun&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#yunyoujun&#34;&gt;#&lt;/a&gt; yunyoujun&lt;/h6&gt;
+&lt;h6 id=&#34;yllia&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#yllia&#34;&gt;#&lt;/a&gt; yllia&lt;/h6&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;超好看主题收藏&lt;/strong&gt;&lt;/p&gt;
-&lt;h6 id=&#34;matery&#34;&gt;&lt;a href=&#34;#matery&#34; class=&#34;headerlink&#34; title=&#34;matery&#34;&gt;&lt;/a&gt;matery&lt;/h6&gt;&lt;h6 id=&#34;butterfly&#34;&gt;&lt;a href=&#34;#butterfly&#34; class=&#34;headerlink&#34; title=&#34;butterfly&#34;&gt;&lt;/a&gt;butterfly&lt;/h6&gt;&lt;h6 id=&#34;MinHow&#34;&gt;&lt;a href=&#34;#MinHow&#34; class=&#34;headerlink&#34; title=&#34;MinHow&#34;&gt;&lt;/a&gt;MinHow&lt;/h6&gt;&lt;h6 id=&#34;yunyoujun&#34;&gt;&lt;a href=&#34;#yunyoujun&#34; class=&#34;headerlink&#34; title=&#34;yunyoujun&#34;&gt;&lt;/a&gt;yunyoujun&lt;/h6&gt;&lt;h6 id=&#34;yllia&#34;&gt;&lt;a href=&#34;#yllia&#34; class=&#34;headerlink&#34; title=&#34;yllia&#34;&gt;&lt;/a&gt;yllia&lt;/h6&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;博客发布&#34;&gt;&lt;a href=&#34;#博客发布&#34; class=&#34;headerlink&#34; title=&#34;博客发布&#34;&gt;&lt;/a&gt;博客发布&lt;/h3&gt;&lt;h4 id=&#34;新建博客&#34;&gt;&lt;a href=&#34;#新建博客&#34; class=&#34;headerlink&#34; title=&#34;新建博客&#34;&gt;&lt;/a&gt;新建博客&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;初始化博客&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; hexo init 文件夹名称&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;新建文章&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; hexo new 文章名称 (或者) hexo n 文章名称&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;修改内容&#34;&gt;&lt;a href=&#34;#修改内容&#34; class=&#34;headerlink&#34; title=&#34;修改内容&#34;&gt;&lt;/a&gt;修改内容&lt;/h4&gt;&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;title:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;date:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#文章发布日期  年/月/日 时/分/秒 示：2020/12/24 12:10:45&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#添加标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Note&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;HTML&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#分类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;文章插入图片&#34;&gt;&lt;a href=&#34;#文章插入图片&#34; class=&#34;headerlink&#34; title=&#34;文章插入图片&#34;&gt;&lt;/a&gt;文章插入图片&lt;/h4&gt;&lt;h6 id=&#34;Markdown语法&#34;&gt;&lt;a href=&#34;#Markdown语法&#34; class=&#34;headerlink&#34; title=&#34;Markdown语法&#34;&gt;&lt;/a&gt;Markdown语法&lt;/h6&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;本地插入方式：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		![图片信息](/source目录下图片所处文件夹名/图片名)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;网络图片插入：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		![图片信息](图片地址)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h6 id=&#34;HTML语法&#34;&gt;&lt;a href=&#34;#HTML语法&#34; class=&#34;headerlink&#34; title=&#34;HTML语法&#34;&gt;&lt;/a&gt;HTML语法&lt;/h6&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;本地：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&amp;lt;img src=&amp;quot;/source目录下图片所处文件夹名/图片名&amp;quot; alt=&amp;quot;图片信息&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;网络：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&amp;lt;img src=&amp;quot;图片地址&amp;quot; alt&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;效果展示：&lt;br&gt;&lt;img src=&#34;http://pic1.win4000.com/m00/43/e4/69301a44acfd7de469f82d360d349fb5.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;文章插图视频&#34;&gt;&lt;a href=&#34;#文章插图视频&#34; class=&#34;headerlink&#34; title=&#34;文章插图视频&#34;&gt;&lt;/a&gt;文章插图视频&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;复制 嵌入代码 到文章，可通过width、height修改播放窗口尺寸			&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;博客发布&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#博客发布&#34;&gt;#&lt;/a&gt; 博客发布&lt;/h3&gt;
+&lt;h4 id=&#34;新建博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建博客&#34;&gt;#&lt;/a&gt; 新建博客&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;初始化博客&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; hexo init 文件夹名称&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;新建文章&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; hexo new 文章名称 (或者) hexo n 文章名称&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;修改内容&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改内容&#34;&gt;#&lt;/a&gt; 修改内容&lt;/h4&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;title:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;date:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#文章发布日期  年/月/日 时/分/秒 示：2020/12/24 12:10:45&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#添加标签&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Note&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;HTML&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#分类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;文章插入图片&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文章插入图片&#34;&gt;#&lt;/a&gt; 文章插入图片&lt;/h4&gt;
+&lt;h6 id=&#34;markdown语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown语法&#34;&gt;#&lt;/a&gt; Markdown 语法&lt;/h6&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;本地插入方式：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		![图片信息](/source目录下图片所处文件夹名/图片名)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;网络图片插入：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		![图片信息](图片地址)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h6 id=&#34;html语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#html语法&#34;&gt;#&lt;/a&gt; HTML 语法&lt;/h6&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;本地：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&amp;lt;img src=&amp;quot;/source目录下图片所处文件夹名/图片名&amp;quot; alt=&amp;quot;图片信息&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;网络：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&amp;lt;img src=&amp;quot;图片地址&amp;quot; alt&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;效果展示：&lt;br&gt;
+&lt;img src=&#34;http://pic1.win4000.com/m00/43/e4/69301a44acfd7de469f82d360d349fb5.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;文章插图视频&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文章插图视频&#34;&gt;#&lt;/a&gt; 文章插图视频&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;复制 嵌入代码 到文章，可通过width、height修改播放窗口尺寸			&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;效果展示：&lt;/p&gt;
 &lt;iframe  width=&#34;300&#34; height=&#34;300&#34; src=&#34;//player.bilibili.com/player.html?aid=37743569&amp;bvid=BV1Mt411D73n&amp;cid=66352604&amp;page=1&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34;&gt; &lt;/iframe&gt;
-
-&lt;h4 id=&#34;音频嵌入&#34;&gt;&lt;a href=&#34;#音频嵌入&#34; class=&#34;headerlink&#34; title=&#34;音频嵌入&#34;&gt;&lt;/a&gt;音频嵌入&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;生成外链播放器，复制 HTML代码&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;音频嵌入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#音频嵌入&#34;&gt;#&lt;/a&gt; 音频嵌入&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;生成外链播放器，复制 HTML代码&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;效果展示：&lt;/p&gt;
   &lt;iframe frameborder=&#34;no&#34; border=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; width=330 height=86 src=&#34;//music.163.com/outchain/player?type=2&amp;id=65766&amp;auto=0&amp;height=66&#34;&gt;&lt;/iframe&gt;
-
-&lt;h4 id=&#34;网址插入&#34;&gt;&lt;a href=&#34;#网址插入&#34; class=&#34;headerlink&#34; title=&#34;网址插入&#34;&gt;&lt;/a&gt;网址插入&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Markdown语法&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		[网站名](网址)  	#[网易云音乐](https://music.163.com/#) 或 markdown快捷键:Ctrl+K&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;HTML语法&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;网站名&amp;lt;/a&amp;gt;    #&amp;lt;a href=&amp;quot;https://music.163.com/#&amp;quot;&amp;gt;网易云音乐&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;​        效果展示：        &lt;a href=&#34;https://www.bilibili.com/&#34;&gt;哔哩哔哩&lt;/a&gt;&lt;/p&gt;
-&lt;h4 id=&#34;一键三连完成发布与查看&#34;&gt;&lt;a href=&#34;#一键三连完成发布与查看&#34; class=&#34;headerlink&#34; title=&#34;一键三连完成发布与查看&#34;&gt;&lt;/a&gt;一键三连完成发布与查看&lt;/h4&gt;&lt;ul&gt;
+&lt;h4 id=&#34;网址插入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网址插入&#34;&gt;#&lt;/a&gt; 网址插入&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Markdown语法&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		[网站名](网址)  	#[网易云音乐](https://music.163.com/#) 或 markdown快捷键:Ctrl+K&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;HTML语法&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;lt;a href=&amp;quot;网址&amp;quot;&amp;gt;网站名&amp;lt;/a&amp;gt;    #&amp;lt;a href=&amp;quot;https://music.163.com/#&amp;quot;&amp;gt;网易云音乐&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;​		效果展示：		&lt;a href=&#34;https://www.bilibili.com/&#34;&gt;哔哩哔哩&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;一键三连完成发布与查看&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一键三连完成发布与查看&#34;&gt;#&lt;/a&gt; 一键三连完成发布与查看&lt;/h4&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;本地查看&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;部署到github&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;部署到 github&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;部署遇到的问题及解决方式&#34;&gt;&lt;a href=&#34;#部署遇到的问题及解决方式&#34; class=&#34;headerlink&#34; title=&#34;部署遇到的问题及解决方式&#34;&gt;&lt;/a&gt;部署遇到的问题及解决方式&lt;/h4&gt;&lt;p&gt;hexo d遇到问题一：删除博客根目录下的.deploy_git文件，重新部署（  &lt;strong&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/strong&gt;）&lt;/p&gt;
+&lt;h4 id=&#34;部署遇到的问题及解决方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#部署遇到的问题及解决方式&#34;&gt;#&lt;/a&gt; 部署遇到的问题及解决方式&lt;/h4&gt;
+&lt;p&gt;hexo d 遇到问题一：删除博客根目录下的.deploy_git 文件，重新部署（  &lt;strong&gt;hexo cl &amp;amp;&amp;amp; hexo g &amp;amp;&amp;amp; hexo d&lt;/strong&gt;）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/20210523134101.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;hexo d遇到问题二：&lt;code&gt;OpenSSL SSL_read: Connection was reset, errno 10054&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;解决方法：&lt;code&gt;git config --global http.sslVerify &amp;quot;false&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;大功告成！&#34;&gt;&lt;a href=&#34;#大功告成！&#34; class=&#34;headerlink&#34; title=&#34;大功告成！&#34;&gt;&lt;/a&gt;大功告成！&lt;/h4&gt;</content>
+&lt;p&gt;hexo d 遇到问题二： &lt;code&gt; OpenSSL SSL_read: Connection was reset, errno 10054&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;解决方法： &lt;code&gt;git config --global http.sslVerify &amp;quot;false&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;大功告成&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#大功告成&#34;&gt;#&lt;/a&gt; 大功告成！&lt;/h4&gt;
+</content>
         <category term="HEXO" />
         <category term="Github" />
         <category term="Note" />

@@ -2407,6 +2407,10 @@ template {
                 #footer-wrap {
                     padding: 1rem 1rem !important;
                 }
+                
+                .tab-contents .active {
+                    background-color: #f2f8fd !important;
+                }
 .limit-one-line,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-name,
 #article-container .flink .flink-list > .flink-list-item a .flink-item-desc,

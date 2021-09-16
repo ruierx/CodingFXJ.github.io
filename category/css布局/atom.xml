@@ -6,184 +6,224 @@
     <updated>2021-06-10T14:46:32.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="css" />
     <category term="CSS" />
-    <category term="JS" />
-    <category term="flex布局" />
+    <category term="css" />
     <category term="Git" />
-    <category term="this指向" />
+    <category term="flex布局" />
+    <category term="JS" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
+    <category term="this指向" />
     <category term="ES6" />
-    <category term="时间" />
     <category term="数组" />
     <category term="懒加载" />
+    <category term="时间" />
+    <category term="高阶函数" />
     <category term="闭包" />
     <category term="LeetCode" />
-    <category term="高阶函数" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
     <category term="算法" />
+    <category term="扁平化" />
     <category term="手写高阶函数" />
     <category term="复杂度" />
-    <category term="扁平化" />
     <category term="JAVA" />
     <category term="HTTP网络请求" />
     <category term="设计模式" />
+    <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
         <id>https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/</id>
         <title>CSS居中</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;CSS细节&#34;&gt;&lt;a href=&#34;#CSS细节&#34; class=&#34;headerlink&#34; title=&#34;CSS细节&#34;&gt;&lt;/a&gt;CSS细节&lt;/h3&gt;&lt;h4 id=&#34;1-浮动的细节（扩展）&#34;&gt;&lt;a href=&#34;#1-浮动的细节（扩展）&#34; class=&#34;headerlink&#34; title=&#34;1. 浮动的细节（扩展）&#34;&gt;&lt;/a&gt;1. 浮动的细节（扩展）&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;浮动盒子的顶边不得高于上一个盒子的顶边&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;css细节&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css细节&#34;&gt;#&lt;/a&gt; CSS 细节&lt;/h3&gt;
+&lt;h4 id=&#34;1-浮动的细节扩展&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-浮动的细节扩展&#34;&gt;#&lt;/a&gt; 1. 浮动的细节（扩展）&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;浮动盒子的顶边不得高于上一个盒子的顶边&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;若剩余空间无法放下浮动的盒子，则该盒子向下移动，直到具备足够的空间能容纳盒子，然后再向左或向右移动&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;若剩余空间无法放下浮动的盒子，则该盒子向下移动，直到具备足够的空间能容纳盒子，然后再向左或向右移动&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;2-行高的取值&#34;&gt;&lt;a href=&#34;#2-行高的取值&#34; class=&#34;headerlink&#34; title=&#34;2. 行高的取值&#34;&gt;&lt;/a&gt;2. 行高的取值&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;数字的时候，子元素的行高 = 子元素的字体大小 *数字&lt;/p&gt;
-&lt;h6 id=&#34;行高是先继承下来，再乘以当前元素的字体大小来计算当前行高&#34;&gt;&lt;a href=&#34;#行高是先继承下来，再乘以当前元素的字体大小来计算当前行高&#34; class=&#34;headerlink&#34; title=&#34;(行高是先继承下来，再乘以当前元素的字体大小来计算当前行高)&#34;&gt;&lt;/a&gt;(行高是先继承下来，再乘以当前元素的字体大小来计算当前行高)&lt;/h6&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;百分比和em单位时，子元素的行高 = 父元素的字体大小 *百分比（或者em单位的值）&lt;/p&gt;
-&lt;h6 id=&#34;行高是先乘以祖先元素的字体大小计算好结果，再继承下来作用在子元素上&#34;&gt;&lt;a href=&#34;#行高是先乘以祖先元素的字体大小计算好结果，再继承下来作用在子元素上&#34; class=&#34;headerlink&#34; title=&#34;(行高是先乘以祖先元素的字体大小计算好结果，再继承下来作用在子元素上)&#34;&gt;&lt;/a&gt;(行高是先乘以祖先元素的字体大小计算好结果，再继承下来作用在子元素上)&lt;/h6&gt;&lt;/li&gt;
+&lt;h4 id=&#34;2-行高的取值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-行高的取值&#34;&gt;#&lt;/a&gt; 2. 行高的取值&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;数字的时候，子元素的行高 = 子元素的字体大小 * 数字&lt;/p&gt;
+&lt;h6 id=&#34;行高是先继承下来再乘以当前元素的字体大小来计算当前行高&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#行高是先继承下来再乘以当前元素的字体大小来计算当前行高&#34;&gt;#&lt;/a&gt; (行高是先继承下来，再乘以当前元素的字体大小来计算当前行高)&lt;/h6&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;百分比和 em 单位时，子元素的行高 = 父元素的字体大小 * 百分比（或者 em 单位的值）&lt;/p&gt;
+&lt;h6 id=&#34;行高是先乘以祖先元素的字体大小计算好结果再继承下来作用在子元素上&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#行高是先乘以祖先元素的字体大小计算好结果再继承下来作用在子元素上&#34;&gt;#&lt;/a&gt; (行高是先乘以祖先元素的字体大小计算好结果，再继承下来作用在子元素上)&lt;/h6&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;3-多个行盒垂直方向上的对齐&#34;&gt;&lt;a href=&#34;#3-多个行盒垂直方向上的对齐&#34; class=&#34;headerlink&#34; title=&#34;3. 多个行盒垂直方向上的对齐&#34;&gt;&lt;/a&gt;3. 多个行盒垂直方向上的对齐&lt;/h4&gt;&lt;p&gt;​        给没有对齐元素设置&lt;code&gt;vertical-align：预设值/px&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;4-图片的底部白边&#34;&gt;&lt;a href=&#34;#4-图片的底部白边&#34; class=&#34;headerlink&#34; title=&#34;4. 图片的底部白边&#34;&gt;&lt;/a&gt;4. 图片的底部白边&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;解决方案：
+&lt;h4 id=&#34;3-多个行盒垂直方向上的对齐&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-多个行盒垂直方向上的对齐&#34;&gt;#&lt;/a&gt; 3. 多个行盒垂直方向上的对齐&lt;/h4&gt;
+&lt;p&gt;​		给没有对齐元素设置 &lt;code&gt;vertical-align：预设值/px&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;4-图片的底部白边&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-图片的底部白边&#34;&gt;#&lt;/a&gt; 4. 图片的底部白边&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;解决方案：
 
 1. 设置父元素的字体大小为0
 
 2. 将图片设置为块盒
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;5-堆叠上下文&#34;&gt;&lt;a href=&#34;#5-堆叠上下文&#34; class=&#34;headerlink&#34; title=&#34;5. 堆叠上下文&#34;&gt;&lt;/a&gt;5. 堆叠上下文&lt;/h4&gt;&lt;p&gt;堆叠上下文（stack context），它是一块区域，这块区域由某个元素创建，它规定了该区域中的内容在Z轴上排列的先后顺序。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;5-堆叠上下文&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-堆叠上下文&#34;&gt;#&lt;/a&gt; 5. 堆叠上下文&lt;/h4&gt;
+&lt;p&gt;堆叠上下文（stack context），它是一块区域，这块区域由某个元素创建，它规定了该区域中的内容在 Z 轴上排列的先后顺序。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;创建堆叠上下文的元素&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;html元素（根元素）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;html 元素（根元素）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;设置了z-index（非auto）数值的定位元素&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;设置了 z-index（非 auto）数值的定位元素&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;同一个堆叠上下文中元素在Z轴上的排列&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;同一个堆叠上下文中元素在 Z 轴上的排列&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;从后到前的排列顺序：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;创建堆叠上下文的元素的背景和边框&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;创建堆叠上下文的元素的背景和边框&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;堆叠级别(z-index, stack level)为负值的堆叠上下文&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;堆叠级别 (z-index, stack level) 为负值的堆叠上下文&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;常规流非定位的块盒&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;常规流非定位的块盒&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;非定位的浮动盒子&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;非定位的浮动盒子&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;常规流非定位行盒&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;常规流非定位行盒&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;任何 z-index 是 auto 的定位子元素，以及 z-index 是 0 的堆叠上下文&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;任何 z-index 是 auto 的定位子元素，以及 z-index 是 0 的堆叠上下文&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;堆叠级别为正值的堆叠上下文&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;堆叠级别为正值的堆叠上下文&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h4 id=&#34;6-浏览器兼容性&#34;&gt;&lt;a href=&#34;#6-浏览器兼容性&#34; class=&#34;headerlink&#34; title=&#34;6. 浏览器兼容性&#34;&gt;&lt;/a&gt;&lt;strong&gt;6. 浏览器兼容性&lt;/strong&gt;&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;IE： -ms-&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Chrome，safari:  -webkit-&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;opera： -o-&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firefox: -moz-&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;水平居中&#34;&gt;&lt;a href=&#34;#水平居中&#34; class=&#34;headerlink&#34; title=&#34;水平居中&#34;&gt;&lt;/a&gt;水平居中&lt;/h3&gt;&lt;p&gt;​    居中：盒子在其包含块中居中&lt;/p&gt;
-&lt;h4 id=&#34;1-行盒（行块盒）水平居中&#34;&gt;&lt;a href=&#34;#1-行盒（行块盒）水平居中&#34; class=&#34;headerlink&#34; title=&#34;1. 行盒（行块盒）水平居中&#34;&gt;&lt;/a&gt;1. 行盒（行块盒）水平居中&lt;/h4&gt;&lt;p&gt;​        直接设置行盒（文本/行块盒）父元素&lt;code&gt;text-align:center&lt;/code&gt;&lt;/p&gt;
-&lt;h4 id=&#34;2-常规流块盒水平居中&#34;&gt;&lt;a href=&#34;#2-常规流块盒水平居中&#34; class=&#34;headerlink&#34; title=&#34;2. 常规流块盒水平居中&#34;&gt;&lt;/a&gt;2. 常规流块盒水平居中&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;定宽，设置左右margin为auto&lt;/li&gt;
+&lt;h4 id=&#34;6-浏览器兼容性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-浏览器兼容性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;6. 浏览器兼容性&lt;/strong&gt;&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;IE： -ms-&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Chrome，safari:  -webkit-&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;opera： -o-&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firefox: -moz-&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;水平居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#水平居中&#34;&gt;#&lt;/a&gt; 水平居中&lt;/h3&gt;
+&lt;p&gt;​	居中：盒子在其包含块中居中&lt;/p&gt;
+&lt;h4 id=&#34;1-行盒行块盒水平居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-行盒行块盒水平居中&#34;&gt;#&lt;/a&gt; 1. 行盒（行块盒）水平居中&lt;/h4&gt;
+&lt;p&gt;​		直接设置行盒（文本 / 行块盒）父元素 &lt;code&gt;text-align:center&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2-常规流块盒水平居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-常规流块盒水平居中&#34;&gt;#&lt;/a&gt; 2. 常规流块盒水平居中&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;定宽，设置左右 margin 为 auto&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt; 优点：只需要对子元素进行设置，就可以现实水平方向居中布局效果&lt;br&gt;                 缺点：如果子级脱离文档流，会导致margin属性的值无效 。&lt;/p&gt;
-&lt;p&gt; 父元素设置：display: table，子元素设置margin: 0 auto; 也可以实现&lt;/p&gt;
+&lt;p&gt;优点：只需要对子元素进行设置，就可以现实水平方向居中布局效果&lt;br&gt;
+缺点：如果子级脱离文档流，会导致 margin 属性的值无效 。&lt;/p&gt;
+&lt;p&gt;父元素设置：display: table，子元素设置 margin: 0 auto; 也可以实现&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;不定宽，display + text-align&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;父元素设置&lt;code&gt;text-align: center&lt;/code&gt;，子元素设置&lt;code&gt;display：inline-block&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;提示: text-algin具有继承性&lt;/p&gt;
+&lt;p&gt;父元素设置 &lt;code&gt;text-align: center&lt;/code&gt; ，子元素设置 &lt;code&gt;display：inline-block&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;提示: text-algin 具有继承性&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;3-块元素的水平居中&#34;&gt;&lt;a href=&#34;#3-块元素的水平居中&#34; class=&#34;headerlink&#34; title=&#34;3. 块元素的水平居中&#34;&gt;&lt;/a&gt;3. 块元素的水平居中&lt;/h4&gt;&lt;ul&gt;
+&lt;h4 id=&#34;3-块元素的水平居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-块元素的水平居中&#34;&gt;#&lt;/a&gt; 3. 块元素的水平居中&lt;/h4&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;定宽 ：定位 + margin&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;span class=&#34;comment&#34;&gt;/*relative、fixed都可以*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;right&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; auto;&lt;span class=&#34;comment&#34;&gt;/*margin自动吸收剩余宽度*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;定宽: 子元素的 &lt;code&gt;margin-left:  -  width / 2 px ;&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;定宽：子元素的  &lt;code&gt;margin-left:  -  width / 2 px ; &lt;/code&gt; &lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#child&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;/*  如果父级元素没有开启定位的话，那么当前元素就相对于页面定位的。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;		如果父级元素开启了定位的话，那么当前元素就相对于父元素定位的。*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: bisque;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin-left&lt;/span&gt;:-&lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/*margin-left: width/2 px;*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;不定宽：利用css3新增属性 &lt;code&gt;transform: translateX(-50%);&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不定宽：利用 css3 新增属性  &lt;code&gt;transform: translateX(-50%);&lt;/code&gt; &lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#child&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    	...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    	&lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;transform&lt;/span&gt;: &lt;span class=&#34;built_in&#34;&gt;translateX&lt;/span&gt;(-&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;absolute + transform 方案的优缺点：&lt;br&gt;           优点：不论父级元素是否脱离文档流，都不会影响子级元素的的水平居中效果。&lt;br&gt;           缺点：transform属性时CSS3新增的属性，老版本浏览器兼容情况不太好。 &lt;/p&gt;
+&lt;p&gt;absolute + transform 方案的优缺点：&lt;br&gt;
+优点：不论父级元素是否脱离文档流，都不会影响子级元素的的水平居中效果。&lt;br&gt;
+缺点：transform 属性时 CSS3 新增的属性，老版本浏览器兼容情况不太好。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;使用flexbox布局实现（宽度定不定都可以）&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;使用 flexbox 布局实现（宽度定不定都可以）&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;​        给待处理的块状元素的父元素添加属性 &lt;code&gt;display: flex; justify-content: center;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;​		给待处理的块状元素的父元素添加属性  &lt;code&gt;display: flex; justify-content: center;&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#father&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;300px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: skyblue;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;垂直居中&#34;&gt;&lt;a href=&#34;#垂直居中&#34; class=&#34;headerlink&#34; title=&#34;垂直居中&#34;&gt;&lt;/a&gt;垂直居中&lt;/h3&gt;&lt;h4 id=&#34;1-单行文本的垂直居中&#34;&gt;&lt;a href=&#34;#1-单行文本的垂直居中&#34; class=&#34;headerlink&#34; title=&#34;1. 单行文本的垂直居中&#34;&gt;&lt;/a&gt;1. 单行文本的垂直居中&lt;/h4&gt;&lt;p&gt;​        设置文本所在元素的行高(&lt;code&gt;line-height&lt;/code&gt;)，为整个区域的高度&lt;/p&gt;
-&lt;h4 id=&#34;2-多行文本的垂直居中-行块盒、块盒内&#34;&gt;&lt;a href=&#34;#2-多行文本的垂直居中-行块盒、块盒内&#34; class=&#34;headerlink&#34; title=&#34;2. 多行文本的垂直居中(行块盒、块盒内)&#34;&gt;&lt;/a&gt;2. 多行文本的垂直居中(行块盒、块盒内)&lt;/h4&gt;&lt;p&gt;​        (未知高度）多行文本垂直居中设置上下的&lt;code&gt;padding&lt;/code&gt;值一样即可。&lt;/p&gt;
+&lt;h3 id=&#34;垂直居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#垂直居中&#34;&gt;#&lt;/a&gt; 垂直居中&lt;/h3&gt;
+&lt;h4 id=&#34;1-单行文本的垂直居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-单行文本的垂直居中&#34;&gt;#&lt;/a&gt; 1. 单行文本的垂直居中&lt;/h4&gt;
+&lt;p&gt;​		设置文本所在元素的行高 ( &lt;code&gt;line-height&lt;/code&gt; )，为整个区域的高度&lt;/p&gt;
+&lt;h4 id=&#34;2-多行文本的垂直居中行块盒-块盒内&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-多行文本的垂直居中行块盒-块盒内&#34;&gt;#&lt;/a&gt; 2. 多行文本的垂直居中 (行块盒、块盒内)&lt;/h4&gt;
+&lt;p&gt;​		(未知高度）多行文本垂直居中设置上下的 &lt;code&gt;padding&lt;/code&gt;  值一样即可。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;多行文本固定高度的居中（模拟table方法）&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;父元素使用&lt;code&gt;display: table&lt;/code&gt;和子元素使用&lt;code&gt;display: table-cell&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;多行文本固定高度的居中（模拟 table 方法）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;父元素使用 &lt;code&gt;display: table&lt;/code&gt;  和子元素使用 &lt;code&gt;display: table-cell&lt;/code&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;span&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-cell;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;对子元素设置&lt;code&gt;display: inline-block&lt;/code&gt;属性，父元素设置对应的height和line-height。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;对子元素设置&lt;code&gt;vertical-align: middle&lt;/code&gt;属性，使其基线对齐。&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;对子元素设置 &lt;code&gt;display: inline-block&lt;/code&gt;  属性，父元素设置对应的 height 和 line-height。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对子元素设置 &lt;code&gt;vertical-align: middle&lt;/code&gt;  属性，使其基线对齐。&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;绝对定位+transform&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;绝对定位 + transform&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;p&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;transform&lt;/span&gt; : &lt;span class=&#34;built_in&#34;&gt;translateY&lt;/span&gt;(-&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;给文本套一个p元素&lt;/p&gt;
+&lt;p&gt;给文本套一个 p 元素&lt;/p&gt;
 &lt;p&gt;注意：文本超过父元素不管用&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;3-块盒绝对定位的垂直居中&#34;&gt;&lt;a href=&#34;#3-块盒绝对定位的垂直居中&#34; class=&#34;headerlink&#34; title=&#34;3.块盒绝对定位的垂直居中&#34;&gt;&lt;/a&gt;3.块盒绝对定位的垂直居中&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;定高，设置上下的坐标为0（&lt;code&gt;top:0, bottom:0&lt;/code&gt;），将上下margin设置为auto&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;absolute + 负margin方式&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;absolute + &lt;code&gt;transform(0, - 50%)&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;h4 id=&#34;3块盒绝对定位的垂直居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3块盒绝对定位的垂直居中&#34;&gt;#&lt;/a&gt; 3. 块盒绝对定位的垂直居中&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;定高，设置上下的坐标为 0（ &lt;code&gt;top:0, bottom:0&lt;/code&gt; ），将上下 margin 设置为 auto&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;absolute + 负 margin 方式&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;absolute +  &lt;code&gt;transform(0, - 50%)&lt;/code&gt; &lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;水平垂直居中&#34;&gt;&lt;a href=&#34;#水平垂直居中&#34; class=&#34;headerlink&#34; title=&#34;水平垂直居中&#34;&gt;&lt;/a&gt;水平垂直居中&lt;/h3&gt;&lt;h4 id=&#34;一-、已知子元素高度和宽度的元素&#34;&gt;&lt;a href=&#34;#一-、已知子元素高度和宽度的元素&#34; class=&#34;headerlink&#34; title=&#34;一.、已知子元素高度和宽度的元素&#34;&gt;&lt;/a&gt;一.、已知子元素高度和宽度的元素&lt;/h4&gt;&lt;ol&gt;
+&lt;h3 id=&#34;水平垂直居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#水平垂直居中&#34;&gt;#&lt;/a&gt; 水平垂直居中&lt;/h3&gt;
+&lt;h4 id=&#34;一-已知子元素高度和宽度的元素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-已知子元素高度和宽度的元素&#34;&gt;#&lt;/a&gt; 一.、已知子元素高度和宽度的元素&lt;/h4&gt;
+&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;设置父元素为相对定位，给子元素设置绝对定位，&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;top: 0; right: 0; bottom: 0; left: 0;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;top: 0; right: 0; bottom: 0; left: 0; &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;margin: auto;&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#father&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vw&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vh&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: skyblue;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: relative;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#son&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;right&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;bottom&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;: auto;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;&lt;strong&gt;设置父元素为相对定位，给子元素设置绝对定位&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;code&gt;left: 50% ; top: 50% ;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;margin-left: - 元素宽度的一半px ;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;margin-left: - 元素宽度的一半px ; &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;margin-top: - 元素高度的一半px&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#son&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;margin-left&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;50px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;margin-top&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;50px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;二、-未知子元素高度和宽度的元素&#34;&gt;&lt;a href=&#34;#二、-未知子元素高度和宽度的元素&#34; class=&#34;headerlink&#34; title=&#34;二、 未知子元素高度和宽度的元素&#34;&gt;&lt;/a&gt;二、 未知子元素高度和宽度的元素&lt;/h4&gt;&lt;ol&gt;
+&lt;h4 id=&#34;二-未知子元素高度和宽度的元素&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-未知子元素高度和宽度的元素&#34;&gt;#&lt;/a&gt; 二、 未知子元素高度和宽度的元素&lt;/h4&gt;
+&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;设置父元素为相对定位，给子元素设置绝对定位，&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;code&gt;left: 50%;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;top: 50%;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;left: 50%; &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;top: 50%; &lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;transform: translateX(-50%) translateY(-50%);&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#son&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;transform&lt;/span&gt;: &lt;span class=&#34;built_in&#34;&gt;translateX&lt;/span&gt;(-&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;) &lt;span class=&#34;built_in&#34;&gt;translateY&lt;/span&gt;(-&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    	 &lt;span class=&#34;comment&#34;&gt;/*transform:translate(-50%,-50%);*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;使用flex布局实现&lt;/strong&gt;&lt;/li&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;使用 flex 布局实现&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-id&#34;&gt;#father&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vw&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vh&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: skyblue;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;利用&lt;code&gt;table-cell;&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;利用 &lt;code&gt;table-cell;&lt;/code&gt; &lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.parent&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vw&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vh&lt;/span&gt;;&lt;span class=&#34;comment&#34;&gt;/*要求父级元素有固定宽高*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;:table-cell;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;:middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;text-align&lt;/span&gt;:center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.child&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;:inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;利用grid布局&lt;/strong&gt;&lt;/li&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;strong&gt;利用 grid 布局&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.parent&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vw&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vh&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: grid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.child&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    justify-self: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;align-self&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;5&#34;&gt;
 &lt;li&gt;&lt;strong&gt;flex+margin&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.parent&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vw&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100vh&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.child&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;: auto;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;JS 模拟CSS实现&lt;/strong&gt;&lt;/li&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;&lt;strong&gt;JS 模拟 CSS 实现&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//方案一:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; div = &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.querySelector(&lt;span class=&#34;string&#34;&gt;&amp;#x27;div&amp;#x27;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; htmlW = &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.documentElement.clientWidth&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; htmlH = &lt;span class=&#34;built_in&#34;&gt;document&lt;/span&gt;.documentElement.clientHeight&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;div.style.position = &lt;span class=&#34;string&#34;&gt;&amp;#x27;absolute&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 2. 设置left  left = 屏幕宽度的一半 - 盒子宽度的一半&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;div.style.left = (htmlW - div.offsetWidth) / &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; + &lt;span class=&#34;string&#34;&gt;&amp;#x27;px&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 3. 设置top&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;div.style.top = (htmlH - div.offsetHeight) / &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; + &lt;span class=&#34;string&#34;&gt;&amp;#x27;px&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//方案二:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//	divW = div.getBoundingClientRect().width&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//	divH = div.getBoundingClientRect().height&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//  div.style.left = (htmlW - divW) / 2 + &amp;#x27;px&amp;#x27;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//	div.style.top = (htmlH - divH) / 2 + &amp;#x27;px&amp;#x27;;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
@@ -194,47 +234,54 @@
         <id>https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/</id>
         <title>CSS三栏布局</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;三栏布局&#34;&gt;&lt;a href=&#34;#三栏布局&#34; class=&#34;headerlink&#34; title=&#34;三栏布局&#34;&gt;&lt;/a&gt;三栏布局&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;共同目的&lt;/strong&gt;：实现两侧宽度固定，中间宽度自适应的三栏布局，并且中间先加载渲染。&lt;/p&gt;
-&lt;h4 id=&#34;一、双飞翼布局&#34;&gt;&lt;a href=&#34;#一、双飞翼布局&#34; class=&#34;headerlink&#34; title=&#34;一、双飞翼布局&#34;&gt;&lt;/a&gt;一、双飞翼布局&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt;&lt;code&gt;浮动+负margin&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;给主区域添加一个父元素，设置&lt;code&gt;width：100%&lt;/code&gt;，&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;三栏布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三栏布局&#34;&gt;#&lt;/a&gt; 三栏布局&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;共同目的&lt;/strong&gt;：实现两侧宽度固定，中间宽度自适应的三栏布局，并且中间先加载渲染。&lt;/p&gt;
+&lt;h4 id=&#34;一-双飞翼布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-双飞翼布局&#34;&gt;#&lt;/a&gt; 一、双飞翼布局&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt; &lt;code&gt;浮动+负margin&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;给主区域添加一个父元素，设置 &lt;code&gt;width：100%&lt;/code&gt; ，&lt;/p&gt;
 &lt;p&gt;让左中右三个区域都左浮动，&lt;/p&gt;
-&lt;p&gt;给主区域设置左右&lt;code&gt;margin&lt;/code&gt;缩进，留出空位给两边的区域，&lt;/p&gt;
-&lt;p&gt;让左边区域&lt;code&gt;margin-left:-100%&lt;/code&gt;，右边区域&lt;code&gt;margin-left:-200px&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;给主区域设置左右 &lt;code&gt;margin&lt;/code&gt;  缩进，留出空位给两边的区域，&lt;/p&gt;
+&lt;p&gt;让左边区域 &lt;code&gt;margin-left:-100%&lt;/code&gt; ，右边区域 &lt;code&gt;margin-left:-200px&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;wrapper&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;main&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;left&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;left&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;right&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.wrapper&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;float&lt;/span&gt;: left;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;: auto &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;float&lt;/span&gt;: left;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin-left&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;float&lt;/span&gt;: left;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin-left&lt;/span&gt;:-&lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;二、圣杯布局&#34;&gt;&lt;a href=&#34;#二、圣杯布局&#34; class=&#34;headerlink&#34; title=&#34;二、圣杯布局&#34;&gt;&lt;/a&gt;二、圣杯布局&lt;/h4&gt;&lt;h5 id=&#34;方式一&#34;&gt;&lt;a href=&#34;#方式一&#34; class=&#34;headerlink&#34; title=&#34;方式一&#34;&gt;&lt;/a&gt;方式一&lt;/h5&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt;&lt;code&gt;浮动+负margin&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;二-圣杯布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-圣杯布局&#34;&gt;#&lt;/a&gt; 二、圣杯布局&lt;/h4&gt;
+&lt;h5 id=&#34;方式一&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式一&#34;&gt;#&lt;/a&gt; 方式一&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt; &lt;code&gt;浮动+负margin&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;用一个父元素包裹三个区域，让三个元素左浮动，&lt;/p&gt;
 &lt;p&gt;父元素清除浮动，并设置左右内边距空出两边区域的宽度，&lt;/p&gt;
-&lt;p&gt;左区域：&lt;code&gt;margin-left:-100%&lt;/code&gt;；右区域：&lt;code&gt;margin-left：-200px&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;左区域： &lt;code&gt;margin-left:-100%&lt;/code&gt; ；右区域： &lt;code&gt;margin-left：-200px&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;wrapper&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;main&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;main&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;left&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;left&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;right&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;right&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;,&lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt;,&lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;float&lt;/span&gt;: left;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.clearfix&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;::after&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;content&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;clear&lt;/span&gt;: both;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.wrapper&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin-left&lt;/span&gt;:-&lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;margin-left&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h5 id=&#34;方式二&#34;&gt;&lt;a href=&#34;#方式二&#34; class=&#34;headerlink&#34; title=&#34;方式二&#34;&gt;&lt;/a&gt;方式二&lt;/h5&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt;&lt;code&gt;浮动+相对定位&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&#34;方式二&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式二&#34;&gt;#&lt;/a&gt; 方式二&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt; &lt;code&gt;浮动+相对定位&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;用一个父元素三个区域，让三个元素左浮动，&lt;/p&gt;
 &lt;p&gt;父元素清除浮动，并设置左右内边距空出两边区域的宽度，&lt;/p&gt;
 &lt;p&gt;给左右区域添加相对定位，都相对自身位置，偏移自己宽度位移&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;wrapper&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;main&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;main&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;left&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;left&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;right&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;right&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;,&lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt;,&lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;float&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;:left&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.clearfix&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;::after&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;content&lt;/span&gt;:&lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;clear&lt;/span&gt;: both;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.wrapper&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: relative;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;right&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.center&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;三、flex布局&#34;&gt;&lt;a href=&#34;#三、flex布局&#34; class=&#34;headerlink&#34; title=&#34;三、flex布局&#34;&gt;&lt;/a&gt;三、flex布局&lt;/h4&gt;&lt;blockquote&gt;
+&lt;h4 id=&#34;三-flex布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-flex布局&#34;&gt;#&lt;/a&gt; 三、flex 布局&lt;/h4&gt;
+&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;让父元素包裹左中右三个元素，并设置父元素为flex容器，&lt;/p&gt;
-&lt;p&gt;通过项目的属性&lt;code&gt;order&lt;/code&gt;属性来设置&lt;code&gt;order: -1&lt;/code&gt;，让左区域排在中间区域前面&lt;/p&gt;
-&lt;p&gt;项目属性&lt;code&gt;flex-grow:1&lt;/code&gt;设置main的放大比例，填充剩余空间，默认为0&lt;/p&gt;
-&lt;p&gt;通过项目属性&lt;code&gt;flex-basis&lt;/code&gt; 设置左右的固定宽度&lt;/p&gt;
+&lt;p&gt;让父元素包裹左中右三个元素，并设置父元素为 flex 容器，&lt;/p&gt;
+&lt;p&gt;通过项目的属性 &lt;code&gt;order&lt;/code&gt;  属性来设置 &lt;code&gt;order: -1&lt;/code&gt; ，让左区域排在中间区域前面&lt;/p&gt;
+&lt;p&gt;项目属性 &lt;code&gt;flex-grow:1&lt;/code&gt;  设置 main 的放大比例，填充剩余空间，默认为 0&lt;/p&gt;
+&lt;p&gt;通过项目属性 &lt;code&gt;flex-basis&lt;/code&gt;  设置左右的固定宽度&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;wrapper&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;main&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;main&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;left&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;left&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt; = &lt;span class=&#34;string&#34;&gt;&amp;#x27;right&amp;#x27;&lt;/span&gt;&amp;gt;&lt;/span&gt;right&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.wrapper&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;min-height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex-grow&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;order&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex-basis&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex-basis&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;300px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;四、绝对定位&#34;&gt;&lt;a href=&#34;#四、绝对定位&#34; class=&#34;headerlink&#34; title=&#34;四、绝对定位&#34;&gt;&lt;/a&gt;四、绝对定位&lt;/h4&gt;&lt;blockquote&gt;
+&lt;h4 id=&#34;四-绝对定位&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-绝对定位&#34;&gt;#&lt;/a&gt; 四、绝对定位&lt;/h4&gt;
+&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;给父元素添加相对定位，&lt;/p&gt;
-&lt;p&gt;中间设置margin留出两边空位&lt;/p&gt;
+&lt;p&gt;中间设置 margin 留出两边空位&lt;/p&gt;
 &lt;p&gt;左右给绝对定位进行摆放&lt;/p&gt;
-&lt;p&gt;中间设置左右&lt;code&gt;margin&lt;/code&gt;留出空位&lt;/p&gt;
+&lt;p&gt;中间设置左右 &lt;code&gt;margin&lt;/code&gt;  留出空位&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;wrapper&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;　　&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;main&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;　　&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;left&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;left&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;　　&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;right&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;right&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.wrapper&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: relative;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;130px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;130px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;300px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;selector-class&#34;&gt;.right&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;300px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;right&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;selector-class&#34;&gt;.left&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;position&lt;/span&gt;: absolute;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;background-color&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;attribute&#34;&gt;left&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -246,55 +293,68 @@
         <id>https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/</id>
         <title>flex布局</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;一、Flex-布局是什么？&#34;&gt;&lt;a href=&#34;#一、Flex-布局是什么？&#34; class=&#34;headerlink&#34; title=&#34;一、Flex 布局是什么？&#34;&gt;&lt;/a&gt;一、Flex 布局是什么？&lt;/h3&gt;&lt;p&gt;Flex 是 Flexible Box 的缩写，意为”&lt;strong&gt;弹性布局&lt;/strong&gt;“，用来为盒状模型提供最大的灵活性。&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;一-flex-布局是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-flex-布局是什么&#34;&gt;#&lt;/a&gt; 一、Flex 布局是什么？&lt;/h3&gt;
+&lt;p&gt;Flex 是 Flexible Box 的缩写，意为 &amp;quot;&lt;strong&gt; 弹性布局&lt;/strong&gt; &amp;quot;，用来为盒状模型提供最大的灵活性。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;任何一个&lt;/strong&gt;容器都可以指定为 Flex 布局。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;行内元素也可以使用&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;为了兼容性，Webkit 内核的浏览器，必须加上&lt;code&gt;-webkit&lt;/code&gt;前缀。&lt;/p&gt;
+&lt;p&gt;为了兼容性，Webkit 内核的浏览器，必须加上 &lt;code&gt;-webkit&lt;/code&gt;  前缀。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: -webkit-flex; &lt;span class=&#34;comment&#34;&gt;/* Safari */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;注意：设为 Flex 布局以后，子元素的&lt;code&gt;float&lt;/code&gt;、&lt;code&gt;clear&lt;/code&gt;和&lt;code&gt;vertical-align&lt;/code&gt;属性将失效。&lt;/p&gt;
+&lt;p&gt;注意：设为 Flex 布局以后，子元素的 &lt;code&gt;float&lt;/code&gt; 、 &lt;code&gt;clear&lt;/code&gt;  和 &lt;code&gt;vertical-align&lt;/code&gt;  属性将失效。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;二、基本概念&#34;&gt;&lt;a href=&#34;#二、基本概念&#34; class=&#34;headerlink&#34; title=&#34;二、基本概念&#34;&gt;&lt;/a&gt;二、基本概念&lt;/h3&gt;&lt;p&gt;采用 Flex 布局的元素，称为 Flex 容器（flex container），简称”&lt;strong&gt;容器&lt;/strong&gt;“。它的所有子元素自动成为容器成员，称为 &lt;strong&gt;Flex 项目&lt;/strong&gt;（flex item），简称”项目”。&lt;/p&gt;
+&lt;h3 id=&#34;二-基本概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-基本概念&#34;&gt;#&lt;/a&gt; 二、基本概念&lt;/h3&gt;
+&lt;p&gt;采用 Flex 布局的元素，称为 Flex 容器（flex container），简称 &amp;quot;&lt;strong&gt; 容器&lt;/strong&gt; &amp;quot;。它的所有子元素自动成为容器成员，称为 &lt;strong&gt;Flex 项目&lt;/strong&gt;（flex item），简称 &amp;quot;项目&amp;quot;。&lt;/p&gt;
 &lt;p&gt;&lt;img src= &#39;http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png&#39;&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。&lt;/p&gt;
-&lt;p&gt;主轴的开始位置（与边框的交叉点）叫做&lt;code&gt;main start&lt;/code&gt;，结束位置叫做&lt;code&gt;main end&lt;/code&gt;；&lt;/p&gt;
-&lt;p&gt;交叉轴的开始位置叫做&lt;code&gt;cross start&lt;/code&gt;，结束位置叫做&lt;code&gt;cross end&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;项目默认沿主轴排列。单个项目占据的主轴空间叫做&lt;code&gt;main size&lt;/code&gt;，占据的交叉轴空间叫做&lt;code&gt;cross size&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;主轴的开始位置（与边框的交叉点）叫做 &lt;code&gt;main start&lt;/code&gt; ，结束位置叫做 &lt;code&gt;main end&lt;/code&gt; ；&lt;/p&gt;
+&lt;p&gt;交叉轴的开始位置叫做 &lt;code&gt;cross start&lt;/code&gt; ，结束位置叫做 &lt;code&gt;cross end&lt;/code&gt; 。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;三、容器的属性&#34;&gt;&lt;a href=&#34;#三、容器的属性&#34; class=&#34;headerlink&#34; title=&#34;三、容器的属性&#34;&gt;&lt;/a&gt;三、容器的属性&lt;/h3&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;:flex;//设置后成为容器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;以下6个属性设置在容器上&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;项目默认沿主轴排列。单个项目占据的主轴空间叫做 &lt;code&gt;main size&lt;/code&gt; ，占据的交叉轴空间叫做 &lt;code&gt;cross size&lt;/code&gt; 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;三-容器的属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-容器的属性&#34;&gt;#&lt;/a&gt; 三、容器的属性&lt;/h3&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;:flex;//设置后成为容器&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;以下 6 个属性设置在容器上&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;lex-direction&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;lex-direction&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;flex-wrap&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;flex-wrap&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;flex-flow&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;flex-flow&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;justify-content&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;justify-content&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;align-items&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;align-items&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;align-content &lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;align-content&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;3-1-flex-direction属性&#34;&gt;&lt;a href=&#34;#3-1-flex-direction属性&#34; class=&#34;headerlink&#34; title=&#34;3.1 flex-direction属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;3.1 flex-direction属性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;flex-direction属性&lt;strong&gt;决定主轴的方向&lt;/strong&gt;（即项目的排列方向）。&lt;/p&gt;
+&lt;h4 id=&#34;31-flex-direction属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#31-flex-direction属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3.1 flex-direction 属性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;flex-direction 属性&lt;strong&gt;决定主轴的方向&lt;/strong&gt;（即项目的排列方向）。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;attribute&#34;&gt;flex-direction&lt;/span&gt;:row | row-reverse |  column | column-reverse; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;img src=&#34;/images/flexdirection.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;它可能有四个值&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;row（默认值）：主轴为水平方向，起点在左端&lt;/li&gt;
-&lt;li&gt;row-reverse:主轴为水平方向，起点在右端&lt;/li&gt;
-&lt;li&gt;column:主轴为垂直方向，起点在上沿&lt;/li&gt;
-&lt;li&gt;column-reverse:主轴为垂直方向，起点在下沿&lt;/li&gt;
+&lt;li&gt;row-reverse: 主轴为水平方向，起点在右端&lt;/li&gt;
+&lt;li&gt;column: 主轴为垂直方向，起点在上沿&lt;/li&gt;
+&lt;li&gt;column-reverse: 主轴为垂直方向，起点在下沿&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;3-2-flex-wrap属性&#34;&gt;&lt;a href=&#34;#3-2-flex-wrap属性&#34; class=&#34;headerlink&#34; title=&#34;3.2  flex-wrap属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;3.2  flex-wrap属性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;默认情况下，项目都排在一条线（又称“轴线”）上。flex-wrap属性定义，如果一条轴线 排不下时，如何换行的&lt;/p&gt;
+&lt;h4 id=&#34;32-flex-wrap属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#32-flex-wrap属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3.2  flex-wrap 属性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;默认情况下，项目都排在一条线（又称 “轴线”）上。flex-wrap 属性定义，如果一条轴线 排不下时，如何换行的&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;flex-wrap&lt;/span&gt;: nowrap | wrap | wrap-reverse;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;它可能取的三个值。&lt;/p&gt;
 &lt;ul&gt;
@@ -302,25 +362,29 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/nowrap.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;wrap:换行，第一行在上方&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;wrap: 换行，第一行在上方&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/wrap.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;wrap-reverse: 换行，在第一行的下方&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/wrapreverse.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;3-3-flex-flow&#34;&gt;&lt;a href=&#34;#3-3-flex-flow&#34; class=&#34;headerlink&#34; title=&#34;3.3  flex-flow&#34;&gt;&lt;/a&gt;&lt;strong&gt;3.3  flex-flow&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认 row nowrap。&lt;/p&gt;
+&lt;h4 id=&#34;33-flex-flow&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#33-flex-flow&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3.3  flex-flow&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;flex-flow 属性是 flex-direction 属性和 flex-wrap 属性的简写形式，默认 row nowrap。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex-flow&lt;/span&gt;:&amp;lt;flex-direction&amp;gt; || &amp;lt;flex-wrap&amp;gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;3-4-justify-content属性&#34;&gt;&lt;a href=&#34;#3-4-justify-content属性&#34; class=&#34;headerlink&#34; title=&#34;3.4  justify-content属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;3.4  justify-content属性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;justify-content属性定义了&lt;strong&gt;项目在主轴上的对齐方式&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;34-justify-content属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#34-justify-content属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3.4  justify-content 属性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;justify-content 属性定义了&lt;strong&gt;项目在主轴上的对齐方式&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;:flex-start | flex-end | center | space-between |space-around;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;justify-content:flex-start&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;justify-content:flex-start&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/images/justifycontent1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;justify-content: flex-end&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/images/justifycontent2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;justify-content: flex-end&lt;/strong&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;/images/justifycontent2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;justify-content:center&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -334,23 +398,24 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/justifycontent5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;它可能取5个值，具体对齐方式与轴的方向有关。下面假设主轴为从左到右。&lt;/p&gt;
+&lt;p&gt;它可能取 5 个值，具体对齐方式与轴的方向有关。下面假设主轴为从左到右。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;flex-start（默认值）：左对齐&lt;/li&gt;
 &lt;li&gt;flex-end：右对齐&lt;/li&gt;
 &lt;li&gt;center：居中&lt;/li&gt;
-&lt;li&gt;space-between:两端对齐，项目之间的间隔都相等&lt;/li&gt;
+&lt;li&gt;space-between: 两端对齐，项目之间的间隔都相等&lt;/li&gt;
 &lt;li&gt;space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;3-5-align-items属性&#34;&gt;&lt;a href=&#34;#3-5-align-items属性&#34; class=&#34;headerlink&#34; title=&#34;3.5  align-items属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;3.5  align-items属性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;align-items属性定义项目&lt;strong&gt;在交叉轴上对齐方式&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;35-align-items属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#35-align-items属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3.5  align-items 属性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;align-items 属性定义项目&lt;strong&gt;在交叉轴上对齐方式&lt;/strong&gt;。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;:flex-start | flex-end | center |baseline | stretch;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;align-items:flex-start&lt;/strong&gt; &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;align-items:flex-start&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/alignitems1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;align-items:flex-end&lt;/strong&gt; &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;align-items:flex-end&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/alignitems2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -366,19 +431,20 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/alignitems5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;它可能取5个值。具体的对齐方式与&lt;strong&gt;交叉轴的方向&lt;/strong&gt;有关，下面假设交叉轴从上之下。&lt;/p&gt;
+&lt;p&gt;它可能取 5 个值。具体的对齐方式与&lt;strong&gt;交叉轴的方向&lt;/strong&gt;有关，下面假设交叉轴从上之下。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;flex-start：交叉轴的起点对齐&lt;/li&gt;
-&lt;li&gt;flex-end:交叉轴的终点对齐&lt;/li&gt;
+&lt;li&gt;flex-end: 交叉轴的终点对齐&lt;/li&gt;
 &lt;li&gt;center：交叉轴的中点对齐&lt;/li&gt;
 &lt;li&gt;baseline：项目的第一行文字的基线对齐。&lt;/li&gt;
-&lt;li&gt;stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。&lt;/li&gt;
+&lt;li&gt;stretch（默认值）：如果项目未设置高度或设为 auto，将占满整个容器的高度。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;3-6-align-content属性&#34;&gt;&lt;a href=&#34;#3-6-align-content属性&#34; class=&#34;headerlink&#34; title=&#34;3.6 align-content属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;3.6 align-content属性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。&lt;/p&gt;
+&lt;h4 id=&#34;36-align-content属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#36-align-content属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;3.6 align-content 属性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;align-content 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;align-content&lt;/span&gt;:flex-start | flex-end | center | spance-between | space-around |stretch;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;该属性可能取6个值。&lt;/p&gt;
+&lt;p&gt;该属性可能取 6 个值。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;flex-start：与交叉轴的起点对齐。&lt;/li&gt;
 &lt;li&gt;flex-end：与交叉轴的终点对齐。&lt;/li&gt;
@@ -388,8 +454,9 @@
 &lt;li&gt;stretch（默认值）：轴线占满整个交叉轴。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;四、项目的属性&#34;&gt;&lt;a href=&#34;#四、项目的属性&#34; class=&#34;headerlink&#34; title=&#34;四、项目的属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;四、项目的属性&lt;/strong&gt;&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;一下6个属性设置在项目上。&lt;/p&gt;
+&lt;h3 id=&#34;四-项目的属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-项目的属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;四、项目的属性&lt;/strong&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一下 6 个属性设置在项目上。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;order&lt;/li&gt;
 &lt;li&gt;flex-grow&lt;/li&gt;
@@ -399,13 +466,15 @@
 &lt;li&gt;align-self&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;4-1-order属性&#34;&gt;&lt;a href=&#34;#4-1-order属性&#34; class=&#34;headerlink&#34; title=&#34;4.1 order属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;4.1 order属性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;order属性定义&lt;strong&gt;项目的排列顺序&lt;/strong&gt;。数值越小，排列越靠前，默认为0.&lt;/p&gt;
+&lt;h4 id=&#34;41-order属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#41-order属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;4.1 order 属性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;order 属性定义&lt;strong&gt;项目的排列顺序&lt;/strong&gt;。数值越小，排列越靠前，默认为 0.&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.item&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;order&lt;/span&gt;:&amp;lt;int&amp;gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;img src=&#34;/images/order1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;4-2-flex-grow属性&#34;&gt;&lt;a href=&#34;#4-2-flex-grow属性&#34; class=&#34;headerlink&#34; title=&#34;4.2 flex-grow属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;4.2 flex-grow属性&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;flex-grow属性定义&lt;strong&gt;项目的放大比例&lt;/strong&gt;，默认值为0，即如果存在剩余空间，也不放大。&lt;/p&gt;
+&lt;h4 id=&#34;42-flex-grow属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#42-flex-grow属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;4.2 flex-grow 属性&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;flex-grow 属性定义&lt;strong&gt;项目的放大比例&lt;/strong&gt;，默认值为 0，即如果存在剩余空间，也不放大。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.item&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex-grow&lt;/span&gt;:&amp;lt;number&amp;gt;;&lt;span class=&#34;comment&#34;&gt;/* default 0*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;均分flex-grow: 1&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;均分 flex-grow: 1&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/flexgrow1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -413,34 +482,48 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;/images/flexgrow2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。&lt;/p&gt;
-&lt;p&gt;如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。&lt;/p&gt;
-&lt;p&gt;如果只有一个 flex 元素设置了 flex-grow 属性值：&lt;br&gt;a. 如果flex-grow值小于1，则分配给它的是总剩余空间和这个比例的计算值。例如一个 0.5 的元素能分到一半的剩余空间。&lt;br&gt;b. 如果flex-grow值大于1，则独享所有剩余空间。&lt;/p&gt;
-&lt;p&gt;如果有多个 flex 元素设置了 flex-grow 属性值：&lt;br&gt;a. 如果 flex-grow 值总和小于1，则分配给元素的是总剩余空间和当前元素设置的 flex-grow 比例的计算值。&lt;/p&gt;
-&lt;p&gt;例如一个 0.1 和一个 0.2 的元素，只能分别分到 1/10 和 2/10 的剩余空间，剩下的剩余空间并不会分配给它们。&lt;br&gt;b. 如果 flex-grow 值总和大于1，则所有剩余空间被利用，分配比例就是 flex-grow 属性值的比例。&lt;/p&gt;
+&lt;p&gt;如果所有项目的 flex-grow 属性都为 1，则它们将等分剩余空间（如果有的话）。&lt;/p&gt;
+&lt;p&gt;如果一个项目的 flex-grow 属性为 2，其他项目都为 1，则前者占据的剩余空间将比其他项多一倍。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;4-3-flex-shrink属性&#34;&gt;&lt;a href=&#34;#4-3-flex-shrink属性&#34; class=&#34;headerlink&#34; title=&#34;4.3 flex-shrink属性&#34;&gt;&lt;/a&gt;4.3 flex-shrink属性&lt;/h4&gt;&lt;p&gt;&lt;code&gt;flex-shrink&lt;/code&gt;属性定义了&lt;strong&gt;项目的缩小比例&lt;/strong&gt;，默认为1，负值对该属性无效。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果只有一个 flex 元素设置了 flex-grow 属性值：&lt;br&gt;
+a. 如果 flex-grow 值小于 1，则分配给它的是总剩余空间和这个比例的计算值。例如一个 0.5 的元素能分到一半的剩余空间。&lt;br&gt;
+b. 如果 flex-grow 值大于 1，则独享所有剩余空间。&lt;/p&gt;
+&lt;p&gt;如果有多个 flex 元素设置了 flex-grow 属性值：&lt;br&gt;
+a. 如果 flex-grow 值总和小于 1，则分配给元素的是总剩余空间和当前元素设置的 flex-grow 比例的计算值。&lt;/p&gt;
+&lt;p&gt;例如一个 0.1 和一个 0.2 的元素，只能分别分到 1/10 和 2/10 的剩余空间，剩下的剩余空间并不会分配给它们。&lt;br&gt;
+b. 如果 flex-grow 值总和大于 1，则所有剩余空间被利用，分配比例就是 flex-grow 属性值的比例。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;43-flex-shrink属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#43-flex-shrink属性&#34;&gt;#&lt;/a&gt; 4.3 flex-shrink 属性&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;flex-shrink&lt;/code&gt;  属性定义了&lt;strong&gt;项目的缩小比例&lt;/strong&gt;，默认为 1，负值对该属性无效。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.item&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;flex-shrink&lt;/span&gt;: &amp;lt;number&amp;gt;; &lt;span class=&#34;comment&#34;&gt;/* default 1 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;img src=&#34;/images/flexshrink1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;如果所有项目的&lt;code&gt;flex-shrink&lt;/code&gt;属性都为1，当空间不足时，都将等比例缩小。项目的&lt;code&gt;flex-shrink&lt;/code&gt;属性为0，不缩小。&lt;/p&gt;
-&lt;h4 id=&#34;4-4-flex-basis属性&#34;&gt;&lt;a href=&#34;#4-4-flex-basis属性&#34; class=&#34;headerlink&#34; title=&#34;4.4 flex-basis属性&#34;&gt;&lt;/a&gt;4.4 flex-basis属性&lt;/h4&gt;&lt;p&gt;&lt;code&gt;flex-basis&lt;/code&gt;属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。默认值为&lt;code&gt;auto&lt;/code&gt;，即项目的本来大小。&lt;/p&gt;
+&lt;p&gt;如果所有项目的 &lt;code&gt;flex-shrink&lt;/code&gt;  属性都为 1，当空间不足时，都将等比例缩小。项目的 &lt;code&gt;flex-shrink&lt;/code&gt;  属性为 0，不缩小。&lt;/p&gt;
+&lt;h4 id=&#34;44-flex-basis属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#44-flex-basis属性&#34;&gt;#&lt;/a&gt; 4.4 flex-basis 属性&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;flex-basis&lt;/code&gt;  属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。默认值为 &lt;code&gt;auto&lt;/code&gt; ，即项目的本来大小。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.item&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;flex-basis&lt;/span&gt;: &amp;lt;length&amp;gt; | auto; &lt;span class=&#34;comment&#34;&gt;/* default auto */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;它可以设为跟&lt;code&gt;width&lt;/code&gt;或&lt;code&gt;height&lt;/code&gt;属性一样的值（比如350px），则项目将占据固定空间。&lt;/p&gt;
+&lt;p&gt;它可以设为跟 &lt;code&gt;width&lt;/code&gt;  或 &lt;code&gt;height&lt;/code&gt;  属性一样的值（比如 350px），则项目将占据固定空间。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;4-5-flex属性&#34;&gt;&lt;a href=&#34;#4-5-flex属性&#34; class=&#34;headerlink&#34; title=&#34;4.5 flex属性&#34;&gt;&lt;/a&gt;4.5 flex属性&lt;/h4&gt;&lt;p&gt;&lt;code&gt;flex&lt;/code&gt;属性是&lt;code&gt;flex-grow&lt;/code&gt;, &lt;code&gt;flex-shrink&lt;/code&gt; 和 &lt;code&gt;flex-basis&lt;/code&gt;的简写，默认值为&lt;code&gt;0 1 auto&lt;/code&gt;。后两个属性可选。&lt;/p&gt;
+&lt;h4 id=&#34;45-flex属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#45-flex属性&#34;&gt;#&lt;/a&gt; 4.5 flex 属性&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;flex&lt;/code&gt;  属性是 &lt;code&gt;flex-grow&lt;/code&gt; ,  &lt;code&gt;flex-shrink&lt;/code&gt;  和  &lt;code&gt;flex-basis&lt;/code&gt;  的简写，默认值为 &lt;code&gt;0 1 auto&lt;/code&gt; 。后两个属性可选。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.item&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;flex&lt;/span&gt;: none | [ &amp;lt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;flex-grow&amp;#x27;&lt;/span&gt;&amp;gt; &amp;lt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;flex-shrink&amp;#x27;&lt;/span&gt;&amp;gt;? || &amp;lt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;flex-basis&amp;#x27;&lt;/span&gt;&amp;gt; ]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;该属性有两个快捷值：&lt;code&gt;auto&lt;/code&gt; (&lt;code&gt;1 1 auto&lt;/code&gt;) 和 none (&lt;code&gt;0 0 auto&lt;/code&gt;)。(推荐使用)&lt;/p&gt;
+&lt;p&gt;该属性有两个快捷值： &lt;code&gt;auto&lt;/code&gt;  ( &lt;code&gt;1 1 auto&lt;/code&gt; ) 和 none ( &lt;code&gt;0 0 auto&lt;/code&gt; )。(推荐使用)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&#34;4-6-align-self属性&#34;&gt;&lt;a href=&#34;#4-6-align-self属性&#34; class=&#34;headerlink&#34; title=&#34;4.6 align-self属性&#34;&gt;&lt;/a&gt;4.6 align-self属性&lt;/h4&gt;&lt;p&gt;&lt;code&gt;align-self&lt;/code&gt;属性允许单个项目有与其他项目不一样的对齐方式，可覆盖容器的&lt;code&gt;align-items&lt;/code&gt;属性。&lt;/p&gt;
-&lt;p&gt;默认值为&lt;code&gt;auto&lt;/code&gt;，表示继承父元素的&lt;code&gt;align-items&lt;/code&gt;属性，如果没有父元素，则等同于&lt;code&gt;stretch&lt;/code&gt;。&lt;/p&gt;
+&lt;h4 id=&#34;46-align-self属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#46-align-self属性&#34;&gt;#&lt;/a&gt; 4.6 align-self 属性&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;align-self&lt;/code&gt;  属性允许单个项目有与其他项目不一样的对齐方式，可覆盖容器的 &lt;code&gt;align-items&lt;/code&gt;  属性。&lt;/p&gt;
+&lt;p&gt;默认值为 &lt;code&gt;auto&lt;/code&gt; ，表示继承父元素的 &lt;code&gt;align-items&lt;/code&gt;  属性，如果没有父元素，则等同于 &lt;code&gt;stretch&lt;/code&gt; 。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.item&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;align-self&lt;/span&gt;: auto | flex-start | flex-end | center | baseline | stretch;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;img src=&#34;/images/alignself1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;该属性可能取6个值，除了auto，其他都与align-items属性完全一致。&lt;/p&gt;
-&lt;h3 id=&#34;五-flex布局实现居中&#34;&gt;&lt;a href=&#34;#五-flex布局实现居中&#34; class=&#34;headerlink&#34; title=&#34;五 flex布局实现居中&#34;&gt;&lt;/a&gt;五 flex布局实现居中&lt;/h3&gt;&lt;h5 id=&#34;5-1-水平垂直居中&#34;&gt;&lt;a href=&#34;#5-1-水平垂直居中&#34; class=&#34;headerlink&#34; title=&#34;5.1 水平垂直居中&#34;&gt;&lt;/a&gt;5.1 水平垂直居中&lt;/h5&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.content&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         &lt;span class=&#34;comment&#34;&gt;/*转为flex弹性盒布局*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;/*主轴上的对齐方式为居中*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;/*交叉轴上对齐方式为居中*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h5 id=&#34;5-2-水平居中&#34;&gt;&lt;a href=&#34;#5-2-水平居中&#34; class=&#34;headerlink&#34; title=&#34;5.2 水平居中&#34;&gt;&lt;/a&gt;5.2 水平居中&lt;/h5&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h5 id=&#34;5-3-垂直居中&#34;&gt;&lt;a href=&#34;#5-3-垂直居中&#34; class=&#34;headerlink&#34; title=&#34;5.3 垂直居中&#34;&gt;&lt;/a&gt;5.3 垂直居中&lt;/h5&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;该属性可能取 6 个值，除了 auto，其他都与 align-items 属性完全一致。&lt;/p&gt;
+&lt;h3 id=&#34;五-flex布局实现居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#五-flex布局实现居中&#34;&gt;#&lt;/a&gt; 五 flex 布局实现居中&lt;/h3&gt;
+&lt;h5 id=&#34;51-水平垂直居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#51-水平垂直居中&#34;&gt;#&lt;/a&gt; 5.1 水平垂直居中&lt;/h5&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.content&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         &lt;span class=&#34;comment&#34;&gt;/*转为flex弹性盒布局*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;/*主轴上的对齐方式为居中*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;/*交叉轴上对齐方式为居中*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&#34;52-水平居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#52-水平居中&#34;&gt;#&lt;/a&gt; 5.2 水平居中&lt;/h5&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h5 id=&#34;53-垂直居中&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#53-垂直居中&#34;&gt;#&lt;/a&gt; 5.3 垂直居中&lt;/h5&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
         <category term="flex布局" />
         <updated>2021-05-15T14:10:32.000Z</updated>
