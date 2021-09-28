@@ -6,8 +6,8 @@
     <updated>2021-06-10T14:46:32.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/</id>
         <title>CSS居中</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/"/>
-        <content type="html">&lt;h3 id=&#34;css细节&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css细节&#34;&gt;#&lt;/a&gt; CSS 细节&lt;/h3&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;css细节&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css细节&#34;&gt;#&lt;/a&gt; CSS 细节&lt;/h3&gt;
 &lt;h4 id=&#34;1-浮动的细节扩展&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-浮动的细节扩展&#34;&gt;#&lt;/a&gt; 1. 浮动的细节（扩展）&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -234,7 +234,7 @@
         <id>https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/</id>
         <title>CSS三栏布局</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/"/>
-        <content type="html">&lt;h3 id=&#34;三栏布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三栏布局&#34;&gt;#&lt;/a&gt; 三栏布局&lt;/h3&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;三栏布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三栏布局&#34;&gt;#&lt;/a&gt; 三栏布局&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;共同目的&lt;/strong&gt;：实现两侧宽度固定，中间宽度自适应的三栏布局，并且中间先加载渲染。&lt;/p&gt;
 &lt;h4 id=&#34;一-双飞翼布局&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-双飞翼布局&#34;&gt;#&lt;/a&gt; 一、双飞翼布局&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -293,7 +293,7 @@
         <id>https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/</id>
         <title>flex布局</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/"/>
-        <content type="html">&lt;h3 id=&#34;一-flex-布局是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-flex-布局是什么&#34;&gt;#&lt;/a&gt; 一、Flex 布局是什么？&lt;/h3&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;一-flex-布局是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-flex-布局是什么&#34;&gt;#&lt;/a&gt; 一、Flex 布局是什么？&lt;/h3&gt;
 &lt;p&gt;Flex 是 Flexible Box 的缩写，意为 &amp;quot;&lt;strong&gt; 弹性布局&lt;/strong&gt; &amp;quot;，用来为盒状模型提供最大的灵活性。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;任何一个&lt;/strong&gt;容器都可以指定为 Flex 布局。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

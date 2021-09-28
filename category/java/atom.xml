@@ -6,8 +6,8 @@
     <updated>2021-06-18T13:17:17.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/</id>
         <title>死锁</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/"/>
-        <content type="html">&lt;h3 id=&#34;生活中的死锁&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生活中的死锁&#34;&gt;#&lt;/a&gt; 生活中的死锁&lt;/h3&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;生活中的死锁&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生活中的死锁&#34;&gt;#&lt;/a&gt; 生活中的死锁&lt;/h3&gt;
 &lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;情景一：找工作中的我，工作要先有工作经验才能工作，但是我需要先有工作才能有工作经验。怎么破？&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;note primary flat&#34;&gt;&lt;p&gt;情景二：出门忘带钥匙，要开门就需要拿到房间里的钥匙，要拿到钥匙就得把门打开。心态崩了呀！&lt;/p&gt;

@@ -9,8 +9,8 @@
         <lastBuildDate>Fri, 21 May 2021 21:21:58 +0800</lastBuildDate>
         <category>AJAX</category>
         <category>jQuery</category>
-        <category>CSS</category>
         <category>css</category>
+        <category>CSS</category>
         <category>JS</category>
         <category>flex布局</category>
         <category>Git</category>
@@ -23,8 +23,8 @@
         <category>this指向</category>
         <category>时间</category>
         <category>懒加载</category>
-        <category>闭包</category>
         <category>高阶函数</category>
+        <category>闭包</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
@@ -47,7 +47,7 @@
             <category>Typora</category>
             <category>Markdown</category>
             <pubDate>Fri, 21 May 2021 21:21:58 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;markdown基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown基本语法&#34;&gt;#&lt;/a&gt; Markdown 基本语法&lt;/h2&gt;
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;markdown基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown基本语法&#34;&gt;#&lt;/a&gt; Markdown 基本语法&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;h4 id=&#34;标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h4&gt;

@@ -9,8 +9,8 @@
         <lastBuildDate>Sun, 23 May 2021 13:26:00 +0800</lastBuildDate>
         <category>AJAX</category>
         <category>jQuery</category>
-        <category>CSS</category>
         <category>css</category>
+        <category>CSS</category>
         <category>JS</category>
         <category>flex布局</category>
         <category>Git</category>
@@ -23,8 +23,8 @@
         <category>this指向</category>
         <category>时间</category>
         <category>懒加载</category>
-        <category>闭包</category>
         <category>高阶函数</category>
+        <category>闭包</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
@@ -45,7 +45,7 @@
             <link>https://codingfxj.github.io/2021/05/23/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
             <category>NPM</category>
             <pubDate>Sun, 23 May 2021 13:26:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h3 id=&#34;npm介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#npm介绍&#34;&gt;#&lt;/a&gt; npm 介绍&lt;/h3&gt;
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;npm介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#npm介绍&#34;&gt;#&lt;/a&gt; npm 介绍&lt;/h3&gt;
 &lt;p&gt;npm（Node Package Manager）是 node 的包管理器，它是随着 NodeJs 安装时一起被安装。&lt;/p&gt;
 &lt;h3 id=&#34;npm作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#npm作用&#34;&gt;#&lt;/a&gt; npm 作用&lt;/h3&gt;
 &lt;p&gt;通过 NPM 可以对 Node 的工具包进行搜索、下载、安装、删除、上传。借助别人写好的包，方便于开发。&lt;/p&gt;

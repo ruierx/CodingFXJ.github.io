@@ -6,8 +6,8 @@
     <updated>2021-07-16T15:41:41.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</id>
         <title>排序算法</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/"/>
-        <content type="html">&lt;p&gt;参考网站：&lt;a href=&#34;https://visualgo.net/en&#34;&gt;&lt;strong&gt;排序动画图解&lt;/strong&gt;   &lt;/a&gt;&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;参考网站：&lt;a href=&#34;https://visualgo.net/en&#34;&gt;&lt;strong&gt;排序动画图解&lt;/strong&gt;   &lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;一-选择排序&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-选择排序&#34;&gt;#&lt;/a&gt; 一、选择排序&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;随机生成测试数组&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; testArr = []&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&#34;number&#34;&gt;10000&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     testArr.push(&lt;span class=&#34;built_in&#34;&gt;Math&lt;/span&gt;.floor(&lt;span class=&#34;built_in&#34;&gt;Math&lt;/span&gt;.random() * &lt;span class=&#34;number&#34;&gt;100000&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

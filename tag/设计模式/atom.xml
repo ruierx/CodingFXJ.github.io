@@ -6,8 +6,8 @@
     <updated>2021-06-24T01:38:00.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/06/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
         <title>设计模式</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-        <content type="html">&lt;p&gt;设计模式：为了解决某种特定问题给出的简洁而优化的解决方案。&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;设计模式：为了解决某种特定问题给出的简洁而优化的解决方案。&lt;/p&gt;
 &lt;h4 id=&#34;常用设计模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用设计模式&#34;&gt;#&lt;/a&gt; 常用设计模式&lt;/h4&gt;
 &lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704175521.png&#34;/&gt;
 &lt;h3 id=&#34;工厂模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#工厂模式&#34;&gt;#&lt;/a&gt; 工厂模式&lt;/h3&gt;

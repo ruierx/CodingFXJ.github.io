@@ -6,8 +6,8 @@
     <updated>2021-07-04T07:12:59.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/</id>
         <title>浏览器网页请求过程</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/"/>
-        <content type="html">&lt;h2 id=&#34;完整的http请求过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#完整的http请求过程&#34;&gt;#&lt;/a&gt; 完整的 HTTP 请求过程&lt;/h2&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;完整的http请求过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#完整的http请求过程&#34;&gt;#&lt;/a&gt; 完整的 HTTP 请求过程&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;域名解析 ==&amp;gt;  与服务器建立连接 ==&amp;gt; 发起 HTTP 请求  ==&amp;gt; 服务器响应 HTTP 请求，浏览器得到 html 代码  ==&amp;gt; 浏览器解析 html 代码，并请求 html 代码中的资源（如 js、css、图片） ==&amp;gt; 浏览器对页面进行渲染呈现给用户&lt;/p&gt;
 &lt;/blockquote&gt;

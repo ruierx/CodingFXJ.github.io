@@ -9,8 +9,8 @@
         <lastBuildDate>Wed, 15 Sep 2021 19:04:15 +0800</lastBuildDate>
         <category>AJAX</category>
         <category>jQuery</category>
-        <category>CSS</category>
         <category>css</category>
+        <category>CSS</category>
         <category>JS</category>
         <category>flex布局</category>
         <category>Git</category>
@@ -23,8 +23,8 @@
         <category>this指向</category>
         <category>时间</category>
         <category>懒加载</category>
-        <category>闭包</category>
         <category>高阶函数</category>
+        <category>闭包</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
@@ -45,7 +45,7 @@
             <link>https://codingfxj.github.io/2021/09/15/Webpack4%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</link>
             <category>Webpack</category>
             <pubDate>Wed, 15 Sep 2021 19:04:15 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;webpack学习总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#webpack学习总结&#34;&gt;#&lt;/a&gt; Webpack 学习总结&lt;/h1&gt;
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;webpack学习总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#webpack学习总结&#34;&gt;#&lt;/a&gt; Webpack 学习总结&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Webpack&lt;/strong&gt;：是一种&lt;emp&gt;前端资源构建工具&lt;/emp&gt;，一个&lt;wavy&gt;静态模块打包器&lt;/wavy&gt;(module bundler)。&lt;/p&gt;
 &lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210915191904.png&#34;/&gt;
 &lt;h3 id=&#34;webpack五个核心概念&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#webpack五个核心概念&#34;&gt;#&lt;/a&gt; webpack 五个核心概念&lt;/h3&gt;

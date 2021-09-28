@@ -6,8 +6,8 @@
     <updated>2021-07-04T01:03:40.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/07/04/JS%E9%97%AD%E5%8C%85/</id>
         <title>JS闭包</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/07/04/JS%E9%97%AD%E5%8C%85/"/>
-        <content type="html">&lt;h3 id=&#34;闭包理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#闭包理解&#34;&gt;#&lt;/a&gt; 闭包理解&lt;/h3&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;闭包理解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#闭包理解&#34;&gt;#&lt;/a&gt; 闭包理解&lt;/h3&gt;
 &lt;p&gt;变量根据作用域的不同分为两种：全局变量和局部变量&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;

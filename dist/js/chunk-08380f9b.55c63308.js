@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>(window["webpackJsonp"] = window["webpackJsonp"] || []).push([
     ["chunk-08380f9b"], { 1148: function(t, e, n) { "use strict"; var r = n("a691"),
                 i = n("1d80");
             t.exports = "".repeat || function(t) { var e = String(i(this)),

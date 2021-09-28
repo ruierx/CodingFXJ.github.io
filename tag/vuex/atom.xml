@@ -6,8 +6,8 @@
     <updated>2021-05-31T16:14:55.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/06/01/VueX/</id>
         <title>VueX</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/01/VueX/"/>
-        <content type="html">&lt;h2 id=&#34;vuex状态管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vuex状态管理&#34;&gt;#&lt;/a&gt; VueX 状态管理&lt;/h2&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;vuex状态管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vuex状态管理&#34;&gt;#&lt;/a&gt; VueX 状态管理&lt;/h2&gt;
 &lt;h3 id=&#34;vuex的三个主要部分&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vuex的三个主要部分&#34;&gt;#&lt;/a&gt; vuex 的三个主要部分&lt;/h3&gt;
 &lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621011026.png&#34;/&gt;
 &lt;h3 id=&#34;运用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#运用&#34;&gt;#&lt;/a&gt; 运用&lt;/h3&gt;

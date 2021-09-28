@@ -6,8 +6,8 @@
     <updated>2021-04-27T15:49:38.000Z</updated>
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
+    <category term="CSS" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
@@ -20,8 +20,8 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
         <title>Git学习笔记</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-        <content type="html">&lt;h3 id=&#34;git-学习笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-学习笔记&#34;&gt;#&lt;/a&gt; Git 学习笔记&lt;/h3&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;git-学习笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-学习笔记&#34;&gt;#&lt;/a&gt; Git 学习笔记&lt;/h3&gt;
 &lt;p&gt;Git 是流行的版本控制，方便查看更改历史记录，备份以便恢复以前的版本。&lt;/p&gt;
 &lt;h4 id=&#34;四个区域之间的转换关系&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四个区域之间的转换关系&#34;&gt;#&lt;/a&gt; 四个区域之间的转换关系&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&#34;/images/gityuanli.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -143,7 +143,7 @@
         <id>https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
         <title>Git常用命令</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-        <content type="html">&lt;p&gt;Git 是一个开源的分布式版本控制系统。&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Git 是一个开源的分布式版本控制系统。&lt;/p&gt;
 &lt;p&gt;可以有效、高速地处理从很小到非常大的项目版本管理。&lt;/p&gt;
 &lt;h4 id=&#34;1-区域&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-区域&#34;&gt;#&lt;/a&gt; 1. 区域&lt;/h4&gt;
 &lt;p&gt;工作区：本地代码&lt;br&gt;
