@@ -8,30 +8,30 @@
     <category term="jQuery" />
     <category term="CSS" />
     <category term="css" />
-    <category term="Git" />
-    <category term="flex布局" />
     <category term="JS" />
+    <category term="flex布局" />
+    <category term="Git" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
-    <category term="this指向" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
+    <category term="this指向" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="懒加载" />
     <category term="闭包" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
+    <category term="手写高阶函数" />
     <category term="算法" />
     <category term="扁平化" />
-    <category term="手写高阶函数" />
     <category term="复杂度" />
-    <category term="JAVA" />
     <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
         <title>Markdown语法及快捷键</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;markdown基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown基本语法&#34;&gt;#&lt;/a&gt; Markdown 基本语法&lt;/h2&gt;
+        <content type="html">&lt;h2 id=&#34;markdown基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown基本语法&#34;&gt;#&lt;/a&gt; Markdown 基本语法&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;h4 id=&#34;标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h4&gt;
@@ -199,7 +199,7 @@
         <id>https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</id>
         <title>HEXO搭建博客笔记</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h3&gt;
+        <content type="html">&lt;h3 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h3&gt;
 &lt;p&gt;​					经过了这两天的折腾，作为菜鸟的我，也终于搭好了一个自己的个人博客（Github 与 Hexo 的结合）。&lt;/p&gt;
 &lt;p&gt;然后今天想着，趁着把之昨天的操作、那些踩过的坑等等再整理一下，免得到时候忘了，又得去找教程。&lt;/p&gt;
 &lt;h3 id=&#34;所需的软件和平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#所需的软件和平台&#34;&gt;#&lt;/a&gt; 所需的软件和平台&lt;/h3&gt;

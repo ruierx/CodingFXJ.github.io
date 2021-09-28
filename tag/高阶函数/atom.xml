@@ -8,30 +8,30 @@
     <category term="jQuery" />
     <category term="CSS" />
     <category term="css" />
-    <category term="Git" />
-    <category term="flex布局" />
     <category term="JS" />
+    <category term="flex布局" />
+    <category term="Git" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
-    <category term="this指向" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
+    <category term="this指向" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="懒加载" />
     <category term="闭包" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
+    <category term="手写高阶函数" />
     <category term="算法" />
     <category term="扁平化" />
-    <category term="手写高阶函数" />
     <category term="复杂度" />
-    <category term="JAVA" />
     <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
@@ -40,7 +40,7 @@
         <id>https://codingfxj.github.io/2021/06/09/JS%E5%B8%B8%E7%94%A8%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</id>
         <title>JS常用高阶函数</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/09/JS%E5%B8%B8%E7%94%A8%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;es6高阶函数之filter&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#es6高阶函数之filter&#34;&gt;#&lt;/a&gt; ES6 高阶函数之 filter&lt;/h3&gt;
+        <content type="html">&lt;h3 id=&#34;es6高阶函数之filter&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#es6高阶函数之filter&#34;&gt;#&lt;/a&gt; ES6 高阶函数之 filter&lt;/h3&gt;
 &lt;h4 id=&#34;定义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 定义&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;

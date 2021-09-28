@@ -11,30 +11,30 @@
         <category>jQuery</category>
         <category>CSS</category>
         <category>css</category>
-        <category>Git</category>
-        <category>flex布局</category>
         <category>JS</category>
+        <category>flex布局</category>
+        <category>Git</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
-        <category>this指向</category>
         <category>ES6</category>
         <category>数组</category>
-        <category>懒加载</category>
+        <category>this指向</category>
         <category>时间</category>
-        <category>高阶函数</category>
+        <category>懒加载</category>
         <category>闭包</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
         <category>NPM</category>
+        <category>手写高阶函数</category>
         <category>算法</category>
         <category>扁平化</category>
-        <category>手写高阶函数</category>
         <category>复杂度</category>
-        <category>JAVA</category>
         <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
@@ -47,7 +47,7 @@
             <category>Typora</category>
             <category>Markdown</category>
             <pubDate>Fri, 21 May 2021 21:21:58 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;markdown基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown基本语法&#34;&gt;#&lt;/a&gt; Markdown 基本语法&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;markdown基本语法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#markdown基本语法&#34;&gt;#&lt;/a&gt; Markdown 基本语法&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;h4 id=&#34;标题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#标题&#34;&gt;#&lt;/a&gt; 标题&lt;/h4&gt;
@@ -207,7 +207,7 @@
             <category>Note</category>
             <category>Blog</category>
             <pubDate>Sat, 10 Apr 2021 22:46:32 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h3&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h3&gt;
 &lt;p&gt;​					经过了这两天的折腾，作为菜鸟的我，也终于搭好了一个自己的个人博客（Github 与 Hexo 的结合）。&lt;/p&gt;
 &lt;p&gt;然后今天想着，趁着把之昨天的操作、那些踩过的坑等等再整理一下，免得到时候忘了，又得去找教程。&lt;/p&gt;
 &lt;h3 id=&#34;所需的软件和平台&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#所需的软件和平台&#34;&gt;#&lt;/a&gt; 所需的软件和平台&lt;/h3&gt;

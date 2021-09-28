@@ -11,30 +11,30 @@
         <category>jQuery</category>
         <category>CSS</category>
         <category>css</category>
-        <category>Git</category>
-        <category>flex布局</category>
         <category>JS</category>
+        <category>flex布局</category>
+        <category>Git</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
-        <category>this指向</category>
         <category>ES6</category>
         <category>数组</category>
-        <category>懒加载</category>
+        <category>this指向</category>
         <category>时间</category>
-        <category>高阶函数</category>
+        <category>懒加载</category>
         <category>闭包</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
         <category>NPM</category>
+        <category>手写高阶函数</category>
         <category>算法</category>
         <category>扁平化</category>
-        <category>手写高阶函数</category>
         <category>复杂度</category>
-        <category>JAVA</category>
         <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
@@ -45,7 +45,7 @@
             <link>https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/</link>
             <category>flex布局</category>
             <pubDate>Sat, 15 May 2021 22:10:32 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;一-flex-布局是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-flex-布局是什么&#34;&gt;#&lt;/a&gt; 一、Flex 布局是什么？&lt;/h3&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;一-flex-布局是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-flex-布局是什么&#34;&gt;#&lt;/a&gt; 一、Flex 布局是什么？&lt;/h3&gt;
 &lt;p&gt;Flex 是 Flexible Box 的缩写，意为 &amp;quot;&lt;strong&gt; 弹性布局&lt;/strong&gt; &amp;quot;，用来为盒状模型提供最大的灵活性。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;任何一个&lt;/strong&gt;容器都可以指定为 Flex 布局。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

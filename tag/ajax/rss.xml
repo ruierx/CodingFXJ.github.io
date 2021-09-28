@@ -11,30 +11,30 @@
         <category>jQuery</category>
         <category>CSS</category>
         <category>css</category>
-        <category>Git</category>
-        <category>flex布局</category>
         <category>JS</category>
+        <category>flex布局</category>
+        <category>Git</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
-        <category>this指向</category>
         <category>ES6</category>
         <category>数组</category>
-        <category>懒加载</category>
+        <category>this指向</category>
         <category>时间</category>
-        <category>高阶函数</category>
+        <category>懒加载</category>
         <category>闭包</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
         <category>NPM</category>
+        <category>手写高阶函数</category>
         <category>算法</category>
         <category>扁平化</category>
-        <category>手写高阶函数</category>
         <category>复杂度</category>
-        <category>JAVA</category>
         <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
@@ -46,7 +46,7 @@
             <category>AJAX</category>
             <category>jQuery</category>
             <pubDate>Wed, 16 Jun 2021 15:57:12 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;ajax-的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ajax-的使用&#34;&gt;#&lt;/a&gt; AJAX 的使用&lt;/h3&gt;
+            <description><![CDATA[ &lt;h3 id=&#34;ajax-的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ajax-的使用&#34;&gt;#&lt;/a&gt; AJAX 的使用&lt;/h3&gt;
 &lt;p&gt;Ajax 特点是 &lt;code&gt;无需刷新页面便可向服务器传输或读写数据&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;创建一个-ajax-对象&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建一个-ajax-对象&#34;&gt;#&lt;/a&gt; 创建⼀个 ajax 对象&lt;/h4&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// IE9及以上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; xhr = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; XMLHttpRequest()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// IE9以下&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; xhr = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ActiveXObject(&lt;span class=&#34;string&#34;&gt;&amp;#x27;Mricosoft.XMLHTTP&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

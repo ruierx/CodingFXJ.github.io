@@ -11,30 +11,30 @@
         <category>jQuery</category>
         <category>CSS</category>
         <category>css</category>
-        <category>Git</category>
-        <category>flex布局</category>
         <category>JS</category>
+        <category>flex布局</category>
+        <category>Git</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
-        <category>this指向</category>
         <category>ES6</category>
         <category>数组</category>
-        <category>懒加载</category>
+        <category>this指向</category>
         <category>时间</category>
-        <category>高阶函数</category>
+        <category>懒加载</category>
         <category>闭包</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
         <category>NPM</category>
+        <category>手写高阶函数</category>
         <category>算法</category>
         <category>扁平化</category>
-        <category>手写高阶函数</category>
         <category>复杂度</category>
-        <category>JAVA</category>
         <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
@@ -46,7 +46,7 @@
             <category>Vue</category>
             <category>Vuex</category>
             <pubDate>Tue, 01 Jun 2021 00:14:55 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;vuex状态管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vuex状态管理&#34;&gt;#&lt;/a&gt; VueX 状态管理&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;vuex状态管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vuex状态管理&#34;&gt;#&lt;/a&gt; VueX 状态管理&lt;/h2&gt;
 &lt;h3 id=&#34;vuex的三个主要部分&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vuex的三个主要部分&#34;&gt;#&lt;/a&gt; vuex 的三个主要部分&lt;/h3&gt;
 &lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210621011026.png&#34;/&gt;
 &lt;h3 id=&#34;运用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#运用&#34;&gt;#&lt;/a&gt; 运用&lt;/h3&gt;
