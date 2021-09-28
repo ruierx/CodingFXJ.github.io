@@ -9,8 +9,8 @@
     <category term="css" />
     <category term="CSS" />
     <category term="JS" />
-    <category term="flex布局" />
     <category term="Git" />
+    <category term="flex布局" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
@@ -20,11 +20,11 @@
     <category term="this指向" />
     <category term="时间" />
     <category term="懒加载" />
-    <category term="高阶函数" />
     <category term="闭包" />
-    <category term="LeetCode" />
+    <category term="高阶函数" />
     <category term="Vue" />
     <category term="Vuex" />
+    <category term="LeetCode" />
     <category term="NPM" />
     <category term="手写高阶函数" />
     <category term="算法" />

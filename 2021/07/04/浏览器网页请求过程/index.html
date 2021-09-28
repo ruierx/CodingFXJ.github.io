@@ -1,0 +1,356 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>浏览器网页请求过程 | CodingFXJ'Blog</title><meta name="keywords" content="HTTP网络请求"><meta name="author" content="FXJ"><meta name="copyright" content="FXJ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="# 完整的 HTTP 请求过程  域名解析 &#x3D;&#x3D;&gt;  与服务器建立连接 &#x3D;&#x3D;&gt; 发起 HTTP 请求  &#x3D;&#x3D;&gt; 服务器响应 HTTP 请求，浏览器得到 html 代码  &#x3D;&#x3D;&gt; 浏览器解析 html 代码，并请求 html 代码中的资源（如 js、css、图片） &#x3D;&#x3D;&gt; 浏览器对页面进行渲染呈现给用户  # 一、域名解析   Chrome 浏览器 会首先搜索浏览器自身">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浏览器网页请求过程">
+<meta property="og:url" content="https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/index.html">
+<meta property="og:site_name" content="CodingFXJ&#39;Blog">
+<meta property="og:description" content="# 完整的 HTTP 请求过程  域名解析 &#x3D;&#x3D;&gt;  与服务器建立连接 &#x3D;&#x3D;&gt; 发起 HTTP 请求  &#x3D;&#x3D;&gt; 服务器响应 HTTP 请求，浏览器得到 html 代码  &#x3D;&#x3D;&gt; 浏览器解析 html 代码，并请求 html 代码中的资源（如 js、css、图片） &#x3D;&#x3D;&gt; 浏览器对页面进行渲染呈现给用户  # 一、域名解析   Chrome 浏览器 会首先搜索浏览器自身">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704185555.png">
+<meta property="article:published_time" content="2021-07-04T07:12:59.000Z">
+<meta property="article:modified_time" content="2021-07-08T15:36:37.600Z">
+<meta property="article:author" content="FXJ">
+<meta property="article:tag" content="HTTP网络请求">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704185555.png"><link rel="shortcut icon" href="/img/study.png"><link rel="canonical" href="https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="http://cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":400},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#777","position":"bottom-right"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '浏览器网页请求过程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-08 23:36:37'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><link rel="stylesheet" href="APlayer.min.css"><div id="aplayer"></div><script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js" async></script><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    })(window)</script><link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/static-butterfly/dist/css/index.min.css"><link  rel="stylesheet" href="http://cdn.repository.webfont.com/webfonts/nomal/145815/46908/60f57c55f629d89354e1e0f3.css "><link  rel="stylesheet" href="/css/pageheader.css"><link  rel="stylesheet" href="/css/poss.css"><link  rel="stylesheet" href="/css/copyright.css"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.jpg" onerror="onerror=null;src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">47</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/colorpalette/"><i class="fa-fw fas fa-palette"></i><span> 调色板</span></a></li><li><a class="site-page child" href="/carousel/"><i class="fa-fw iconfont icon-image"></i><span> 轮播图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/"><i class="fa-fw iconfont icon-xuni"></i><span> 模拟流体</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw far fa-address-card"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704185555.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">CodingFXJ'Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-tools"></i><span> 工具</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li><li><a class="site-page child" href="/colorpalette/"><i class="fa-fw fas fa-palette"></i><span> 调色板</span></a></li><li><a class="site-page child" href="/carousel/"><i class="fa-fw iconfont icon-image"></i><span> 轮播图</span></a></li><li><a class="site-page child" target="_blank" rel="noopener" href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/"><i class="fa-fw iconfont icon-xuni"></i><span> 模拟流体</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw far fa-address-card"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">浏览器网页请求过程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-07-04T07:12:59.000Z" title="发表于 2021-07-04 15:12:59">2021-07-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-08T15:36:37.600Z" title="更新于 2021-07-08 23:36:37">2021-07-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HTTP%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82/">HTTP网络请求</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">926</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="浏览器网页请求过程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="完整的http请求过程"><a class="markdownIt-Anchor" href="#完整的http请求过程">#</a> 完整的 HTTP 请求过程</h2>
+<blockquote>
+<p>域名解析 ==&gt;  与服务器建立连接 ==&gt; 发起 HTTP 请求  ==&gt; 服务器响应 HTTP 请求，浏览器得到 html 代码  ==&gt; 浏览器解析 html 代码，并请求 html 代码中的资源（如 js、css、图片） ==&gt; 浏览器对页面进行渲染呈现给用户</p>
+</blockquote>
+<h3 id="一-域名解析"><a class="markdownIt-Anchor" href="#一-域名解析">#</a> 一、域名解析</h3>
+<ol>
+<li>
+<p>Chrome 浏览器 会首先搜索浏览器自身的 DNS 缓存，有且没有过期则解析到此结束。</p>
+</li>
+<li>
+<p>如果浏览器自身的缓存里面没有找到对应的条目，会搜索操作系统自身的 DNS 缓存，有且没有过期则停止搜索解析到此结束</p>
+</li>
+</ol>
+<blockquote>
+<p>Windows 系统：ipconfig /displaydns 命令查看</p>
+</blockquote>
+<ol start="3">
+<li>如果在 Windows 系统的 DNS 缓存也没有找到，则读取 hosts 文件</li>
+</ol>
+<blockquote>
+<p>hosts 位于 ‪C:\Windows\System32\drivers\etc\hosts</p>
+</blockquote>
+<ol start="4">
+<li>
+<p>hosts 文件中也没有找到对应的条目，浏览器就会发起一个 DNS 的系统调用，就会向本地配置的首选 DNS 服务器发起域名解析请求</p>
+<p>并返回给 Windows 系统内核，内核又把结果返回给浏览器。（这是递归的请求，也就是运营商的 DNS 服务器必须得提供并返回该域名的 IP 地址）</p>
+</li>
+<li>
+<p>经过以上的 4 个步骤，还没有解析成功</p>
+</li>
+</ol>
+<blockquote>
+<p>注：一般不会进行以下几步</p>
+<p>操作系统就会查找 NetBIOS name Cache == &gt; WINS 服务器 ==&gt; 客户端就要进行广播查找 ==&gt; 客户端就读取 LMHOSTS 文件</p>
+</blockquote>
+<p>如果还没有解析成功，那么就宣告这次解析失败，那就无法跟目标计算机进行通信。只要其中有一步可以解析成功，那就可以成功和目标计算机进行通信。</p>
+<h3 id="二-与服务器建立连接"><a class="markdownIt-Anchor" href="#二-与服务器建立连接">#</a> 二、与服务器建立连接</h3>
+<ol>
+<li>TCP 连接的建立</li>
+</ol>
+<p>客户端的请求到达服务器，首先就是三次握手建立 TCP 连接</p>
+<blockquote>
+<p>三次握手的目的：试探一下对方是否遵循 TCP/IP 协议，为了在不可靠的信道上建立起可靠的连接</p>
+</blockquote>
+<blockquote>
+<p><strong>为什么要进行第三次握手</strong>：为了防止服务器端开启一些无用的连接，增加服务器开销；</p>
+<p>以及防止已失效的连接请求报文段突然又传送到了服务端，因而产生错误。</p>
+</blockquote>
+<img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704153259.png"/>
+<h3 id="三-发起http请求"><a class="markdownIt-Anchor" href="#三-发起http请求">#</a> 三、发起 HTTP 请求</h3>
+<p>http 协议：计算机通过网络进行通信的规则，是一个基于请求与响应，无状态的，应用层的协议，常基于 TCP/IP 协议传输数据。</p>
+<h4 id="请求报文结构"><a class="markdownIt-Anchor" href="#请求报文结构">#</a> 请求报文结构</h4>
+<p>请求报文包括四个部分：请求行，请求头，空行，请求体。</p>
+<img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704155902.png"/>
+<h3 id="四-服务器端响应http请求浏览器得到html代码"><a class="markdownIt-Anchor" href="#四-服务器端响应http请求浏览器得到html代码">#</a> 四、服务器端响应 HTTP 请求，浏览器得到 HTML 代码</h3>
+<p>HTTP 的响应报文也由四部分组成：响应行、响应头、空行、响应体</p>
+<img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704160248.png"/>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lyn_00/article/details/84953763">报文结构参考</a></p>
+<h3 id="五-浏览器解析html代码并请求html代码中的资源"><a class="markdownIt-Anchor" href="#五-浏览器解析html代码并请求html代码中的资源">#</a> 五、浏览器解析 HTML 代码，并请求 HTML 代码中的资源</h3>
+<ol>
+<li>解析 html 结构，形成 Dom 树</li>
+<li>解析 CSS，生成 cssom</li>
+<li>将 CSS 和 Dom 合并形成 render 树</li>
+<li>计算 layout 布局</li>
+<li>将布局渲染到屏幕上</li>
+</ol>
+<img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704162443.png"/>
+<h3 id="六-浏览器对页面进行渲染呈现给用户关闭连接"><a class="markdownIt-Anchor" href="#六-浏览器对页面进行渲染呈现给用户关闭连接">#</a> 六、浏览器对页面进行渲染呈现给用户，关闭连接</h3>
+<h4 id="四次挥手"><a class="markdownIt-Anchor" href="#四次挥手">#</a> 四次挥手</h4>
+<img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704162253.png"/>
+<p>问题一：</p>
+<p>为什么连接的时候是三次握手，关闭的时候却是四次握手？</p>
+<blockquote>
+<p>为了保障数据发送完再断开连接</p>
+</blockquote>
+<p>问题二：</p>
+<p>为什么要等待一段时间在关闭连接？</p>
+<blockquote>
+<p>因为客户端发送完 ack 包后中途可能丢失，此时服务端未收到 ack 包会重发 fin 包，客户端在发送 ack 包刷新等待时间，</p>
+<p>确保服务端关闭再 关闭客户端</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1kV411j7hA?from=search&amp;seid=11094337157520488587">参考视频 1</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1BV411a72M?from=search&amp;seid=4937986881420888725">参考视频 2</a></p>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>浏览器网页请求过程</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/">https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a" style="display: inline-block;width: 120px"><h>作者</h><div class="post-copyright-cc-info"><h>FXJ</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 120px"><h>发布于</h><div class="post-copyright-cc-info"><h>2021-07-04</h></div></div><div class="post-copyright-u" style="display: inline-block;width: 120px"><h>更新于</h><div class="post-copyright-cc-info"><h>2021-07-08</h></div></div><div class="post-copyright-c" style="display: inline-block;width: 120px"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY 4.0" href="https://creativecommons.org/licenses/by/4.0/deed.zh">CC BY 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HTTP%E7%BD%91%E7%BB%9C%E8%AF%B7%E6%B1%82/">HTTP网络请求</a></div><div class="post_share"><div class="social-share" data-image="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704185555.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/07/04/%E6%89%8B%E5%86%99%E5%B8%B8%E7%94%A8%E9%AB%98%E9%98%B6%E6%96%B9%E6%B3%95/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235523.jpg" onerror="onerror=null;src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">手写常用高阶函数</div></div></a></div><div class="next-post pull-right"><a href="/2021/07/04/JS%E9%97%AD%E5%8C%85/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704183238.png" onerror="onerror=null;src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JS闭包</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/img/avatar.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="avatar"/><div class="author-info__name">FXJ</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">47</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">32</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">16</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="http://codingfxj.3vhost.net/"><i class="iconfont icon-Path378"></i><span>My WebStack</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/CodingFXJ" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://gitee.com/GiteeFXJ" target="_blank" title="Gitee"><i class="iconfont icon-gitee"></i></a><a class="social-icon" href="/3010099292@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="http://wpa.qq.com/msgrd?v=3&amp;uin=3010099292&amp;site=qq&amp;menu=yes&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://wpa.qq.com/pa?p=2:3010099292:53" target="_blank" title="QQ"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">Welcome to my blog !</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E7%9A%84http%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text"> 完整的 HTTP 请求过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90"><span class="toc-number">1.1.</span> <span class="toc-text"> 一、域名解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E4%B8%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BB%BA%E7%AB%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.2.</span> <span class="toc-text"> 二、与服务器建立连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E5%8F%91%E8%B5%B7http%E8%AF%B7%E6%B1%82"><span class="toc-number">1.3.</span> <span class="toc-text"> 三、发起 HTTP 请求</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 请求报文结构</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E5%93%8D%E5%BA%94http%E8%AF%B7%E6%B1%82%E6%B5%8F%E8%A7%88%E5%99%A8%E5%BE%97%E5%88%B0html%E4%BB%A3%E7%A0%81"><span class="toc-number">1.4.</span> <span class="toc-text"> 四、服务器端响应 HTTP 请求，浏览器得到 HTML 代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94-%E6%B5%8F%E8%A7%88%E5%99%A8%E8%A7%A3%E6%9E%90html%E4%BB%A3%E7%A0%81%E5%B9%B6%E8%AF%B7%E6%B1%82html%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84%E8%B5%84%E6%BA%90"><span class="toc-number">1.5.</span> <span class="toc-text"> 五、浏览器解析 HTML 代码，并请求 HTML 代码中的资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD-%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AF%B9%E9%A1%B5%E9%9D%A2%E8%BF%9B%E8%A1%8C%E6%B8%B2%E6%9F%93%E5%91%88%E7%8E%B0%E7%BB%99%E7%94%A8%E6%88%B7%E5%85%B3%E9%97%AD%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.6.</span> <span class="toc-text"> 六、浏览器对页面进行渲染呈现给用户，关闭连接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E6%AC%A1%E6%8C%A5%E6%89%8B"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 四次挥手</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/09/15/%E5%A6%99%E5%A6%99%E6%80%AA%E7%9A%84%E3%80%8ACSS%E6%8F%AD%E7%A7%98%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/" title="妙妙怪的《CSS揭秘》读书摘要"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235650.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="妙妙怪的《CSS揭秘》读书摘要"/></a><div class="content"><a class="title" href="/2021/09/15/%E5%A6%99%E5%A6%99%E6%80%AA%E7%9A%84%E3%80%8ACSS%E6%8F%AD%E7%A7%98%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/" title="妙妙怪的《CSS揭秘》读书摘要">妙妙怪的《CSS揭秘》读书摘要</a><time datetime="2021-09-15T11:13:48.000Z" title="发表于 2021-09-15 19:13:48">2021-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/15/Webpack4%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" title="Webpack4学习总结"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724234952.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="Webpack4学习总结"/></a><div class="content"><a class="title" href="/2021/09/15/Webpack4%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/" title="Webpack4学习总结">Webpack4学习总结</a><time datetime="2021-09-15T11:04:15.000Z" title="发表于 2021-09-15 19:04:15">2021-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/05/width/" title="min-width和max-width"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235639.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="min-width和max-width"/></a><div class="content"><a class="title" href="/2021/08/05/width/" title="min-width和max-width">min-width和max-width</a><time datetime="2021-08-05T12:59:39.000Z" title="发表于 2021-08-05 20:59:39">2021-08-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/23/%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3Vue%E9%A1%B9%E7%9B%AE/" title="快速了解Vue项目"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210717105420.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="快速了解Vue项目"/></a><div class="content"><a class="title" href="/2021/07/23/%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3Vue%E9%A1%B9%E7%9B%AE/" title="快速了解Vue项目">快速了解Vue项目</a><time datetime="2021-07-23T13:16:58.000Z" title="发表于 2021-07-23 21:16:58">2021-07-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法"><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210724235653.jpg" onerror="this.onerror=null;this.src='https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210720130530.png'" alt="排序算法"/></a><div class="content"><a class="title" href="/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/" title="排序算法">排序算法</a><time datetime="2021-07-16T15:41:41.000Z" title="发表于 2021-07-16 23:41:41">2021-07-16</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704185555.png')"><div id="footer-wrap"><div class="footer_custom_text">捡起一片小代码，堆起一座大前端！</div><div id="workboard"></div><script async="async" src="/js/runtime.js"></script></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (document.getElementsByClassName('mermaid').length) {
+  if (window.mermaidJsLoad) mermaid.init()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(() => {
+      window.mermaidJsLoad = true
+      mermaid.initialize({
+        theme: 'default',
+      })
+      true && mermaid.init()
+    })
+  }
+}</script></div><script defer src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script defer src="https://myhkw.cn/api/player/162672702069" id="myhk" key="162672702069" m="1"></script><script defer src="/js/smooth-scrolling.js"></script><script defer src="/js/poss.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="100" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script src="/"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener toc scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
+                console.log('已挂载electric_clock')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            electric_clock_injector_config()
+        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --><script src="/live2d/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"display":{"position":"right"},"mobile":{"show":false},"model":{"scale":0.6,"jsonPath":"/live2d/assets/weier.model.json"},"react":{"opacity":0.7},"log":false});</script></body></html>
