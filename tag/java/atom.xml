@@ -4,35 +4,35 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;java&#34; tag</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-06-18T13:17:17.000Z</updated>
-    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
+    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
-    <category term="Git" />
     <category term="flex布局" />
+    <category term="Git" />
     <category term="this指向" />
-    <category term="ES6" />
-    <category term="数组" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
+    <category term="ES6" />
+    <category term="数组" />
     <category term="懒加载" />
     <category term="时间" />
-    <category term="闭包" />
     <category term="高阶函数" />
+    <category term="闭包" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
     <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="扁平化" />
     <category term="复杂度" />
-    <category term="设计模式" />
     <category term="JAVA" />
     <category term="HTTP网络请求" />
+    <category term="扁平化" />
+    <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
@@ -40,20 +40,17 @@
         <id>https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/</id>
         <title>死锁</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;生活中的死锁&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生活中的死锁&#34;&gt;#&lt;/a&gt; 生活中的死锁&lt;/h3&gt;
-&lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;情景一：找工作中的我，工作要先有工作经验才能工作，但是我需要先有工作才能有工作经验。怎么破？&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;生活中的死锁&#34;&gt;&lt;a href=&#34;#生活中的死锁&#34; class=&#34;headerlink&#34; title=&#34;生活中的死锁&#34;&gt;&lt;/a&gt;生活中的死锁&lt;/h3&gt;&lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;情景一：找工作中的我，工作要先有工作经验才能工作，但是我需要先有工作才能有工作经验。怎么破？&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;note primary flat&#34;&gt;&lt;p&gt;情景二：出门忘带钥匙，要开门就需要拿到房间里的钥匙，要拿到钥匙就得把门打开。心态崩了呀！&lt;/p&gt;
 &lt;/div&gt;
-&lt;h3 id=&#34;产生死锁的四个条件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#产生死锁的四个条件&#34;&gt;#&lt;/a&gt; 产生死锁的四个条件&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;互斥条件&lt;/strong&gt;：即当资源被一个线程使用 (占有) 时，别的线程不能使用&lt;/li&gt;
+&lt;h3 id=&#34;产生死锁的四个条件&#34;&gt;&lt;a href=&#34;#产生死锁的四个条件&#34; class=&#34;headerlink&#34; title=&#34;产生死锁的四个条件&#34;&gt;&lt;/a&gt;产生死锁的四个条件&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;互斥条件&lt;/strong&gt;：即当资源被一个线程使用(占有)时，别的线程不能使用&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;不可剥夺条件&lt;/strong&gt;：资源请求者不能强制从资源占有者手中夺取资源，资源只能由资源占有者主动释放&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;请求与保持条件&lt;/strong&gt;：当资源请求者在请求其他的资源的同时保持对原有资源的占有&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;循环等待条件&lt;/strong&gt;：即存在一个等待队列：P1 占有 P2 需要的资源，P2 占有 P3 需要的资源，P3 占有 P1 需要的资源。这样就形成了一个等待环路。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;循环等待条件&lt;/strong&gt;：即存在一个等待队列：P1占有P2需要的资源，P2占有P3需要的资源，P3占有P1需要的资源。这样就形成了一个等待环路。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;避免死锁的四种方式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#避免死锁的四种方式&#34;&gt;#&lt;/a&gt; 避免死锁的四种方式&lt;/h3&gt;
-&lt;ol&gt;
+&lt;h3 id=&#34;避免死锁的四种方式&#34;&gt;&lt;a href=&#34;#避免死锁的四种方式&#34; class=&#34;headerlink&#34; title=&#34;避免死锁的四种方式&#34;&gt;&lt;/a&gt;避免死锁的四种方式&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;破坏互斥使用&lt;/strong&gt;，比如拷贝一份资源（但由于生产上开销太大，几乎不会采用这种方式）&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;破坏请求和保持&lt;/strong&gt;，一次性申请所有资源&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;破坏不可剥夺&lt;/strong&gt;，设置优先级或者规定时间内无法获取所需资源，主动让出已持有的资源&lt;/li&gt;
@@ -62,8 +59,9 @@
 &lt;div class=&#34;note info flat&#34;&gt;&lt;p&gt;&lt;strong&gt;四个条件是死锁的必要条件，只要系统发生死锁，这些条件必然成立，而只要上述条件之一不满足，就不会发生死锁&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;hr&gt;&lt;/hr&gt;
-&lt;h3 id=&#34;处理死锁的方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#处理死锁的方法&#34;&gt;#&lt;/a&gt; 处理死锁的方法&lt;/h3&gt;
-&lt;div class=&#34;note success flat&#34;&gt;&lt;p&gt;预防死锁：通过设置某些限制条件，去破坏产生死锁的四个必要条件中的一个或几个条件，来防止死锁的发生。&lt;/p&gt;
+
+
+&lt;h3 id=&#34;处理死锁的方法&#34;&gt;&lt;a href=&#34;#处理死锁的方法&#34; class=&#34;headerlink&#34; title=&#34;处理死锁的方法&#34;&gt;&lt;/a&gt;处理死锁的方法&lt;/h3&gt;&lt;div class=&#34;note success flat&#34;&gt;&lt;p&gt;预防死锁：通过设置某些限制条件，去破坏产生死锁的四个必要条件中的一个或几个条件，来防止死锁的发生。&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;note primary flat&#34;&gt;&lt;p&gt;解除死锁：当检测出死锁后，便采取适当措施将进程从死锁状态中解脱出来。&lt;/p&gt;
 &lt;/div&gt;
