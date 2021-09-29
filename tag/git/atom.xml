@@ -4,35 +4,35 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;git&#34; tag</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-04-27T15:49:38.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
-    <category term="flex布局" />
     <category term="Git" />
+    <category term="flex布局" />
     <category term="this指向" />
+    <category term="ES6" />
+    <category term="数组" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
-    <category term="ES6" />
-    <category term="时间" />
-    <category term="数组" />
     <category term="懒加载" />
-    <category term="高阶函数" />
+    <category term="时间" />
     <category term="闭包" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="手写高阶函数" />
     <category term="算法" />
+    <category term="手写高阶函数" />
     <category term="扁平化" />
     <category term="复杂度" />
+    <category term="设计模式" />
     <category term="JAVA" />
     <category term="HTTP网络请求" />
-    <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
@@ -40,82 +40,98 @@
         <id>https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
         <title>Git学习笔记</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;Git-学习笔记&#34;&gt;&lt;a href=&#34;#Git-学习笔记&#34; class=&#34;headerlink&#34; title=&#34;Git 学习笔记&#34;&gt;&lt;/a&gt;Git 学习笔记&lt;/h3&gt;&lt;p&gt;Git是流行的版本控制，方便查看更改历史记录，备份以便恢复以前的版本。&lt;/p&gt;
-&lt;h4 id=&#34;四个区域之间的转换关系&#34;&gt;&lt;a href=&#34;#四个区域之间的转换关系&#34; class=&#34;headerlink&#34; title=&#34;四个区域之间的转换关系&#34;&gt;&lt;/a&gt;四个区域之间的转换关系&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;/images/gityuanli.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;git-学习笔记&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-学习笔记&#34;&gt;#&lt;/a&gt; Git 学习笔记&lt;/h3&gt;
+&lt;p&gt;Git 是流行的版本控制，方便查看更改历史记录，备份以便恢复以前的版本。&lt;/p&gt;
+&lt;h4 id=&#34;四个区域之间的转换关系&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四个区域之间的转换关系&#34;&gt;#&lt;/a&gt; 四个区域之间的转换关系&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;/images/gityuanli.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;Workspace：工作区，就是你平时存放项目代码的地方&lt;/li&gt;
 &lt;li&gt;Index / Stage：暂存区，用于临时存放你的改动，事实上它只是一个文件，保存即将提交到文件列表信息&lt;/li&gt;
-&lt;li&gt;Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中HEAD指向最新放入仓库的版本&lt;/li&gt;
+&lt;li&gt;Repository：仓库区（或本地仓库），就是安全存放数据的位置，这里面有你提交到所有版本的数据。其中 HEAD 指向最新放入仓库的版本&lt;/li&gt;
 &lt;li&gt;Remote：远程仓库，托管代码的服务器，可以简单的认为是你项目组中的一台电脑用于远程数据交换&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;工作流程：&lt;/p&gt;
 &lt;p&gt;１、在工作目录中添加、修改文件；&lt;/p&gt;
 &lt;p&gt;２、将需要进行版本管理的文件放入暂存区域；&lt;/p&gt;
-&lt;p&gt;３、将暂存区域的文件提交到git仓库&lt;/p&gt;
+&lt;p&gt;３、将暂存区域的文件提交到 git 仓库&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&#34;/images/zhuangtai.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h4 id=&#34;Git-bash常用的Linux命令&#34;&gt;&lt;a href=&#34;#Git-bash常用的Linux命令&#34; class=&#34;headerlink&#34; title=&#34;Git bash常用的Linux命令&#34;&gt;&lt;/a&gt;Git bash常用的Linux命令&lt;/h4&gt;&lt;p&gt;1）cd : 改变目录。&lt;/p&gt;
-&lt;p&gt;2）cd . . 回退到上一个目录，直接cd进入默认目录&lt;/p&gt;
+&lt;h4 id=&#34;git-bash常用的linux命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git-bash常用的linux命令&#34;&gt;#&lt;/a&gt; Git bash 常用的 Linux 命令&lt;/h4&gt;
+&lt;p&gt;1）cd : 改变目录。&lt;/p&gt;
+&lt;p&gt;2）cd . . 回退到上一个目录，直接 cd 进入默认目录&lt;/p&gt;
 &lt;p&gt;3）pwd : 显示当前所在的目录路径。&lt;/p&gt;
-&lt;p&gt;4）ls(ll):  都是列出当前目录中的所有文件，只不过ll(两个ll)列出的内容更为详细。&lt;/p&gt;
-&lt;p&gt;5）touch : 新建一个文件 如 touch index.js 就会在当前目录下新建一个index.js文件。&lt;/p&gt;
-&lt;p&gt;6）m:  删除一个文件, rm index.js 就会把index.js文件删除。&lt;/p&gt;
-&lt;p&gt;7）mkdir:  新建一个目录,就是新建一个文件夹。&lt;/p&gt;
-&lt;p&gt;8）rm -r :  删除一个文件夹, rm -r src 删除src目录&lt;/p&gt;
+&lt;p&gt;4）ls (ll):  都是列出当前目录中的所有文件，只不过 ll (两个 ll) 列出的内容更为详细。&lt;/p&gt;
+&lt;p&gt;5）touch : 新建一个文件 如 touch index.js 就会在当前目录下新建一个 index.js 文件。&lt;/p&gt;
+&lt;p&gt;6）m:  删除一个文件，rm index.js 就会把 index.js 文件删除。&lt;/p&gt;
+&lt;p&gt;7）mkdir:  新建一个目录，就是新建一个文件夹。&lt;/p&gt;
+&lt;p&gt;8）rm -r :  删除一个文件夹，rm -r src 删除 src 目录&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;rm -rf / 切勿在Linux中尝试！删除电脑中全部文件！&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;9）mv 移动文件, mv index.html src index.html 是我们要移动的文件, src 是目标文件夹,当然, 这样写,必须保证文件和目标文件夹在同一目录下。&lt;/p&gt;
-&lt;p&gt;10) reset 重新初始化终端/清屏。&lt;/p&gt;
+&lt;p&gt;9）mv 移动文件，mv index.html src index.html 是我们要移动的文件，src 是目标文件夹，当然，这样写，必须保证文件和目标文件夹在同一目录下。&lt;/p&gt;
+&lt;ol start=&#34;10&#34;&gt;
+&lt;li&gt;reset 重新初始化终端 / 清屏。&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;11）clear 清屏。&lt;/p&gt;
 &lt;p&gt;12）history 查看命令历史。&lt;/p&gt;
 &lt;p&gt;13）help 帮助。&lt;/p&gt;
 &lt;p&gt;14）exit 退出。&lt;/p&gt;
-&lt;p&gt;15）#表示注释&lt;/p&gt;
-&lt;h4 id=&#34;Git配置&#34;&gt;&lt;a href=&#34;#Git配置&#34; class=&#34;headerlink&#34; title=&#34;Git配置&#34;&gt;&lt;/a&gt;Git配置&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;查看配置&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;15）# 表示注释&lt;/p&gt;
+&lt;h4 id=&#34;git配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git配置&#34;&gt;#&lt;/a&gt; Git 配置&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;查看配置&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看系统config&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --system --list&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;　　&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看当前用户（global）配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global  --list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Git\etc\gitconfig  ：Git 安装目录下的 gitconfig   —system 系统级&lt;/p&gt;
-&lt;p&gt;C:\Users\Administrator\ .gitconfig   只适用于当前登录用户的配置  —global 全局&lt;/p&gt;
+&lt;p&gt;Git\etc\gitconfig  ：Git 安装目录下的 gitconfig   --system 系统级&lt;/p&gt;
+&lt;p&gt;C:\Users\Administrator\ .gitconfig   只适用于当前登录用户的配置  --global 全局&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;配置&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global user.name &lt;span class=&#34;string&#34;&gt;&amp;quot;CodingFXJ&amp;quot;&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --global user.email 3010099292@qq.com   &lt;span class=&#34;comment&#34;&gt;#邮箱&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;Git项目搭建&#34;&gt;&lt;a href=&#34;#Git项目搭建&#34; class=&#34;headerlink&#34; title=&#34;Git项目搭建&#34;&gt;&lt;/a&gt;Git项目搭建&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;本地仓库搭建&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;1、创建全新的仓库，需要用GIT管理的项目的根目录执行：&lt;/p&gt;
+&lt;h4 id=&#34;git项目搭建&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git项目搭建&#34;&gt;#&lt;/a&gt; Git 项目搭建&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;本地仓库搭建&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1、创建全新的仓库，需要用 GIT 管理的项目的根目录执行：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 在当前目录新建一个Git代码库&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ git init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;2、执行后可以看到，仅仅在项目目录多出了一个.git目录，关于版本等的所有信息都在这个目录里面。&lt;/p&gt;
+&lt;p&gt;2、执行后可以看到，仅仅在项目目录多出了一个.git 目录，关于版本等的所有信息都在这个目录里面。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;克隆远程仓库&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;1、另一种方式是克隆远程目录，由于是将远程服务器上的仓库完全镜像一份至本地！&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 克隆一个项目和它的整个代码历史(版本信息)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ git &lt;span class=&#34;built_in&#34;&gt;clone&lt;/span&gt; [url]  &lt;span class=&#34;comment&#34;&gt;# &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;文件操作&#34;&gt;&lt;a href=&#34;#文件操作&#34; class=&#34;headerlink&#34; title=&#34;文件操作&#34;&gt;&lt;/a&gt;文件操作&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;文件四种状态&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;文件操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文件操作&#34;&gt;#&lt;/a&gt; 文件操作&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;文件四种状态&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;Untracked: 未跟踪, 此文件在文件夹中, 但并没有加入到git库, 不参与版本控制. 通过git add 状态变为Staged.&lt;/li&gt;
-&lt;li&gt;Unmodify: 文件已经入库, 未修改, 即版本库中的文件快照内容与文件夹中完全一致. 这种类型的文件有两种去处, 如果它被修改, 而变为Modified. 如果使用git rm移出版本库, 则成为Untracked文件&lt;/li&gt;
-&lt;li&gt;Modified: 文件已修改, 仅仅是修改, 并没有进行其他的操作. 这个文件也有两个去处, 通过git add可进入暂存staged状态, 使用git checkout 则丢弃修改过, 返回到unmodify状态, 这个git checkout即从库中取出文件, 覆盖当前修改 !&lt;/li&gt;
-&lt;li&gt;Staged: 暂存状态. 执行git commit则将修改同步到库中, 这时库中的文件和本地文件又变为一致, 文件为Unmodify状态. 执行git reset HEAD filename取消暂存, 文件状态为Modified&lt;/li&gt;
+&lt;li&gt;Untracked: 未跟踪，此文件在文件夹中，但并没有加入到 git 库，不参与版本控制。通过 git add 状态变为 Staged.&lt;/li&gt;
+&lt;li&gt;Unmodify: 文件已经入库，未修改，即版本库中的文件快照内容与文件夹中完全一致。这种类型的文件有两种去处，如果它被修改，而变为 Modified. 如果使用 git rm 移出版本库，则成为 Untracked 文件&lt;/li&gt;
+&lt;li&gt;Modified: 文件已修改，仅仅是修改，并没有进行其他的操作。这个文件也有两个去处，通过 git add 可进入暂存 staged 状态，使用 git checkout 则丢弃修改过，返回到 unmodify 状态，这个 git checkout 即从库中取出文件，覆盖当前修改！&lt;/li&gt;
+&lt;li&gt;Staged: 暂存状态。执行 git commit 则将修改同步到库中，这时库中的文件和本地文件又变为一致，文件为 Unmodify 状态。执行 git reset HEAD filename 取消暂存，文件状态为 Modified&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;查看文件状态&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看指定文件状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git status [filename]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看所有文件状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git status&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# git add .                  添加所有文件到暂存区&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# git commit -m &amp;quot;消息内容&amp;quot;    提交暂存区中的内容到本地仓库 -m 提交信息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;忽略文件&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#为注释&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*.txt        &lt;span class=&#34;comment&#34;&gt;#忽略所有 .txt结尾的文件,这样的话上传就不会被选中！&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;!lib.txt     &lt;span class=&#34;comment&#34;&gt;#但lib.txt除外&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/temp        &lt;span class=&#34;comment&#34;&gt;#仅忽略项目根目录下的TODO文件,不包括其它目录temp&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;build/       &lt;span class=&#34;comment&#34;&gt;#忽略build/目录下的所有文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;doc/*.txt    &lt;span class=&#34;comment&#34;&gt;#会忽略 doc/notes.txt 但不包括 doc/server/arch.txt&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;IDEA中集成Git&#34;&gt;&lt;a href=&#34;#IDEA中集成Git&#34; class=&#34;headerlink&#34; title=&#34;IDEA中集成Git&#34;&gt;&lt;/a&gt;IDEA中集成Git&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;使用github、gitee，设置本机绑定SSH公钥，实现免密码登录&lt;/li&gt;
+&lt;h4 id=&#34;idea中集成git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#idea中集成git&#34;&gt;#&lt;/a&gt; IDEA 中集成 Git&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 github、gitee，设置本机绑定 SSH 公钥，实现免密码登录&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;克隆项目到本地。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;使用IDEA绑定git，把远程git文件目录复制到项目中&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;使用 IDEA 绑定 git，把远程 git 文件目录复制到项目中&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;编写文件，使用IDEA操作git&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;编写文件，使用 IDEA 操作 git&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;添加到暂存区&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;添加到暂存区&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;commit 提交&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;commit 提交&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;push到远程仓库&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;push 到远程仓库&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
@@ -127,41 +143,59 @@
         <id>https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
         <title>Git常用命令</title>
         <link rel="alternate" href="https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Git是一个开源的分布式版本控制系统。&lt;/p&gt;
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Git 是一个开源的分布式版本控制系统。&lt;/p&gt;
 &lt;p&gt;可以有效、高速地处理从很小到非常大的项目版本管理。&lt;/p&gt;
-&lt;h4 id=&#34;1-区域&#34;&gt;&lt;a href=&#34;#1-区域&#34; class=&#34;headerlink&#34; title=&#34;1. 区域&#34;&gt;&lt;/a&gt;1. 区域&lt;/h4&gt;&lt;p&gt;   工作区 : 本地代码&lt;br&gt;   暂存区 : 暂时先放到这儿&lt;br&gt;   版本库 : 提交后的存储&lt;/p&gt;
-&lt;h4 id=&#34;2-Git对象&#34;&gt;&lt;a href=&#34;#2-Git对象&#34; class=&#34;headerlink&#34; title=&#34;2.Git对象&#34;&gt;&lt;/a&gt;2.Git对象&lt;/h4&gt;&lt;p&gt;Git有&lt;strong&gt;四种基本的对象类型&lt;/strong&gt;，包括：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;blobs :&lt;/strong&gt;  &lt;/p&gt;
-&lt;p&gt;git add命令将文件或者目录加入到暂存区时产生。&lt;/p&gt;
-&lt;p&gt;每个blob代表一个版本文件，blob只包含文件的数据，&lt;/p&gt;
+&lt;h4 id=&#34;1-区域&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-区域&#34;&gt;#&lt;/a&gt; 1. 区域&lt;/h4&gt;
+&lt;p&gt;工作区：本地代码&lt;br&gt;
+暂存区：暂时先放到这儿&lt;br&gt;
+版本库：提交后的存储&lt;/p&gt;
+&lt;h4 id=&#34;2git对象&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2git对象&#34;&gt;#&lt;/a&gt; 2.Git 对象&lt;/h4&gt;
+&lt;p&gt;Git 有&lt;strong&gt;四种基本的对象类型&lt;/strong&gt;，包括：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;blobs :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;git add 命令将文件或者目录加入到暂存区时产生。&lt;/p&gt;
+&lt;p&gt;每个 blob 代表一个版本文件，blob 只包含文件的数据，&lt;/p&gt;
 &lt;p&gt;而忽略文件的其他元数据，如：名字、路径、格式等。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;trees :&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt;每个tree代表了一个目录的信息，包含了此目录下的blobs，子目录（对应于子trees）,文件名、路径等元数据。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;trees :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;每个 tree 代表了一个目录的信息，包含了此目录下的 blobs，子目录（对应于子 trees）, 文件名、路径等元数据。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;commits :&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt; 每个commit记录了提交一个更新的所有元数据，&lt;/p&gt;
-&lt;p&gt;如：指向的tree、父commit、作者、提交者、提交日期、提交日志等。&lt;/p&gt;
-&lt;p&gt;每次提交都指向一个tree对象，记录了当时提交的目录信息，一个commit可以有多个（至少一个）父commit。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;tags :&lt;/strong&gt; &lt;/p&gt;
-&lt;p&gt; tag用于给某个上述类型的对象指配一个便于开发者记忆的名字，通常用于某次commit。&lt;/p&gt;
-&lt;h4 id=&#34;3-查看-更新git版本&#34;&gt;&lt;a href=&#34;#3-查看-更新git版本&#34; class=&#34;headerlink&#34; title=&#34;3.查看/更新git版本&#34;&gt;&lt;/a&gt;3.查看/更新git版本&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;--version&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git --version&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git update-git-for-windows&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;4-主要命令&#34;&gt;&lt;a href=&#34;#4-主要命令&#34; class=&#34;headerlink&#34; title=&#34;4.主要命令&#34;&gt;&lt;/a&gt;4.主要命令&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;add # 将工作区的修改提交到暂存区&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git commit # 将暂存区的修改提交到当前分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git reset # 回退到某一个版本&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash # 保存某次修改&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git pull # 从远程更新代码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push # 将本地代码更新到远程分支上&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git reflog # 查看历史命令&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git status # 查看当前仓库的状态&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff # 查看修改&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git log # 查看提交历史&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git revert # 回退某个修改&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;5-配置git&#34;&gt;&lt;a href=&#34;#5-配置git&#34; class=&#34;headerlink&#34; title=&#34;5.配置git&#34;&gt;&lt;/a&gt;5.配置git&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;config --global user.name&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global user.email&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;6-高级命令（增删改查）&#34;&gt;&lt;a href=&#34;#6-高级命令（增删改查）&#34; class=&#34;headerlink&#34; title=&#34;6.高级命令（增删改查）&#34;&gt;&lt;/a&gt;6.高级命令（增删改查）&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;init                 初始化仓库&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git status               查看文件的状态&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff                 查卡那些修改还没有暂存&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff --staged        查看那些修改以及暂存的还没有被提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git log --oneline        查看提交的历史记录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add ./               将修改添加到暂存区&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rm 文件               删除工作目录中对应的文件 再将修改添加到暂存区&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git mv 源文件名 新文件名    将工作目录中的文件进行重命名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit               提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -a            被跟踪过的文件才可以用的&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -a -m &amp;quot;注释&amp;quot;   将暂存区提交到版本库&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push origin master 将文件给推到服务器上 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push &amp;lt;远程主机名&amp;gt; &amp;lt;本地分支名&amp;gt;:&amp;lt;远程分支名&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote show origin 显示远程库origin里的资源&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote show 查看远程库&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;7-高级命令-（分支）&#34;&gt;&lt;a href=&#34;#7-高级命令-（分支）&#34; class=&#34;headerlink&#34; title=&#34;7.高级命令 （分支）&#34;&gt;&lt;/a&gt;7.高级命令 （分支）&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;reflog          查看操作内容日志&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git log --oneline --decorate --graph --all 查看整个项目的分支图&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch          显示分支列表&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -v       查看分支指向的最新提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch name     创建分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -a 查看所有的分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -r 查看远程所有分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch name commithash 在指定的提交对象上创建新的分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout -b name 切换分支并创建新分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout name   切换分支（每一次切换时要提交上一次的分支）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -d name  删除空的分支或者已经被合并的分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -D name  强行删除分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git merge name      合并分支（先切换到主分支）&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;8-数据恢复&#34;&gt;&lt;a href=&#34;#8-数据恢复&#34; class=&#34;headerlink&#34; title=&#34;8.数据恢复&#34;&gt;&lt;/a&gt;8.数据恢复&lt;/h4&gt;&lt;p&gt;工作区&lt;br&gt;撤回自己再工作目录中的修改&lt;/p&gt;
+&lt;p&gt;每个 commit 记录了提交一个更新的所有元数据，&lt;/p&gt;
+&lt;p&gt;如：指向的 tree、父 commit、作者、提交者、提交日期、提交日志等。&lt;/p&gt;
+&lt;p&gt;每次提交都指向一个 tree 对象，记录了当时提交的目录信息，一个 commit 可以有多个（至少一个）父 commit。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;tags :&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;tag 用于给某个上述类型的对象指配一个便于开发者记忆的名字，通常用于某次 commit。&lt;/p&gt;
+&lt;h4 id=&#34;3查看更新git版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3查看更新git版本&#34;&gt;#&lt;/a&gt; 3. 查看 / 更新 git 版本&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;--version&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git --version&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git update-git-for-windows&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;4主要命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4主要命令&#34;&gt;#&lt;/a&gt; 4. 主要命令&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;add # 将工作区的修改提交到暂存区&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git commit # 将暂存区的修改提交到当前分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git reset # 回退到某一个版本&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git stash # 保存某次修改&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git pull # 从远程更新代码&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push # 将本地代码更新到远程分支上&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git reflog # 查看历史命令&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git status # 查看当前仓库的状态&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff # 查看修改&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git log # 查看提交历史&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git revert # 回退某个修改&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;5配置git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5配置git&#34;&gt;#&lt;/a&gt; 5. 配置 git&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;config --global user.name&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git config --global user.email&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git config --list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;6高级命令增删改查&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6高级命令增删改查&#34;&gt;#&lt;/a&gt; 6. 高级命令（增删改查）&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;init                 初始化仓库&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git status               查看文件的状态&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff                 查卡那些修改还没有暂存&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git diff --staged        查看那些修改以及暂存的还没有被提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git log --oneline        查看提交的历史记录&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git add ./               将修改添加到暂存区&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git rm 文件               删除工作目录中对应的文件 再将修改添加到暂存区&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git mv 源文件名 新文件名    将工作目录中的文件进行重命名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit               提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -a            被跟踪过的文件才可以用的&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git commit -a -m &amp;quot;注释&amp;quot;   将暂存区提交到版本库&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push origin master 将文件给推到服务器上 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git push &amp;lt;远程主机名&amp;gt; &amp;lt;本地分支名&amp;gt;:&amp;lt;远程分支名&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote show origin 显示远程库origin里的资源&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git remote show 查看远程库&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;7高级命令-分支&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7高级命令-分支&#34;&gt;#&lt;/a&gt; 7. 高级命令 （分支）&lt;/h4&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;reflog          查看操作内容日志&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git log --oneline --decorate --graph --all 查看整个项目的分支图&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch          显示分支列表&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -v       查看分支指向的最新提交&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch name     创建分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -a 查看所有的分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -r 查看远程所有分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch name commithash 在指定的提交对象上创建新的分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout -b name 切换分支并创建新分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git checkout name   切换分支（每一次切换时要提交上一次的分支）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -d name  删除空的分支或者已经被合并的分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git branch -D name  强行删除分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git merge name      合并分支（先切换到主分支）&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;8数据恢复&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8数据恢复&#34;&gt;#&lt;/a&gt; 8. 数据恢复&lt;/h4&gt;
+&lt;p&gt;工作区&lt;br&gt;
+撤回自己再工作目录中的修改&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;checkout --filename&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git checkout --filename&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;暂存区&lt;br&gt;撤回自己的暂存区&lt;/p&gt;
+&lt;p&gt;暂存区&lt;br&gt;
+撤回自己的暂存区&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git reset HEAD filename&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;9-操作文件&#34;&gt;&lt;a href=&#34;#9-操作文件&#34; class=&#34;headerlink&#34; title=&#34;9.操作文件&#34;&gt;&lt;/a&gt;9.操作文件&lt;/h4&gt;&lt;p&gt;echo “文件内容” &amp;gt; one.txt 创建文件&lt;br&gt;查看暂存区&lt;/p&gt;
+&lt;h4 id=&#34;9操作文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9操作文件&#34;&gt;#&lt;/a&gt; 9. 操作文件&lt;/h4&gt;
+&lt;p&gt;echo “文件内容” &amp;gt; one.txt 创建文件&lt;br&gt;
+查看暂存区&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;figcaption&gt;&lt;span&gt;ls-files -s&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;git ls-files -s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h4 id=&#34;10-Git的功能特性：&#34;&gt;&lt;a href=&#34;#10-Git的功能特性：&#34; class=&#34;headerlink&#34; title=&#34;10.Git的功能特性：&#34;&gt;&lt;/a&gt;10.Git的功能特性：&lt;/h4&gt;&lt;h5 id=&#34;从一般开发者的角度来看，git有以下功能：&#34;&gt;&lt;a href=&#34;#从一般开发者的角度来看，git有以下功能：&#34; class=&#34;headerlink&#34; title=&#34;从一般开发者的角度来看，git有以下功能：&#34;&gt;&lt;/a&gt;从一般开发者的角度来看，git有以下功能：&lt;/h5&gt;&lt;p&gt;1、从服务器上克隆完整的Git仓库（包括代码和版本信息）到单机上。&lt;/p&gt;
+&lt;h4 id=&#34;10git的功能特性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10git的功能特性&#34;&gt;#&lt;/a&gt; 10.Git 的功能特性：&lt;/h4&gt;
+&lt;h5 id=&#34;从一般开发者的角度来看git有以下功能&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#从一般开发者的角度来看git有以下功能&#34;&gt;#&lt;/a&gt; 从一般开发者的角度来看，git 有以下功能：&lt;/h5&gt;
+&lt;p&gt;1、从服务器上克隆完整的 Git 仓库（包括代码和版本信息）到单机上。&lt;/p&gt;
 &lt;p&gt;2、在自己的机器上根据不同的开发目的，创建分支，修改代码。3、在单机上自己创建的分支上提交代码。&lt;/p&gt;
 &lt;p&gt;4、在单机上合并分支。&lt;/p&gt;
-&lt;p&gt;5、把服务器上最新版的代码fetch下来，然后跟自己的主分支合并。&lt;/p&gt;
+&lt;p&gt;5、把服务器上最新版的代码 fetch 下来，然后跟自己的主分支合并。&lt;/p&gt;
 &lt;p&gt;6、生成补丁（patch），把补丁发送给主开发者。&lt;/p&gt;
-&lt;p&gt;7、看主开发者的反馈，如果主开发者发现两个一般开发者之间有冲突（他们之间可以合作解决的冲突），就会要求他们先解决冲突，然后再由其中一个人提交。&lt;br&gt;如果主开发者可以自己解决，或者没有冲突，就通过。&lt;/p&gt;
-&lt;p&gt;8、一般开发者之间解决冲突的方法，开发者之间可以使用pull 命令解决冲突，解决完冲突之后再向主开发者提交补丁。&lt;/p&gt;
-&lt;h5 id=&#34;从主-开发者的角度看，git有以下功能：&#34;&gt;&lt;a href=&#34;#从主-开发者的角度看，git有以下功能：&#34; class=&#34;headerlink&#34; title=&#34;从主 开发者的角度看，git有以下功能：&#34;&gt;&lt;/a&gt;从主 开发者的角度看，git有以下功能：&lt;/h5&gt;&lt;p&gt;1、查看邮件或者通过其它方式查看一般开发者的提交状态。&lt;/p&gt;
+&lt;p&gt;7、看主开发者的反馈，如果主开发者发现两个一般开发者之间有冲突（他们之间可以合作解决的冲突），就会要求他们先解决冲突，然后再由其中一个人提交。&lt;br&gt;
+如果主开发者可以自己解决，或者没有冲突，就通过。&lt;/p&gt;
+&lt;p&gt;8、一般开发者之间解决冲突的方法，开发者之间可以使用 pull 命令解决冲突，解决完冲突之后再向主开发者提交补丁。&lt;/p&gt;
+&lt;h5 id=&#34;从主-开发者的角度看git有以下功能&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#从主-开发者的角度看git有以下功能&#34;&gt;#&lt;/a&gt; 从主 开发者的角度看，git 有以下功能：&lt;/h5&gt;
+&lt;p&gt;1、查看邮件或者通过其它方式查看一般开发者的提交状态。&lt;/p&gt;
 &lt;p&gt;2、打上补丁，解决冲突（可以自己解决，也可以要求开发者之间解决以后再重新提交，如果是开源项目，还要决定哪些补丁有用，哪些不用）。&lt;/p&gt;
 &lt;p&gt;3、向公共服务器提交结果，然后通知所有开发人员。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;优点&lt;/strong&gt;：适合分布式开发，强调个体。公共服务器压力和数据量都不会太大。速度快、灵活。&lt;/p&gt;
