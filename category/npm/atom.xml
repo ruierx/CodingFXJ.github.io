@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;npm&#34; category</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-05-23T05:26:00.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/05/23/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+        <id>https://codingfxj.github.io/p/5a00e12e.html</id>
         <title>NPM学习笔记</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/05/23/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/5a00e12e.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;npm介绍&#34;&gt;&lt;a href=&#34;#npm介绍&#34; class=&#34;headerlink&#34; title=&#34;npm介绍&#34;&gt;&lt;/a&gt;npm介绍&lt;/h3&gt;&lt;p&gt;npm（Node Package Manager）是 node 的包管理器，它是随着 NodeJs 安装时一起被安装。&lt;/p&gt;
 &lt;h3 id=&#34;npm作用&#34;&gt;&lt;a href=&#34;#npm作用&#34; class=&#34;headerlink&#34; title=&#34;npm作用&#34;&gt;&lt;/a&gt;npm作用&lt;/h3&gt;&lt;p&gt;通过 NPM 可以对 Node 的工具包进行搜索、下载、安装、删除、上传。借助别人写好的包，方便于开发。&lt;/p&gt;
 &lt;h5 id=&#34;安装&#34;&gt;&lt;a href=&#34;#安装&#34; class=&#34;headerlink&#34; title=&#34;安装&#34;&gt;&lt;/a&gt;安装&lt;/h5&gt;&lt;p&gt;官网地址：&lt;a href=&#34;https://nodejs.org/en/download/&#34;&gt;https://nodejs.org/en/download/&lt;/a&gt;&lt;/p&gt;

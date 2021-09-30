@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;typora&#34; tag</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-05-21T13:21:58.480Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</id>
+        <id>https://codingfxj.github.io/p/fb70d7a3.html</id>
         <title>Markdown语法及快捷键</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/fb70d7a3.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;Markdown基本语法&#34;&gt;&lt;a href=&#34;#Markdown基本语法&#34; class=&#34;headerlink&#34; title=&#34;Markdown基本语法&#34;&gt;&lt;/a&gt;Markdown基本语法&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;h4 id=&#34;标题&#34;&gt;&lt;a href=&#34;#标题&#34; class=&#34;headerlink&#34; title=&#34;标题&#34;&gt;&lt;/a&gt;标题&lt;/h4&gt;&lt;/li&gt;
 &lt;/ol&gt;

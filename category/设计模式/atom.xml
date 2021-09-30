@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;设计模式&#34; category</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-06-24T01:38:00.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/06/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
+        <id>https://codingfxj.github.io/p/364ea8cc.html</id>
         <title>设计模式</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/364ea8cc.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;设计模式：为了解决某种特定问题给出的简洁而优化的解决方案。&lt;/p&gt;
 &lt;h4 id=&#34;常用设计模式&#34;&gt;&lt;a href=&#34;#常用设计模式&#34; class=&#34;headerlink&#34; title=&#34;常用设计模式&#34;&gt;&lt;/a&gt;常用设计模式&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/codepic/20210704175521.png&#34;/&gt;&lt;/p&gt;
 &lt;h3 id=&#34;工厂模式&#34;&gt;&lt;a href=&#34;#工厂模式&#34; class=&#34;headerlink&#34; title=&#34;工厂模式&#34;&gt;&lt;/a&gt;工厂模式&lt;/h3&gt;&lt;p&gt;体现了高内聚、低耦合的思想：减少页面的中的冗余代码，提高代码的重复利用率&lt;/p&gt;

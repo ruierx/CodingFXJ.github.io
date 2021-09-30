@@ -7,42 +7,42 @@
         <language>zh-CN</language>
         <pubDate>Fri, 21 May 2021 21:21:58 +0800</pubDate>
         <lastBuildDate>Fri, 21 May 2021 21:21:58 +0800</lastBuildDate>
+        <category>CSS</category>
         <category>AJAX</category>
         <category>jQuery</category>
-        <category>CSS</category>
         <category>css</category>
         <category>JS</category>
         <category>flex布局</category>
         <category>Git</category>
-        <category>this指向</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
         <category>ES6</category>
         <category>数组</category>
-        <category>懒加载</category>
         <category>时间</category>
-        <category>高阶函数</category>
+        <category>this指向</category>
         <category>闭包</category>
+        <category>懒加载</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
         <category>NPM</category>
-        <category>算法</category>
         <category>手写高阶函数</category>
-        <category>复杂度</category>
-        <category>JAVA</category>
-        <category>HTTP网络请求</category>
+        <category>算法</category>
         <category>扁平化</category>
+        <category>复杂度</category>
+        <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
         <category>Markdown</category>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/fb70d7a3.html</guid>
             <title>Markdown语法及快捷键</title>
-            <link>https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+            <link>https://codingfxj.github.io/p/fb70d7a3.html</link>
             <category>Note</category>
             <category>Typora</category>
             <category>Markdown</category>
@@ -167,9 +167,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/fcca9343.html</guid>
             <title>HEXO搭建博客笔记</title>
-            <link>https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</link>
+            <link>https://codingfxj.github.io/p/fcca9343.html</link>
             <category>HEXO</category>
             <category>Github</category>
             <category>Note</category>

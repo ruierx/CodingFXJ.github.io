@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;jquery&#34; category</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-06-16T07:57:12.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/06/16/AJAX/</id>
+        <id>https://codingfxj.github.io/p/f3334fd0.html</id>
         <title>AJAX</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/16/AJAX/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/f3334fd0.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;AJAX-的使用&#34;&gt;&lt;a href=&#34;#AJAX-的使用&#34; class=&#34;headerlink&#34; title=&#34;AJAX 的使用&#34;&gt;&lt;/a&gt;AJAX 的使用&lt;/h3&gt;&lt;p&gt;Ajax特点是&lt;code&gt;无需刷新页面便可向服务器传输或读写数据&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;创建⼀个-ajax-对象&#34;&gt;&lt;a href=&#34;#创建⼀个-ajax-对象&#34; class=&#34;headerlink&#34; title=&#34;创建⼀个 ajax 对象&#34;&gt;&lt;/a&gt;创建⼀个 ajax 对象&lt;/h4&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// IE9及以上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; xhr = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; XMLHttpRequest()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// IE9以下&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; xhr = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ActiveXObject(&lt;span class=&#34;string&#34;&gt;&amp;#x27;Mricosoft.XMLHTTP&amp;#x27;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;XMLHttpRequest-对象属性描述&#34;&gt;&lt;a href=&#34;#XMLHttpRequest-对象属性描述&#34; class=&#34;headerlink&#34; title=&#34;XMLHttpRequest 对象属性描述&#34;&gt;&lt;/a&gt;XMLHttpRequest 对象属性描述&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;AJAX.assets/20210621030002.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -70,9 +70,9 @@
         <updated>2021-06-16T07:57:12.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B004/</id>
+        <id>https://codingfxj.github.io/p/69ce317d.html</id>
         <title>jQuery笔记04</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B004/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/69ce317d.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;jQuery的API&#34;&gt;&lt;a href=&#34;#jQuery的API&#34; class=&#34;headerlink&#34; title=&#34;jQuery的API&#34;&gt;&lt;/a&gt;jQuery的API&lt;/h3&gt;&lt;h4 id=&#34;文本值操作&#34;&gt;&lt;a href=&#34;#文本值操作&#34; class=&#34;headerlink&#34; title=&#34;文本值操作&#34;&gt;&lt;/a&gt;文本值操作&lt;/h4&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;1.&lt;/span&gt;html([val|fn])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	和原生JS中的innerHTML作用一样&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2.&lt;/span&gt;text([val|fn])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	和原生JS中的innerText作用一样&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;3.&lt;/span&gt;val([val|fn|arr])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; $(&lt;span class=&#34;string&#34;&gt;&amp;quot;div&amp;quot;&lt;/span&gt;).html(&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;p&amp;gt;我是段落&amp;lt;span&amp;gt;我是span&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; $(&lt;span class=&#34;string&#34;&gt;&amp;quot;div&amp;quot;&lt;/span&gt;).text(&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;p&amp;gt;我是段落&amp;lt;span&amp;gt;我是span&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; $(&lt;span class=&#34;string&#34;&gt;&amp;quot;input&amp;quot;&lt;/span&gt;).val(&lt;span class=&#34;string&#34;&gt;&amp;quot;请输入内容&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;原生JS属性与属性节点操作&#34;&gt;&lt;a href=&#34;#原生JS属性与属性节点操作&#34; class=&#34;headerlink&#34; title=&#34;原生JS属性与属性节点操作&#34;&gt;&lt;/a&gt;原生JS属性与属性节点操作&lt;/h4&gt;&lt;h6 id=&#34;属性&#34;&gt;&lt;a href=&#34;#属性&#34; class=&#34;headerlink&#34; title=&#34;属性&#34;&gt;&lt;/a&gt;属性&lt;/h6&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;属性&lt;/strong&gt;：对象身上保存的变量就是属性&lt;br&gt;操作属性：&lt;br&gt;            对象.属性名称 = 值;&lt;br&gt;            对象[“属性名称”] = 值;&lt;/p&gt;
@@ -132,9 +132,9 @@
         <updated>2021-06-04T01:58:18.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B003/</id>
+        <id>https://codingfxj.github.io/p/f7aaa4de.html</id>
         <title>jQuery笔记03</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B003/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/f7aaa4de.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;jQuery的事件&#34;&gt;&lt;a href=&#34;#jQuery的事件&#34; class=&#34;headerlink&#34; title=&#34;jQuery的事件&#34;&gt;&lt;/a&gt;jQuery的事件&lt;/h3&gt;&lt;h4 id=&#34;事件&#34;&gt;&lt;a href=&#34;#事件&#34; class=&#34;headerlink&#34; title=&#34;事件&#34;&gt;&lt;/a&gt;事件&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;on()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   在选定的元素上绑定一个或多个事件处理函数。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;off()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   移除一个事件处理函数。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;trigger()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   根据绑定到匹配元素的给定的事件类型执行所有的处理程序和行为。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;事件的绑定&#34;&gt;&lt;a href=&#34;#事件的绑定&#34; class=&#34;headerlink&#34; title=&#34;事件的绑定&#34;&gt;&lt;/a&gt;&lt;strong&gt;事件的绑定&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt; jQuery中有两种绑定事件方式&lt;/p&gt;
@@ -209,9 +209,9 @@
         <updated>2021-06-04T01:04:40.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B002/</id>
+        <id>https://codingfxj.github.io/p/80ad9448.html</id>
         <title>jQuery笔记02</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B002/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/80ad9448.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;jQuery选择器&#34;&gt;&lt;a href=&#34;#jQuery选择器&#34; class=&#34;headerlink&#34; title=&#34;jQuery选择器&#34;&gt;&lt;/a&gt;jQuery选择器&lt;/h3&gt;&lt;h4 id=&#34;1-基本选择器：&#34;&gt;&lt;a href=&#34;#1-基本选择器：&#34; class=&#34;headerlink&#34; title=&#34;1.基本选择器：&#34;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;1.基本选择器：&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;   所有选择器      *&lt;br&gt;   标签选择器      标签名&lt;br&gt;   ID选择器          #id&lt;br&gt;   类选择器          .className&lt;br&gt;   群组选择器      .one, .two   多个选择器使用==逗号==分隔，取并集&lt;br&gt;   复合选择器      .one.two   多个选择器组合使用，取交集&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -260,9 +260,9 @@
         <updated>2021-06-04T00:40:26.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B001/</id>
+        <id>https://codingfxj.github.io/p/19a4c5f2.html</id>
         <title>jQuery笔记01</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B001/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/19a4c5f2.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;初识jQuery&#34;&gt;&lt;a href=&#34;#初识jQuery&#34; class=&#34;headerlink&#34; title=&#34;初识jQuery&#34;&gt;&lt;/a&gt;初识jQuery&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;一个优秀的JavaScript库&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;jQuery封装了很多预定义的对象和函数，jQuery本质上也是一个函数：&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt; &lt;span class=&#34;built_in&#34;&gt;window&lt;/span&gt;, &lt;span class=&#34;literal&#34;&gt;undefined&lt;/span&gt; &lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125;)( &lt;span class=&#34;built_in&#34;&gt;window&lt;/span&gt; );&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

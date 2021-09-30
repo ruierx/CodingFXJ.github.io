@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;webpack&#34; category</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-09-15T11:04:15.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/09/15/Webpack4%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
+        <id>https://codingfxj.github.io/p/f60e89e0.html</id>
         <title>Webpack4学习总结</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/09/15/Webpack4%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/f60e89e0.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Webpack学习总结&#34;&gt;&lt;a href=&#34;#Webpack学习总结&#34; class=&#34;headerlink&#34; title=&#34;Webpack学习总结&#34;&gt;&lt;/a&gt;Webpack学习总结&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Webpack&lt;/strong&gt;：是一种&lt;emp&gt;前端资源构建工具&lt;/emp&gt;，一个&lt;wavy&gt;静态模块打包器&lt;/wavy&gt;(module bundler)。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210915191904.png&#34;/&gt;&lt;/p&gt;
 &lt;h3 id=&#34;webpack五个核心概念&#34;&gt;&lt;a href=&#34;#webpack五个核心概念&#34; class=&#34;headerlink&#34; title=&#34;webpack五个核心概念&#34;&gt;&lt;/a&gt;webpack五个核心概念&lt;/h3&gt;&lt;h4 id=&#34;一、Entry&#34;&gt;&lt;a href=&#34;#一、Entry&#34; class=&#34;headerlink&#34; title=&#34;一、Entry&#34;&gt;&lt;/a&gt;一、Entry&lt;/h4&gt;&lt;p&gt;​    入口(Entry)指示 webpack 以哪个文件为入口起点开始打包&lt;/p&gt;

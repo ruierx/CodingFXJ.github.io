@@ -7,42 +7,42 @@
         <language>zh-CN</language>
         <pubDate>Tue, 27 Apr 2021 23:49:38 +0800</pubDate>
         <lastBuildDate>Tue, 27 Apr 2021 23:49:38 +0800</lastBuildDate>
+        <category>CSS</category>
         <category>AJAX</category>
         <category>jQuery</category>
-        <category>CSS</category>
         <category>css</category>
         <category>JS</category>
         <category>flex布局</category>
         <category>Git</category>
-        <category>this指向</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
         <category>ES6</category>
         <category>数组</category>
-        <category>懒加载</category>
         <category>时间</category>
-        <category>高阶函数</category>
+        <category>this指向</category>
         <category>闭包</category>
+        <category>懒加载</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
         <category>NPM</category>
-        <category>算法</category>
         <category>手写高阶函数</category>
-        <category>复杂度</category>
-        <category>JAVA</category>
-        <category>HTTP网络请求</category>
+        <category>算法</category>
         <category>扁平化</category>
+        <category>复杂度</category>
+        <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
         <category>Markdown</category>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/a91eaa72.html</guid>
             <title>Git学习笔记</title>
-            <link>https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+            <link>https://codingfxj.github.io/p/a91eaa72.html</link>
             <category>Git</category>
             <pubDate>Tue, 27 Apr 2021 23:49:38 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;Git-学习笔记&#34;&gt;&lt;a href=&#34;#Git-学习笔记&#34; class=&#34;headerlink&#34; title=&#34;Git 学习笔记&#34;&gt;&lt;/a&gt;Git 学习笔记&lt;/h3&gt;&lt;p&gt;Git是流行的版本控制，方便查看更改历史记录，备份以便恢复以前的版本。&lt;/p&gt;
@@ -127,9 +127,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/caff8000.html</guid>
             <title>Git常用命令</title>
-            <link>https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+            <link>https://codingfxj.github.io/p/caff8000.html</link>
             <category>Git</category>
             <pubDate>Thu, 15 Apr 2021 10:46:32 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Git是一个开源的分布式版本控制系统。&lt;/p&gt;

@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;css&#34; tag</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-09-15T11:13:48.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/09/15/%E5%A6%99%E5%A6%99%E6%80%AA%E7%9A%84%E3%80%8ACSS%E6%8F%AD%E7%A7%98%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/</id>
+        <id>https://codingfxj.github.io/p/6a9b0045.html</id>
         <title>妙妙怪的《CSS揭秘》读书摘要</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/09/15/%E5%A6%99%E5%A6%99%E6%80%AA%E7%9A%84%E3%80%8ACSS%E6%8F%AD%E7%A7%98%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/6a9b0045.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;看这本书前：看书，现在短视频时代，正经人谁看书啊，要看也是看视频教程和大佬博客啊！&lt;/p&gt;
 &lt;p&gt;看完这本后：似乎有一点香!(轻松有趣)&lt;/p&gt;
@@ -92,8 +92,7 @@
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210929223848.png&#34;/&gt;&lt;/p&gt;
 &lt;h4 id=&#34;自定义下划线&#34;&gt;&lt;a href=&#34;#自定义下划线&#34; class=&#34;headerlink&#34; title=&#34;自定义下划线&#34;&gt;&lt;/a&gt;自定义下划线&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background&lt;/span&gt;: &lt;span class=&#34;built_in&#34;&gt;linear-gradient&lt;/span&gt;(gray, gray) no-repeat;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-size&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-position&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1.15em&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;text-shadow&lt;/span&gt;: .&lt;span class=&#34;number&#34;&gt;05em&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; white, -.&lt;span class=&#34;number&#34;&gt;05em&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; white;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;凹凸印刷文字效果&#34;&gt;&lt;a href=&#34;#凹凸印刷文字效果&#34; class=&#34;headerlink&#34; title=&#34;凹凸印刷文字效果&#34;&gt;&lt;/a&gt;凹凸印刷文字效果&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;text-shadow&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#000&lt;/span&gt;, -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#fff&lt;/span&gt;;//凸&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;text-shadow&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#000&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#fff&lt;/span&gt;;//凹&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;满幅背景、定宽内容（页脚）&lt;/p&gt;
-&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;footer&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;max-width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;1000px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    paddint:&lt;span class=&#34;number&#34;&gt;1em&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;calc&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;满幅背景、定宽内容（页脚）&#34;&gt;&lt;a href=&#34;#满幅背景、定宽内容（页脚）&#34; class=&#34;headerlink&#34; title=&#34;满幅背景、定宽内容（页脚）&#34;&gt;&lt;/a&gt;满幅背景、定宽内容（页脚）&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;footer&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;max-width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;1000px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    paddint:&lt;span class=&#34;number&#34;&gt;1em&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;calc&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;紧贴底部的页脚&#34;&gt;&lt;a href=&#34;#紧贴底部的页脚&#34; class=&#34;headerlink&#34; title=&#34;紧贴底部的页脚&#34;&gt;&lt;/a&gt;紧贴底部的页脚&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;body&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;:flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex-direction&lt;/span&gt;:column;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;min-height&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;100vh&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;闪烁效果&#34;&gt;&lt;a href=&#34;#闪烁效果&#34; class=&#34;headerlink&#34; title=&#34;闪烁效果&#34;&gt;&lt;/a&gt;闪烁效果&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;attribute&#34;&gt;animation&lt;/span&gt;: twinkle &lt;span class=&#34;number&#34;&gt;0.5s&lt;/span&gt; infinite &lt;span class=&#34;built_in&#34;&gt;steps&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) alternate;&lt;span class=&#34;comment&#34;&gt;/*普通闪烁*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;animation&lt;/span&gt;: twinkle &lt;span class=&#34;number&#34;&gt;0.5s&lt;/span&gt; infinite   alternate; &lt;span class=&#34;comment&#34;&gt;/*真实闪烁*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 </content>
@@ -101,9 +100,9 @@
         <updated>2021-09-15T11:13:48.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/08/05/width/</id>
+        <id>https://codingfxj.github.io/p/f1a1c847.html</id>
         <title>min-width和max-width</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/08/05/width/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/f1a1c847.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;媒体查询的max-width和min-width&#34;&gt;&lt;a href=&#34;#媒体查询的max-width和min-width&#34; class=&#34;headerlink&#34; title=&#34;媒体查询的max-width和min-width&#34;&gt;&lt;/a&gt;媒体查询的max-width和min-width&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;max-width：500px      (屏幕尺寸&amp;gt;500时 样式起作用)&lt;/p&gt;
 &lt;p&gt;max-width：500px     (屏幕尺寸&amp;lt;500时 样式起作用)&lt;/p&gt;
@@ -123,9 +122,9 @@
         <updated>2021-08-05T12:59:39.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/12/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9802/</id>
+        <id>https://codingfxj.github.io/p/e42f8d23.html</id>
         <title>CSS基础知识备忘02</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/12/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9802/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/e42f8d23.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;CSS进阶&#34;&gt;&lt;a href=&#34;#CSS进阶&#34; class=&#34;headerlink&#34; title=&#34;CSS进阶&#34;&gt;&lt;/a&gt;CSS进阶&lt;/h2&gt;&lt;h3 id=&#34;规则&#34;&gt;&lt;a href=&#34;#规则&#34; class=&#34;headerlink&#34; title=&#34;@规则&#34;&gt;&lt;/a&gt;@规则&lt;/h3&gt;&lt;h4 id=&#34;1-import&#34;&gt;&lt;a href=&#34;#1-import&#34; class=&#34;headerlink&#34; title=&#34;1. import&#34;&gt;&lt;/a&gt;1. import&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@import &amp;quot;路径&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- 导入另外一个css文件--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;2-charset&#34;&gt;&lt;a href=&#34;#2-charset&#34; class=&#34;headerlink&#34; title=&#34;2. charset&#34;&gt;&lt;/a&gt;2. charset&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@charset &amp;quot;utf-8&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h6 id=&#34;3-font-face指令制作一个新字体&#34;&gt;&lt;a href=&#34;#3-font-face指令制作一个新字体&#34; class=&#34;headerlink&#34; title=&#34;3. @font-face指令制作一个新字体&#34;&gt;&lt;/a&gt;3. @font-face指令制作一个新字体&lt;/h6&gt;&lt;h3 id=&#34;块级格式化上下文&#34;&gt;&lt;a href=&#34;#块级格式化上下文&#34; class=&#34;headerlink&#34; title=&#34;块级格式化上下文&#34;&gt;&lt;/a&gt;块级格式化上下文&lt;/h3&gt;&lt;p&gt;(全称：Block Formatting Context，简称BFC)&lt;/p&gt;
@@ -243,9 +242,9 @@
         <updated>2021-06-12T06:46:32.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/</id>
+        <id>https://codingfxj.github.io/p/53bb4266.html</id>
         <title>CSS居中</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/53bb4266.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;CSS细节&#34;&gt;&lt;a href=&#34;#CSS细节&#34; class=&#34;headerlink&#34; title=&#34;CSS细节&#34;&gt;&lt;/a&gt;CSS细节&lt;/h3&gt;&lt;h4 id=&#34;1-浮动的细节（扩展）&#34;&gt;&lt;a href=&#34;#1-浮动的细节（扩展）&#34; class=&#34;headerlink&#34; title=&#34;1. 浮动的细节（扩展）&#34;&gt;&lt;/a&gt;1. 浮动的细节（扩展）&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;浮动盒子的顶边不得高于上一个盒子的顶边&lt;/p&gt;
 &lt;/li&gt;
@@ -398,9 +397,9 @@
         <updated>2021-06-10T14:46:32.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/08/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9801/</id>
+        <id>https://codingfxj.github.io/p/7d26dc99.html</id>
         <title>CSS基础知识备忘01</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/08/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9801/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/7d26dc99.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;CSS基础知识&#34;&gt;&lt;a href=&#34;#CSS基础知识&#34; class=&#34;headerlink&#34; title=&#34;CSS基础知识&#34;&gt;&lt;/a&gt;CSS基础知识&lt;/h3&gt;&lt;h4 id=&#34;绝对路径和相对路径&#34;&gt;&lt;a href=&#34;#绝对路径和相对路径&#34; class=&#34;headerlink&#34; title=&#34;绝对路径和相对路径&#34;&gt;&lt;/a&gt;绝对路径和相对路径&lt;/h4&gt;&lt;ol&gt;
 &lt;li&gt;绝对路径&lt;/li&gt;
 &lt;/ol&gt;
@@ -527,9 +526,9 @@
         <updated>2021-06-08T08:46:32.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/</id>
+        <id>https://codingfxj.github.io/p/ec1679d5.html</id>
         <title>CSS三栏布局</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/ec1679d5.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;三栏布局&#34;&gt;&lt;a href=&#34;#三栏布局&#34; class=&#34;headerlink&#34; title=&#34;三栏布局&#34;&gt;&lt;/a&gt;三栏布局&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;共同目的&lt;/strong&gt;：实现两侧宽度固定，中间宽度自适应的三栏布局，并且中间先加载渲染。&lt;/p&gt;
 &lt;h4 id=&#34;一、双飞翼布局&#34;&gt;&lt;a href=&#34;#一、双飞翼布局&#34; class=&#34;headerlink&#34; title=&#34;一、双飞翼布局&#34;&gt;&lt;/a&gt;一、双飞翼布局&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;主要思路：&lt;/strong&gt;&lt;code&gt;浮动+负margin&lt;/code&gt;&lt;/p&gt;
@@ -579,9 +578,9 @@
         <updated>2021-06-04T13:52:19.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/06/02/CSS3%E6%96%B0%E7%89%B9%E6%80%A7%E7%AC%94%E8%AE%B0/</id>
+        <id>https://codingfxj.github.io/p/1509683a.html</id>
         <title>CSS3新特性笔记</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/02/CSS3%E6%96%B0%E7%89%B9%E6%80%A7%E7%AC%94%E8%AE%B0/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/1509683a.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-前言&#34;&gt;&lt;a href=&#34;#1-前言&#34; class=&#34;headerlink&#34; title=&#34;1 前言&#34;&gt;&lt;/a&gt;1 前言&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;CSS3 相比 CSS 2 对边框、背景、渐变、文本效果、字体、转换效果、过渡、动画、图片、用户界面、盒模型、媒体查询等都有了很大的改进，新增了不少功能和属性&lt;/p&gt;
 &lt;/blockquote&gt;

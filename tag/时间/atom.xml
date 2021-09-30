@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;时间&#34; tag</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-06-06T03:57:47.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/06/06/JS%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E4%B9%8B%E6%97%B6%E9%97%B40-20/</id>
+        <id>https://codingfxj.github.io/p/7571fc24.html</id>
         <title>JS代码片段之时间0-20</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/06/06/JS%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E4%B9%8B%E6%97%B6%E9%97%B40-20/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/7571fc24.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;JS代码片段之时间0-20&#34;&gt;&lt;a href=&#34;#JS代码片段之时间0-20&#34; class=&#34;headerlink&#34; title=&#34;JS代码片段之时间0-20&#34;&gt;&lt;/a&gt;JS代码片段之时间0-20&lt;/h3&gt;&lt;h4 id=&#34;1-Date对象拿到转为HH-MM-SS-格式的时间&#34;&gt;&lt;a href=&#34;#1-Date对象拿到转为HH-MM-SS-格式的时间&#34; class=&#34;headerlink&#34; title=&#34;1.Date对象拿到转为HH:MM:SS`格式的时间&#34;&gt;&lt;/a&gt;1.Date对象拿到转为HH:MM:SS`格式的时间&lt;/h4&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; getFromDate = &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;date&lt;/span&gt; =&amp;gt;&lt;/span&gt; date.toTimeString().slice(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;getFromDate(&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;Date&lt;/span&gt;()); &lt;span class=&#34;comment&#34;&gt;// &amp;#x27;08:38:00&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;2-推算n天前的日期&#34;&gt;&lt;a href=&#34;#2-推算n天前的日期&#34; class=&#34;headerlink&#34; title=&#34;2.推算n天前的日期&#34;&gt;&lt;/a&gt;2.推算n天前的日期&lt;/h4&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;const&lt;/span&gt; daysAgo = &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;n&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; d = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;Date&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  d.setDate(d.getDate() - &lt;span class=&#34;built_in&#34;&gt;Math&lt;/span&gt;.abs(n));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; d.toISOString().split(&lt;span class=&#34;string&#34;&gt;&amp;#x27;T&amp;#x27;&lt;/span&gt;)[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;daysAgo(&lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;); &lt;span class=&#34;comment&#34;&gt;// 2020-09-16 (if current date is 2020-10-06)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;flex布局&#34; tag</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-05-15T14:10:32.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/</id>
+        <id>https://codingfxj.github.io/p/e43580c1.html</id>
         <title>flex布局</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/e43580c1.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;一、Flex-布局是什么？&#34;&gt;&lt;a href=&#34;#一、Flex-布局是什么？&#34; class=&#34;headerlink&#34; title=&#34;一、Flex 布局是什么？&#34;&gt;&lt;/a&gt;一、Flex 布局是什么？&lt;/h3&gt;&lt;p&gt;Flex 是 Flexible Box 的缩写，意为”&lt;strong&gt;弹性布局&lt;/strong&gt;“，用来为盒状模型提供最大的灵活性。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;任何一个&lt;/strong&gt;容器都可以指定为 Flex 布局。&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;

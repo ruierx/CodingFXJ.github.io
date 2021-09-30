@@ -7,42 +7,42 @@
         <language>zh-CN</language>
         <pubDate>Wed, 15 Sep 2021 19:13:48 +0800</pubDate>
         <lastBuildDate>Wed, 15 Sep 2021 19:13:48 +0800</lastBuildDate>
+        <category>CSS</category>
         <category>AJAX</category>
         <category>jQuery</category>
-        <category>CSS</category>
         <category>css</category>
         <category>JS</category>
         <category>flex布局</category>
         <category>Git</category>
-        <category>this指向</category>
         <category>HEXO</category>
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
         <category>ES6</category>
         <category>数组</category>
-        <category>懒加载</category>
         <category>时间</category>
-        <category>高阶函数</category>
+        <category>this指向</category>
         <category>闭包</category>
+        <category>懒加载</category>
+        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
         <category>NPM</category>
-        <category>算法</category>
         <category>手写高阶函数</category>
-        <category>复杂度</category>
-        <category>JAVA</category>
-        <category>HTTP网络请求</category>
+        <category>算法</category>
         <category>扁平化</category>
+        <category>复杂度</category>
+        <category>HTTP网络请求</category>
+        <category>JAVA</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
         <category>Markdown</category>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/09/15/%E5%A6%99%E5%A6%99%E6%80%AA%E7%9A%84%E3%80%8ACSS%E6%8F%AD%E7%A7%98%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/6a9b0045.html</guid>
             <title>妙妙怪的《CSS揭秘》读书摘要</title>
-            <link>https://codingfxj.github.io/2021/09/15/%E5%A6%99%E5%A6%99%E6%80%AA%E7%9A%84%E3%80%8ACSS%E6%8F%AD%E7%A7%98%E3%80%8B%E8%AF%BB%E4%B9%A6%E6%91%98%E8%A6%81/</link>
+            <link>https://codingfxj.github.io/p/6a9b0045.html</link>
             <category>CSS</category>
             <pubDate>Wed, 15 Sep 2021 19:13:48 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
@@ -97,16 +97,15 @@
 &lt;p&gt;&lt;img src=&#34;https://gitee.com/GiteeFXJ/picstore/raw/master/pics/20210929223848.png&#34;/&gt;&lt;/p&gt;
 &lt;h4 id=&#34;自定义下划线&#34;&gt;&lt;a href=&#34;#自定义下划线&#34; class=&#34;headerlink&#34; title=&#34;自定义下划线&#34;&gt;&lt;/a&gt;自定义下划线&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.box&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background&lt;/span&gt;: &lt;span class=&#34;built_in&#34;&gt;linear-gradient&lt;/span&gt;(gray, gray) no-repeat;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-size&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;background-position&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1.15em&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;text-shadow&lt;/span&gt;: .&lt;span class=&#34;number&#34;&gt;05em&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; white, -.&lt;span class=&#34;number&#34;&gt;05em&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; white;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;凹凸印刷文字效果&#34;&gt;&lt;a href=&#34;#凹凸印刷文字效果&#34; class=&#34;headerlink&#34; title=&#34;凹凸印刷文字效果&#34;&gt;&lt;/a&gt;凹凸印刷文字效果&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;text-shadow&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#000&lt;/span&gt;, -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#fff&lt;/span&gt;;//凸&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;text-shadow&lt;/span&gt;: -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#000&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;#fff&lt;/span&gt;;//凹&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;满幅背景、定宽内容（页脚）&lt;/p&gt;
-&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;footer&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;max-width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;1000px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    paddint:&lt;span class=&#34;number&#34;&gt;1em&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;calc&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;满幅背景、定宽内容（页脚）&#34;&gt;&lt;a href=&#34;#满幅背景、定宽内容（页脚）&#34; class=&#34;headerlink&#34; title=&#34;满幅背景、定宽内容（页脚）&#34;&gt;&lt;/a&gt;满幅背景、定宽内容（页脚）&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;footer&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;max-width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;1000px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    paddint:&lt;span class=&#34;number&#34;&gt;1em&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;calc&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;50%&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;500px&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;紧贴底部的页脚&#34;&gt;&lt;a href=&#34;#紧贴底部的页脚&#34; class=&#34;headerlink&#34; title=&#34;紧贴底部的页脚&#34;&gt;&lt;/a&gt;紧贴底部的页脚&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;body&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;:flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex-direction&lt;/span&gt;:column;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;min-height&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;100vh&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attribute&#34;&gt;flex&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h4 id=&#34;闪烁效果&#34;&gt;&lt;a href=&#34;#闪烁效果&#34; class=&#34;headerlink&#34; title=&#34;闪烁效果&#34;&gt;&lt;/a&gt;闪烁效果&lt;/h4&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;attribute&#34;&gt;animation&lt;/span&gt;: twinkle &lt;span class=&#34;number&#34;&gt;0.5s&lt;/span&gt; infinite &lt;span class=&#34;built_in&#34;&gt;steps&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) alternate;&lt;span class=&#34;comment&#34;&gt;/*普通闪烁*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;animation&lt;/span&gt;: twinkle &lt;span class=&#34;number&#34;&gt;0.5s&lt;/span&gt; infinite   alternate; &lt;span class=&#34;comment&#34;&gt;/*真实闪烁*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/09/15/Webpack4%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/f60e89e0.html</guid>
             <title>Webpack4学习总结</title>
-            <link>https://codingfxj.github.io/2021/09/15/Webpack4%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</link>
+            <link>https://codingfxj.github.io/p/f60e89e0.html</link>
             <category>Webpack</category>
             <pubDate>Wed, 15 Sep 2021 19:04:15 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;Webpack学习总结&#34;&gt;&lt;a href=&#34;#Webpack学习总结&#34; class=&#34;headerlink&#34; title=&#34;Webpack学习总结&#34;&gt;&lt;/a&gt;Webpack学习总结&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;Webpack&lt;/strong&gt;：是一种&lt;emp&gt;前端资源构建工具&lt;/emp&gt;，一个&lt;wavy&gt;静态模块打包器&lt;/wavy&gt;(module bundler)。&lt;/p&gt;
@@ -242,9 +241,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/08/05/width/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/f1a1c847.html</guid>
             <title>min-width和max-width</title>
-            <link>https://codingfxj.github.io/2021/08/05/width/</link>
+            <link>https://codingfxj.github.io/p/f1a1c847.html</link>
             <category>CSS</category>
             <pubDate>Thu, 05 Aug 2021 20:59:39 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;媒体查询的max-width和min-width&#34;&gt;&lt;a href=&#34;#媒体查询的max-width和min-width&#34; class=&#34;headerlink&#34; title=&#34;媒体查询的max-width和min-width&#34;&gt;&lt;/a&gt;媒体查询的max-width和min-width&lt;/h2&gt;&lt;blockquote&gt;
@@ -264,9 +263,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/23/%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3Vue%E9%A1%B9%E7%9B%AE/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/de8a12f5.html</guid>
             <title>快速了解Vue项目</title>
-            <link>https://codingfxj.github.io/2021/07/23/%E5%BF%AB%E9%80%9F%E4%BA%86%E8%A7%A3Vue%E9%A1%B9%E7%9B%AE/</link>
+            <link>https://codingfxj.github.io/p/de8a12f5.html</link>
             <category>Vue</category>
             <pubDate>Fri, 23 Jul 2021 21:16:58 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;写在最前&#34;&gt;&lt;a href=&#34;#写在最前&#34; class=&#34;headerlink&#34; title=&#34;写在最前&#34;&gt;&lt;/a&gt;写在最前&lt;/h3&gt;&lt;p&gt;今天刚入职需要了解公司项目，刚开始感觉操作有点迷，浪费了不少时间，下面总结一下快速了解Vue项目的大致思路。&lt;/p&gt;
@@ -299,9 +298,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/735e5788.html</guid>
             <title>排序算法</title>
-            <link>https://codingfxj.github.io/2021/07/16/%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</link>
+            <link>https://codingfxj.github.io/p/735e5788.html</link>
             <category>算法</category>
             <pubDate>Fri, 16 Jul 2021 23:41:41 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;参考网站：&lt;a href=&#34;https://visualgo.net/en&#34;&gt;&lt;strong&gt;排序动画图解&lt;/strong&gt;   &lt;/a&gt;&lt;/p&gt;
@@ -318,9 +317,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/16/%E6%89%8B%E5%86%99Promise%E5%85%A8%E8%BF%87%E7%A8%8B/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/25eeb00.html</guid>
             <title>手写Promise全过程</title>
-            <link>https://codingfxj.github.io/2021/07/16/%E6%89%8B%E5%86%99Promise%E5%85%A8%E8%BF%87%E7%A8%8B/</link>
+            <link>https://codingfxj.github.io/p/25eeb00.html</link>
             <category>JS</category>
             <pubDate>Fri, 16 Jul 2021 23:39:04 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;手写Promise全过程&#34;&gt;&lt;a href=&#34;#手写Promise全过程&#34; class=&#34;headerlink&#34; title=&#34;手写Promise全过程&#34;&gt;&lt;/a&gt;手写Promise全过程&lt;/h2&gt;&lt;h3 id=&#34;一、声名Promise并绑定this&#34;&gt;&lt;a href=&#34;#一、声名Promise并绑定this&#34; class=&#34;headerlink&#34; title=&#34;一、声名Promise并绑定this&#34;&gt;&lt;/a&gt;一、声名Promise并绑定this&lt;/h3&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Promise&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 1.定义三个状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; PENDING = &lt;span class=&#34;string&#34;&gt;&amp;#x27;pending&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; FUFILLED = &lt;span class=&#34;string&#34;&gt;&amp;#x27;fulfilled&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; REJECTED = &lt;span class=&#34;string&#34;&gt;&amp;#x27;rejected&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 2.构造函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;constructor&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;executor&lt;/span&gt;)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;//初始态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.status = &lt;span class=&#34;built_in&#34;&gt;Promise&lt;/span&gt;.PENDING&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.value = &lt;span class=&#34;literal&#34;&gt;null&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;// 绑定this&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            executor(&lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.resolve.bind(&lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;), &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.reject.bind(&lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 3.成功状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;resolve&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;value&lt;/span&gt;)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.status = &lt;span class=&#34;built_in&#34;&gt;Promise&lt;/span&gt;.FUFILLED&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.value = value&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 4.失败状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;reject&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;reason&lt;/span&gt;)&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.status = &lt;span class=&#34;built_in&#34;&gt;Promise&lt;/span&gt;.REJECTED&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.reason = reason&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -377,17 +376,17 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/07/ES6%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/de81bfb9.html</guid>
             <title>ES6新特性</title>
-            <link>https://codingfxj.github.io/2021/07/07/ES6%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+            <link>https://codingfxj.github.io/p/de81bfb9.html</link>
             <category>JS</category>
             <pubDate>Wed, 07 Jul 2021 16:09:19 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;ES6新特性&#34;&gt;&lt;a href=&#34;#ES6新特性&#34; class=&#34;headerlink&#34; title=&#34;ES6新特性&#34;&gt;&lt;/a&gt;ES6新特性&lt;/h1&gt;&lt;h3 id=&#34;const-与-let-变量&#34;&gt;&lt;a href=&#34;#const-与-let-变量&#34; class=&#34;headerlink&#34; title=&#34;const 与 let 变量&#34;&gt;&lt;/a&gt;const 与 let 变量&lt;/h3&gt;&lt;h3 id=&#34;模板字面量&#34;&gt;&lt;a href=&#34;#模板字面量&#34; class=&#34;headerlink&#34; title=&#34;模板字面量&#34;&gt;&lt;/a&gt;模板字面量&lt;/h3&gt;&lt;h3 id=&#34;解构&#34;&gt;&lt;a href=&#34;#解构&#34; class=&#34;headerlink&#34; title=&#34;解构&#34;&gt;&lt;/a&gt;解构&lt;/h3&gt;&lt;h3 id=&#34;对象字面量简写法&#34;&gt;&lt;a href=&#34;#对象字面量简写法&#34; class=&#34;headerlink&#34; title=&#34;对象字面量简写法&#34;&gt;&lt;/a&gt;对象字面量简写法&lt;/h3&gt;&lt;h3 id=&#34;for…of循环&#34;&gt;&lt;a href=&#34;#for…of循环&#34; class=&#34;headerlink&#34; title=&#34;for…of循环&#34;&gt;&lt;/a&gt;for…of循环&lt;/h3&gt;&lt;h3 id=&#34;展开运算符&#34;&gt;&lt;a href=&#34;#展开运算符&#34; class=&#34;headerlink&#34; title=&#34;展开运算符&#34;&gt;&lt;/a&gt;展开运算符&lt;/h3&gt;&lt;h3 id=&#34;ES6箭头函数&#34;&gt;&lt;a href=&#34;#ES6箭头函数&#34; class=&#34;headerlink&#34; title=&#34;ES6箭头函数&#34;&gt;&lt;/a&gt;ES6箭头函数&lt;/h3&gt;&lt;h3 id=&#34;Javascript类&#34;&gt;&lt;a href=&#34;#Javascript类&#34; class=&#34;headerlink&#34; title=&#34;Javascript类&#34;&gt;&lt;/a&gt;Javascript类&lt;/h3&gt;&lt;h3 id=&#34;promise&#34;&gt;&lt;a href=&#34;#promise&#34; class=&#34;headerlink&#34; title=&#34;promise&#34;&gt;&lt;/a&gt;promise&lt;/h3&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/05/JS%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/602555d7.html</guid>
             <title>JS图片懒加载</title>
-            <link>https://codingfxj.github.io/2021/07/05/JS%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD/</link>
+            <link>https://codingfxj.github.io/p/602555d7.html</link>
             <category>JS</category>
             <category>懒加载</category>
             <pubDate>Mon, 05 Jul 2021 18:08:41 +0800</pubDate>
@@ -397,9 +396,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/04/%E6%89%8B%E5%86%99%E5%B8%B8%E7%94%A8%E9%AB%98%E9%98%B6%E6%96%B9%E6%B3%95/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/b59adaed.html</guid>
             <title>手写常用高阶函数</title>
-            <link>https://codingfxj.github.io/2021/07/04/%E6%89%8B%E5%86%99%E5%B8%B8%E7%94%A8%E9%AB%98%E9%98%B6%E6%96%B9%E6%B3%95/</link>
+            <link>https://codingfxj.github.io/p/b59adaed.html</link>
             <category>JS</category>
             <category>手写高阶函数</category>
             <pubDate>Sun, 04 Jul 2021 23:19:32 +0800</pubDate>
@@ -421,9 +420,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/9df07266.html</guid>
             <title>浏览器网页请求过程</title>
-            <link>https://codingfxj.github.io/2021/07/04/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BD%91%E9%A1%B5%E8%AF%B7%E6%B1%82%E8%BF%87%E7%A8%8B/</link>
+            <link>https://codingfxj.github.io/p/9df07266.html</link>
             <category>HTTP网络请求</category>
             <pubDate>Sun, 04 Jul 2021 15:12:59 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;完整的HTTP请求过程&#34;&gt;&lt;a href=&#34;#完整的HTTP请求过程&#34; class=&#34;headerlink&#34; title=&#34;完整的HTTP请求过程&#34;&gt;&lt;/a&gt;完整的HTTP请求过程&lt;/h2&gt;&lt;blockquote&gt;
@@ -497,9 +496,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/04/JS%E9%97%AD%E5%8C%85/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/87e33057.html</guid>
             <title>JS闭包</title>
-            <link>https://codingfxj.github.io/2021/07/04/JS%E9%97%AD%E5%8C%85/</link>
+            <link>https://codingfxj.github.io/p/87e33057.html</link>
             <category>JS</category>
             <category>闭包</category>
             <pubDate>Sun, 04 Jul 2021 09:03:40 +0800</pubDate>
@@ -540,9 +539,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/04/JS%E4%B8%AD%E7%9A%84this%E6%8C%87%E5%90%91/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/d6b539d3.html</guid>
             <title>JS中的this指向</title>
-            <link>https://codingfxj.github.io/2021/07/04/JS%E4%B8%AD%E7%9A%84this%E6%8C%87%E5%90%91/</link>
+            <link>https://codingfxj.github.io/p/d6b539d3.html</link>
             <category>JS</category>
             <category>this指向</category>
             <pubDate>Sun, 04 Jul 2021 08:19:22 +0800</pubDate>
@@ -628,9 +627,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/07/01/vue%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/bc152925.html</guid>
             <title>vue面试题</title>
-            <link>https://codingfxj.github.io/2021/07/01/vue%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+            <link>https://codingfxj.github.io/p/bc152925.html</link>
             <category>Vue</category>
             <pubDate>Thu, 01 Jul 2021 16:28:11 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;v-if-和v-for优先级&#34;&gt;&lt;a href=&#34;#v-if-和v-for优先级&#34; class=&#34;headerlink&#34; title=&#34;v-if 和v-for优先级&#34;&gt;&lt;/a&gt;v-if 和v-for优先级&lt;/h3&gt;&lt;blockquote&gt;
@@ -730,9 +729,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/364ea8cc.html</guid>
             <title>设计模式</title>
-            <link>https://codingfxj.github.io/2021/06/24/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link>
+            <link>https://codingfxj.github.io/p/364ea8cc.html</link>
             <category>设计模式</category>
             <pubDate>Thu, 24 Jun 2021 09:38:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;设计模式：为了解决某种特定问题给出的简洁而优化的解决方案。&lt;/p&gt;
@@ -755,9 +754,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/22/%E6%95%B0%E7%BB%84%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/acae6c2a.html</guid>
             <title>数组常见应用</title>
-            <link>https://codingfxj.github.io/2021/06/22/%E6%95%B0%E7%BB%84%E5%B8%B8%E8%A7%81%E5%BA%94%E7%94%A8/</link>
+            <link>https://codingfxj.github.io/p/acae6c2a.html</link>
             <category>JS</category>
             <category>数组</category>
             <pubDate>Tue, 22 Jun 2021 19:38:57 +0800</pubDate>
@@ -798,9 +797,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/1abadc07.html</guid>
             <title>死锁</title>
-            <link>https://codingfxj.github.io/2021/06/18/%E6%AD%BB%E9%94%81/</link>
+            <link>https://codingfxj.github.io/p/1abadc07.html</link>
             <category>JAVA</category>
             <pubDate>Fri, 18 Jun 2021 21:17:17 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;生活中的死锁&#34;&gt;&lt;a href=&#34;#生活中的死锁&#34; class=&#34;headerlink&#34; title=&#34;生活中的死锁&#34;&gt;&lt;/a&gt;生活中的死锁&lt;/h3&gt;&lt;div class=&#34;note warning flat&#34;&gt;&lt;p&gt;情景一：找工作中的我，工作要先有工作经验才能工作，但是我需要先有工作才能有工作经验。怎么破？&lt;/p&gt;
@@ -835,9 +834,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/16/JS%E9%9A%BE%E7%82%B9%E5%A4%8D%E4%B9%A0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/e34d5323.html</guid>
             <title>JS难点复习</title>
-            <link>https://codingfxj.github.io/2021/06/16/JS%E9%9A%BE%E7%82%B9%E5%A4%8D%E4%B9%A0/</link>
+            <link>https://codingfxj.github.io/p/e34d5323.html</link>
             <category>JS</category>
             <pubDate>Wed, 16 Jun 2021 23:48:04 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;原型和原型链&#34;&gt;&lt;a href=&#34;#原型和原型链&#34; class=&#34;headerlink&#34; title=&#34;原型和原型链&#34;&gt;&lt;/a&gt;原型和原型链&lt;/h3&gt;&lt;p&gt;ES5中，构造函数创建对象的方式，每个函数都会重新开辟内存空间，浪费内存。&lt;/p&gt;
@@ -997,9 +996,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/16/LeetCode%E7%AE%97%E6%B3%95%E9%A2%980-5/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/3e435058.html</guid>
             <title>LeetCode算法题0-5</title>
-            <link>https://codingfxj.github.io/2021/06/16/LeetCode%E7%AE%97%E6%B3%95%E9%A2%980-5/</link>
+            <link>https://codingfxj.github.io/p/3e435058.html</link>
             <category>LeetCode</category>
             <pubDate>Wed, 16 Jun 2021 23:44:23 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;一、括号匹配&#34;&gt;&lt;a href=&#34;#一、括号匹配&#34; class=&#34;headerlink&#34; title=&#34;一、括号匹配&#34;&gt;&lt;/a&gt;一、括号匹配&lt;/h3&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; str1 = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;[]&amp;#125;&amp;#x27;&lt;/span&gt;	&lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; str2 = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;[[]&amp;#125;&amp;#x27;&lt;/span&gt;	&lt;span class=&#34;comment&#34;&gt;//false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; str3 = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;[]&amp;#125;[&amp;#x27;&lt;/span&gt;	&lt;span class=&#34;comment&#34;&gt;//false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; str4 = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;[()]&amp;#125;&amp;#x27;&lt;/span&gt;	&lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -1014,9 +1013,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/16/AJAX/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/f3334fd0.html</guid>
             <title>AJAX</title>
-            <link>https://codingfxj.github.io/2021/06/16/AJAX/</link>
+            <link>https://codingfxj.github.io/p/f3334fd0.html</link>
             <category>AJAX</category>
             <category>jQuery</category>
             <pubDate>Wed, 16 Jun 2021 15:57:12 +0800</pubDate>
@@ -1047,9 +1046,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/12/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9802/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/e42f8d23.html</guid>
             <title>CSS基础知识备忘02</title>
-            <link>https://codingfxj.github.io/2021/06/12/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9802/</link>
+            <link>https://codingfxj.github.io/p/e42f8d23.html</link>
             <category>css</category>
             <pubDate>Sat, 12 Jun 2021 14:46:32 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;CSS进阶&#34;&gt;&lt;a href=&#34;#CSS进阶&#34; class=&#34;headerlink&#34; title=&#34;CSS进阶&#34;&gt;&lt;/a&gt;CSS进阶&lt;/h2&gt;&lt;h3 id=&#34;规则&#34;&gt;&lt;a href=&#34;#规则&#34; class=&#34;headerlink&#34; title=&#34;@规则&#34;&gt;&lt;/a&gt;@规则&lt;/h3&gt;&lt;h4 id=&#34;1-import&#34;&gt;&lt;a href=&#34;#1-import&#34; class=&#34;headerlink&#34; title=&#34;1. import&#34;&gt;&lt;/a&gt;1. import&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@import &amp;quot;路径&amp;quot;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!-- 导入另外一个css文件--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -1167,9 +1166,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/53bb4266.html</guid>
             <title>CSS居中</title>
-            <link>https://codingfxj.github.io/2021/06/10/CSS%E5%B1%85%E4%B8%AD/</link>
+            <link>https://codingfxj.github.io/p/53bb4266.html</link>
             <category>CSS</category>
             <pubDate>Thu, 10 Jun 2021 22:46:32 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;CSS细节&#34;&gt;&lt;a href=&#34;#CSS细节&#34; class=&#34;headerlink&#34; title=&#34;CSS细节&#34;&gt;&lt;/a&gt;CSS细节&lt;/h3&gt;&lt;h4 id=&#34;1-浮动的细节（扩展）&#34;&gt;&lt;a href=&#34;#1-浮动的细节（扩展）&#34; class=&#34;headerlink&#34; title=&#34;1. 浮动的细节（扩展）&#34;&gt;&lt;/a&gt;1. 浮动的细节（扩展）&lt;/h4&gt;&lt;ul&gt;
@@ -1322,9 +1321,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/09/JS%E5%B8%B8%E7%94%A8%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/9802f9da.html</guid>
             <title>JS常用高阶函数</title>
-            <link>https://codingfxj.github.io/2021/06/09/JS%E5%B8%B8%E7%94%A8%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</link>
+            <link>https://codingfxj.github.io/p/9802f9da.html</link>
             <category>JS</category>
             <category>ES6</category>
             <category>高阶函数</category>
@@ -1416,9 +1415,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/09/JS%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E4%B9%8B%E6%95%B0%E7%BB%8420-50/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/141169e6.html</guid>
             <title>JS代码片段之数组20-50</title>
-            <link>https://codingfxj.github.io/2021/06/09/JS%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E4%B9%8B%E6%95%B0%E7%BB%8420-50/</link>
+            <link>https://codingfxj.github.io/p/141169e6.html</link>
             <category>JS</category>
             <category>ES6</category>
             <category>数组</category>
@@ -1496,9 +1495,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/08/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9801/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/7d26dc99.html</guid>
             <title>CSS基础知识备忘01</title>
-            <link>https://codingfxj.github.io/2021/06/08/CSS%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%87%E5%BF%9801/</link>
+            <link>https://codingfxj.github.io/p/7d26dc99.html</link>
             <category>css</category>
             <pubDate>Tue, 08 Jun 2021 16:46:32 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;CSS基础知识&#34;&gt;&lt;a href=&#34;#CSS基础知识&#34; class=&#34;headerlink&#34; title=&#34;CSS基础知识&#34;&gt;&lt;/a&gt;CSS基础知识&lt;/h3&gt;&lt;h4 id=&#34;绝对路径和相对路径&#34;&gt;&lt;a href=&#34;#绝对路径和相对路径&#34; class=&#34;headerlink&#34; title=&#34;绝对路径和相对路径&#34;&gt;&lt;/a&gt;绝对路径和相对路径&lt;/h4&gt;&lt;ol&gt;
@@ -1625,9 +1624,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/06/JS%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E4%B9%8B%E6%97%B6%E9%97%B40-20/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/7571fc24.html</guid>
             <title>JS代码片段之时间0-20</title>
-            <link>https://codingfxj.github.io/2021/06/06/JS%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%E4%B9%8B%E6%97%B6%E9%97%B40-20/</link>
+            <link>https://codingfxj.github.io/p/7571fc24.html</link>
             <category>JS</category>
             <category>ES6</category>
             <category>时间</category>
@@ -1675,9 +1674,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/ec1679d5.html</guid>
             <title>CSS三栏布局</title>
-            <link>https://codingfxj.github.io/2021/06/04/CSS%E4%B8%89%E6%A0%8F%E5%B8%83%E5%B1%80/</link>
+            <link>https://codingfxj.github.io/p/ec1679d5.html</link>
             <category>CSS</category>
             <pubDate>Fri, 04 Jun 2021 21:52:19 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;三栏布局&#34;&gt;&lt;a href=&#34;#三栏布局&#34; class=&#34;headerlink&#34; title=&#34;三栏布局&#34;&gt;&lt;/a&gt;三栏布局&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;共同目的&lt;/strong&gt;：实现两侧宽度固定，中间宽度自适应的三栏布局，并且中间先加载渲染。&lt;/p&gt;
@@ -1727,9 +1726,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/04/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/efc8f5d2.html</guid>
             <title>数组扁平化方案</title>
-            <link>https://codingfxj.github.io/2021/06/04/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96/</link>
+            <link>https://codingfxj.github.io/p/efc8f5d2.html</link>
             <category>JS</category>
             <category>数组</category>
             <category>扁平化</category>
@@ -1752,9 +1751,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B004/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/69ce317d.html</guid>
             <title>jQuery笔记04</title>
-            <link>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B004/</link>
+            <link>https://codingfxj.github.io/p/69ce317d.html</link>
             <category>jQuery</category>
             <pubDate>Fri, 04 Jun 2021 09:58:18 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;jQuery的API&#34;&gt;&lt;a href=&#34;#jQuery的API&#34; class=&#34;headerlink&#34; title=&#34;jQuery的API&#34;&gt;&lt;/a&gt;jQuery的API&lt;/h3&gt;&lt;h4 id=&#34;文本值操作&#34;&gt;&lt;a href=&#34;#文本值操作&#34; class=&#34;headerlink&#34; title=&#34;文本值操作&#34;&gt;&lt;/a&gt;文本值操作&lt;/h4&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;1.&lt;/span&gt;html([val|fn])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	和原生JS中的innerHTML作用一样&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;2.&lt;/span&gt;text([val|fn])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	和原生JS中的innerText作用一样&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;number&#34;&gt;3.&lt;/span&gt;val([val|fn|arr])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; $(&lt;span class=&#34;string&#34;&gt;&amp;quot;div&amp;quot;&lt;/span&gt;).html(&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;p&amp;gt;我是段落&amp;lt;span&amp;gt;我是span&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; $(&lt;span class=&#34;string&#34;&gt;&amp;quot;div&amp;quot;&lt;/span&gt;).text(&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;p&amp;gt;我是段落&amp;lt;span&amp;gt;我是span&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; $(&lt;span class=&#34;string&#34;&gt;&amp;quot;input&amp;quot;&lt;/span&gt;).val(&lt;span class=&#34;string&#34;&gt;&amp;quot;请输入内容&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -1814,9 +1813,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B003/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/f7aaa4de.html</guid>
             <title>jQuery笔记03</title>
-            <link>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B003/</link>
+            <link>https://codingfxj.github.io/p/f7aaa4de.html</link>
             <category>jQuery</category>
             <pubDate>Fri, 04 Jun 2021 09:04:40 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;jQuery的事件&#34;&gt;&lt;a href=&#34;#jQuery的事件&#34; class=&#34;headerlink&#34; title=&#34;jQuery的事件&#34;&gt;&lt;/a&gt;jQuery的事件&lt;/h3&gt;&lt;h4 id=&#34;事件&#34;&gt;&lt;a href=&#34;#事件&#34; class=&#34;headerlink&#34; title=&#34;事件&#34;&gt;&lt;/a&gt;事件&lt;/h4&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;on()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   在选定的元素上绑定一个或多个事件处理函数。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;off()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   移除一个事件处理函数。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;trigger()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   根据绑定到匹配元素的给定的事件类型执行所有的处理程序和行为。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -1891,9 +1890,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B002/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/80ad9448.html</guid>
             <title>jQuery笔记02</title>
-            <link>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B002/</link>
+            <link>https://codingfxj.github.io/p/80ad9448.html</link>
             <category>jQuery</category>
             <pubDate>Fri, 04 Jun 2021 08:40:26 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;jQuery选择器&#34;&gt;&lt;a href=&#34;#jQuery选择器&#34; class=&#34;headerlink&#34; title=&#34;jQuery选择器&#34;&gt;&lt;/a&gt;jQuery选择器&lt;/h3&gt;&lt;h4 id=&#34;1-基本选择器：&#34;&gt;&lt;a href=&#34;#1-基本选择器：&#34; class=&#34;headerlink&#34; title=&#34;1.基本选择器：&#34;&gt;&lt;/a&gt;&lt;strong&gt;&lt;em&gt;1.基本选择器：&lt;/em&gt;&lt;/strong&gt;&lt;/h4&gt;&lt;blockquote&gt;
@@ -1942,9 +1941,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B001/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/19a4c5f2.html</guid>
             <title>jQuery笔记01</title>
-            <link>https://codingfxj.github.io/2021/06/04/jQuery%E7%AC%94%E8%AE%B001/</link>
+            <link>https://codingfxj.github.io/p/19a4c5f2.html</link>
             <category>jQuery</category>
             <pubDate>Fri, 04 Jun 2021 08:38:48 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;初识jQuery&#34;&gt;&lt;a href=&#34;#初识jQuery&#34; class=&#34;headerlink&#34; title=&#34;初识jQuery&#34;&gt;&lt;/a&gt;初识jQuery&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;一个优秀的JavaScript库&lt;/strong&gt;&lt;/p&gt;
@@ -2041,9 +2040,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/02/CSS3%E6%96%B0%E7%89%B9%E6%80%A7%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/1509683a.html</guid>
             <title>CSS3新特性笔记</title>
-            <link>https://codingfxj.github.io/2021/06/02/CSS3%E6%96%B0%E7%89%B9%E6%80%A7%E7%AC%94%E8%AE%B0/</link>
+            <link>https://codingfxj.github.io/p/1509683a.html</link>
             <category>CSS</category>
             <pubDate>Wed, 02 Jun 2021 22:06:48 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;1-前言&#34;&gt;&lt;a href=&#34;#1-前言&#34; class=&#34;headerlink&#34; title=&#34;1 前言&#34;&gt;&lt;/a&gt;1 前言&lt;/h2&gt;&lt;blockquote&gt;
@@ -2269,9 +2268,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/02/Vue%E8%84%9A%E6%89%8B%E6%9E%B6%E6%90%AD%E5%BB%BA/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/f1428b32.html</guid>
             <title>Vue脚手架搭建</title>
-            <link>https://codingfxj.github.io/2021/06/02/Vue%E8%84%9A%E6%89%8B%E6%9E%B6%E6%90%AD%E5%BB%BA/</link>
+            <link>https://codingfxj.github.io/p/f1428b32.html</link>
             <category>Vue</category>
             <pubDate>Wed, 02 Jun 2021 20:16:44 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;脚手架项目搭建&#34;&gt;&lt;a href=&#34;#脚手架项目搭建&#34; class=&#34;headerlink&#34; title=&#34;脚手架项目搭建&#34;&gt;&lt;/a&gt;脚手架项目搭建&lt;/h2&gt;&lt;h4 id=&#34;安装&#34;&gt;&lt;a href=&#34;#安装&#34; class=&#34;headerlink&#34; title=&#34;安装&#34;&gt;&lt;/a&gt;安装&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;安装： npm i @vue/cli -g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;或者：  npm i &lt;span class=&#34;string&#34;&gt;&amp;quot;@vue/cli&amp;quot;&lt;/span&gt; -g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;安装指定版本：npm install -g vue-cli@版本号 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;#npm install -g @vue/cli@版本号&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;卸载：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	npm uninstall -g @vue/cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -2290,9 +2289,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/02/Vue%E7%BB%84%E4%BB%B6/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/5fcafa01.html</guid>
             <title>Vue组件</title>
-            <link>https://codingfxj.github.io/2021/06/02/Vue%E7%BB%84%E4%BB%B6/</link>
+            <link>https://codingfxj.github.io/p/5fcafa01.html</link>
             <category>Vue</category>
             <pubDate>Wed, 02 Jun 2021 12:39:46 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;Vue组件&#34;&gt;&lt;a href=&#34;#Vue组件&#34; class=&#34;headerlink&#34; title=&#34;Vue组件&#34;&gt;&lt;/a&gt;Vue组件&lt;/h2&gt;&lt;h3 id=&#34;组件创建-一&#34;&gt;&lt;a href=&#34;#组件创建-一&#34; class=&#34;headerlink&#34; title=&#34;组件创建(一)&#34;&gt;&lt;/a&gt;组件创建(一)&lt;/h3&gt;&lt;blockquote&gt;
@@ -2359,9 +2358,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/02/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/83f13096.html</guid>
             <title>Vue生命周期</title>
-            <link>https://codingfxj.github.io/2021/06/02/Vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</link>
+            <link>https://codingfxj.github.io/p/83f13096.html</link>
             <category>Vue</category>
             <pubDate>Wed, 02 Jun 2021 12:39:29 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;Vue生命周期&#34;&gt;&lt;a href=&#34;#Vue生命周期&#34; class=&#34;headerlink&#34; title=&#34;Vue生命周期&#34;&gt;&lt;/a&gt;Vue生命周期&lt;/h2&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; vm = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Vue(&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;beforeCreate&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;,    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 实例刚在内存中被创建出来，还没初始化好 data 和 methods 属性之前调用此函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;created&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;,    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 实例已经在内存中创建完成，此时 data 和 methods 属性初始化完成，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//页面（HTML）加载完成之前（未开始编译模板）调用此函数。执行顺序：父组件 -&amp;gt; 子组件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;beforeMount&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;,    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 此时已经完成了模板的编译，但是还没有挂载到页面中，在挂载开始之前调用此函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;mounted&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;, &lt;span class=&#34;comment&#34;&gt;// 此时已经将编译好的模板，挂载到了页面指定的容器中显示。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//页面（HTML）加载完成之后调用此函数。执行顺序：子组件 -&amp;gt; 父组件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;beforeUpdate&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;,    &lt;span class=&#34;comment&#34;&gt;// 状态更新之前调用此函数，此时 data 中的状态值是最新的，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//但是界面上显示的数据还是旧的，因为此时还没有开始重新渲染 DOM 节点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;updated&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;, &lt;span class=&#34;comment&#34;&gt;// 状态更新完成之后调用此函数，此时 data 中的状态值和界面上显示的数据，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//都已经完成了更新，界面已经被重新渲染&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;beforeDestroy&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;,    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 实例销毁之前调用此函数。在这一步，实例仍然完全可用&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;destroyed&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;&lt;/span&gt;)&lt;/span&gt; &amp;#123; &amp;#125;,    &lt;span class=&#34;comment&#34;&gt;// 实例销毁后调用此函数。该钩子被调用后，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//对应 Vue 实例的所有指令都被解绑，所有的事件监听器被移除，所有的子实例也都被销毁&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -2412,9 +2411,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/02/Vue%E5%B1%9E%E6%80%A7/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/3290eff4.html</guid>
             <title>Vue属性</title>
-            <link>https://codingfxj.github.io/2021/06/02/Vue%E5%B1%9E%E6%80%A7/</link>
+            <link>https://codingfxj.github.io/p/3290eff4.html</link>
             <category>Vue</category>
             <pubDate>Wed, 02 Jun 2021 12:38:35 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;Vue-常用属性&#34;&gt;&lt;a href=&#34;#Vue-常用属性&#34; class=&#34;headerlink&#34; title=&#34;Vue 常用属性&#34;&gt;&lt;/a&gt;Vue 常用属性&lt;/h2&gt;&lt;h3 id=&#34;整体总结&#34;&gt;&lt;a href=&#34;#整体总结&#34; class=&#34;headerlink&#34; title=&#34;整体总结&#34;&gt;&lt;/a&gt;整体总结&lt;/h3&gt;&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; vm = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Vue(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;el&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;#x27;#app&amp;#x27;&lt;/span&gt;,    &lt;span class=&#34;comment&#34;&gt;// 控制区域&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;data&lt;/span&gt;: &amp;#123; &amp;#125;,    &lt;span class=&#34;comment&#34;&gt;// 定义数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;methods&lt;/span&gt;: &amp;#123; &amp;#125;,    &lt;span class=&#34;comment&#34;&gt;// 定义事件方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   	  &lt;span class=&#34;attr&#34;&gt;computed&lt;/span&gt;:&amp;#123;&amp;#125;		&lt;span class=&#34;comment&#34;&gt;//定义data数据逻辑处理方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;watch&lt;/span&gt;:&amp;#123; &amp;#125;    &lt;span class=&#34;comment&#34;&gt;// 监听值的变化，然后执行相对应的函数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;filters&lt;/span&gt;: &amp;#123; &amp;#125;,    &lt;span class=&#34;comment&#34;&gt;// 定义私有的过滤器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;directives&lt;/span&gt;: &amp;#123; &amp;#125;,    &lt;span class=&#34;comment&#34;&gt;// 自定义指令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;attr&#34;&gt;components&lt;/span&gt;: &amp;#123; &amp;#125;,    &lt;span class=&#34;comment&#34;&gt;// 定义实例内部私有的组件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -2465,9 +2464,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/01/Vue%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/e0886ac8.html</guid>
             <title>Vue基础语法</title>
-            <link>https://codingfxj.github.io/2021/06/01/Vue%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link>
+            <link>https://codingfxj.github.io/p/e0886ac8.html</link>
             <category>Vue</category>
             <pubDate>Tue, 01 Jun 2021 19:44:29 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;Vue基础语法&#34;&gt;&lt;a href=&#34;#Vue基础语法&#34; class=&#34;headerlink&#34; title=&#34;Vue基础语法&#34;&gt;&lt;/a&gt;Vue基础语法&lt;/h2&gt;&lt;h3 id=&#34;Mustache语法&#34;&gt;&lt;a href=&#34;#Mustache语法&#34; class=&#34;headerlink&#34; title=&#34;Mustache语法&#34;&gt;&lt;/a&gt;Mustache语法&lt;/h3&gt;&lt;h4 id=&#34;v-text&#34;&gt;&lt;a href=&#34;#v-text&#34; class=&#34;headerlink&#34; title=&#34;v-text&#34;&gt;&lt;/a&gt;v-text&lt;/h4&gt;&lt;p&gt;使用场景：&lt;strong&gt;不做解析&lt;/strong&gt;，直接 展示的数据中包含 &lt;strong&gt;&lt;em&gt;元素标签&lt;/em&gt;&lt;/strong&gt; 或者 &lt;strong&gt;&lt;em&gt;样式&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -2568,9 +2567,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/01/Vue%E7%9A%84axios/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/dc220eb7.html</guid>
             <title>Vue的axios</title>
-            <link>https://codingfxj.github.io/2021/06/01/Vue%E7%9A%84axios/</link>
+            <link>https://codingfxj.github.io/p/dc220eb7.html</link>
             <category>Vue</category>
             <pubDate>Tue, 01 Jun 2021 00:15:37 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;Axios&#34;&gt;&lt;a href=&#34;#Axios&#34; class=&#34;headerlink&#34; title=&#34;Axios&#34;&gt;&lt;/a&gt;Axios&lt;/h2&gt;&lt;h3 id=&#34;Promise对象&#34;&gt;&lt;a href=&#34;#Promise对象&#34; class=&#34;headerlink&#34; title=&#34;Promise对象&#34;&gt;&lt;/a&gt;Promise对象&lt;/h3&gt;&lt;h4 id=&#34;Promise-简介&#34;&gt;&lt;a href=&#34;#Promise-简介&#34; class=&#34;headerlink&#34; title=&#34;Promise 简介&#34;&gt;&lt;/a&gt;Promise 简介&lt;/h4&gt;&lt;p&gt;Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息，可以解决地狱回调，并可以异步处理和观察任务进度。&lt;/p&gt;
@@ -2647,9 +2646,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/01/VueX/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/e02263fd.html</guid>
             <title>VueX</title>
-            <link>https://codingfxj.github.io/2021/06/01/VueX/</link>
+            <link>https://codingfxj.github.io/p/e02263fd.html</link>
             <category>Vue</category>
             <category>Vuex</category>
             <pubDate>Tue, 01 Jun 2021 00:14:55 +0800</pubDate>
@@ -2710,9 +2709,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/06/01/VueRouter/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/29c38654.html</guid>
             <title>VueRouter</title>
-            <link>https://codingfxj.github.io/2021/06/01/VueRouter/</link>
+            <link>https://codingfxj.github.io/p/29c38654.html</link>
             <category>Vue</category>
             <pubDate>Tue, 01 Jun 2021 00:14:43 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h2 id=&#34;VueRouter&#34;&gt;&lt;a href=&#34;#VueRouter&#34; class=&#34;headerlink&#34; title=&#34;VueRouter&#34;&gt;&lt;/a&gt;VueRouter&lt;/h2&gt;&lt;h3 id=&#34;路由&#34;&gt;&lt;a href=&#34;#路由&#34; class=&#34;headerlink&#34; title=&#34;路由&#34;&gt;&lt;/a&gt;路由&lt;/h3&gt;&lt;h4 id=&#34;路由简介&#34;&gt;&lt;a href=&#34;#路由简介&#34; class=&#34;headerlink&#34; title=&#34;路由简介&#34;&gt;&lt;/a&gt;路由简介&lt;/h4&gt;&lt;p&gt;&lt;strong&gt;路由&lt;/strong&gt;（&lt;strong&gt;routing&lt;/strong&gt;）就是通过互联的网络把信息从源地址传输到目的地址的活动&lt;/p&gt;
@@ -2799,9 +2798,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/05/30/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%92%8C%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/8e12165d.html</guid>
             <title>时间复杂度和空间复杂度</title>
-            <link>https://codingfxj.github.io/2021/05/30/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%92%8C%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/</link>
+            <link>https://codingfxj.github.io/p/8e12165d.html</link>
             <category>算法</category>
             <category>复杂度</category>
             <pubDate>Sun, 30 May 2021 23:50:58 +0800</pubDate>
@@ -2874,9 +2873,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/05/23/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/5a00e12e.html</guid>
             <title>NPM学习笔记</title>
-            <link>https://codingfxj.github.io/2021/05/23/npm%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+            <link>https://codingfxj.github.io/p/5a00e12e.html</link>
             <category>NPM</category>
             <pubDate>Sun, 23 May 2021 13:26:00 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;npm介绍&#34;&gt;&lt;a href=&#34;#npm介绍&#34; class=&#34;headerlink&#34; title=&#34;npm介绍&#34;&gt;&lt;/a&gt;npm介绍&lt;/h3&gt;&lt;p&gt;npm（Node Package Manager）是 node 的包管理器，它是随着 NodeJs 安装时一起被安装。&lt;/p&gt;
@@ -2889,9 +2888,9 @@
 &lt;h4 id=&#34;package-json文件&#34;&gt;&lt;a href=&#34;#package-json文件&#34; class=&#34;headerlink&#34; title=&#34;package.json文件&#34;&gt;&lt;/a&gt;package.json文件&lt;/h4&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;name&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;1-npm&amp;quot;&lt;/span&gt;,      &lt;span class=&#34;comment&#34;&gt;#包的名字&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;version&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;1.0.0&amp;quot;&lt;/span&gt;,   &lt;span class=&#34;comment&#34;&gt;#包的版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;description&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;,    &lt;span class=&#34;comment&#34;&gt;#包的描述&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;index.js&amp;quot;&lt;/span&gt;,   &lt;span class=&#34;comment&#34;&gt;#包的入口文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;scripts&amp;quot;&lt;/span&gt;: &amp;#123;          &lt;span class=&#34;comment&#34;&gt;#脚本配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;echo \&amp;quot;Error: no test specified\&amp;quot; &amp;amp;&amp;amp; exit 1&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;author&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;,         &lt;span class=&#34;comment&#34;&gt;#作者&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;string&#34;&gt;&amp;quot;license&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;ISC&amp;quot;&lt;/span&gt;      &lt;span class=&#34;comment&#34;&gt;#版权声明&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/fb70d7a3.html</guid>
             <title>Markdown语法及快捷键</title>
-            <link>https://codingfxj.github.io/2021/05/21/Markdown%E8%AF%AD%E6%B3%95%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+            <link>https://codingfxj.github.io/p/fb70d7a3.html</link>
             <category>Note</category>
             <category>Typora</category>
             <category>Markdown</category>
@@ -3016,9 +3015,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/e43580c1.html</guid>
             <title>flex布局</title>
-            <link>https://codingfxj.github.io/2021/05/15/Flex%E5%B8%83%E5%B1%80/</link>
+            <link>https://codingfxj.github.io/p/e43580c1.html</link>
             <category>flex布局</category>
             <pubDate>Sat, 15 May 2021 22:10:32 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;一、Flex-布局是什么？&#34;&gt;&lt;a href=&#34;#一、Flex-布局是什么？&#34; class=&#34;headerlink&#34; title=&#34;一、Flex 布局是什么？&#34;&gt;&lt;/a&gt;一、Flex 布局是什么？&lt;/h3&gt;&lt;p&gt;Flex 是 Flexible Box 的缩写，意为”&lt;strong&gt;弹性布局&lt;/strong&gt;“，用来为盒状模型提供最大的灵活性。&lt;/p&gt;
@@ -3219,9 +3218,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/a91eaa72.html</guid>
             <title>Git学习笔记</title>
-            <link>https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+            <link>https://codingfxj.github.io/p/a91eaa72.html</link>
             <category>Git</category>
             <pubDate>Tue, 27 Apr 2021 23:49:38 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;Git-学习笔记&#34;&gt;&lt;a href=&#34;#Git-学习笔记&#34; class=&#34;headerlink&#34; title=&#34;Git 学习笔记&#34;&gt;&lt;/a&gt;Git 学习笔记&lt;/h3&gt;&lt;p&gt;Git是流行的版本控制，方便查看更改历史记录，备份以便恢复以前的版本。&lt;/p&gt;
@@ -3306,9 +3305,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/caff8000.html</guid>
             <title>Git常用命令</title>
-            <link>https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+            <link>https://codingfxj.github.io/p/caff8000.html</link>
             <category>Git</category>
             <pubDate>Thu, 15 Apr 2021 10:46:32 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Git是一个开源的分布式版本控制系统。&lt;/p&gt;
@@ -3353,9 +3352,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</guid>
+            <guid isPermalink="true">https://codingfxj.github.io/p/fcca9343.html</guid>
             <title>HEXO搭建博客笔记</title>
-            <link>https://codingfxj.github.io/2021/04/10/HEXO%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/</link>
+            <link>https://codingfxj.github.io/p/fcca9343.html</link>
             <category>HEXO</category>
             <category>Github</category>
             <category>Note</category>

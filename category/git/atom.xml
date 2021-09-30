@@ -4,42 +4,42 @@
     <title>CodingFXJ&#39;Blog • Posts by &#34;git&#34; category</title>
     <link href="https://CodingFXJ.github.io" />
     <updated>2021-04-27T15:49:38.000Z</updated>
+    <category term="CSS" />
     <category term="AJAX" />
     <category term="jQuery" />
-    <category term="CSS" />
     <category term="css" />
     <category term="JS" />
     <category term="flex布局" />
     <category term="Git" />
-    <category term="this指向" />
     <category term="HEXO" />
     <category term="Github" />
     <category term="Note" />
     <category term="Blog" />
     <category term="ES6" />
     <category term="数组" />
-    <category term="懒加载" />
     <category term="时间" />
-    <category term="高阶函数" />
+    <category term="this指向" />
     <category term="闭包" />
+    <category term="懒加载" />
+    <category term="高阶函数" />
     <category term="LeetCode" />
     <category term="Vue" />
     <category term="Vuex" />
     <category term="NPM" />
-    <category term="算法" />
     <category term="手写高阶函数" />
-    <category term="复杂度" />
-    <category term="JAVA" />
-    <category term="HTTP网络请求" />
+    <category term="算法" />
     <category term="扁平化" />
+    <category term="复杂度" />
+    <category term="HTTP网络请求" />
+    <category term="JAVA" />
     <category term="设计模式" />
     <category term="Webpack" />
     <category term="Typora" />
     <category term="Markdown" />
     <entry>
-        <id>https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+        <id>https://codingfxj.github.io/p/a91eaa72.html</id>
         <title>Git学习笔记</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/04/27/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/a91eaa72.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;Git-学习笔记&#34;&gt;&lt;a href=&#34;#Git-学习笔记&#34; class=&#34;headerlink&#34; title=&#34;Git 学习笔记&#34;&gt;&lt;/a&gt;Git 学习笔记&lt;/h3&gt;&lt;p&gt;Git是流行的版本控制，方便查看更改历史记录，备份以便恢复以前的版本。&lt;/p&gt;
 &lt;h4 id=&#34;四个区域之间的转换关系&#34;&gt;&lt;a href=&#34;#四个区域之间的转换关系&#34; class=&#34;headerlink&#34; title=&#34;四个区域之间的转换关系&#34;&gt;&lt;/a&gt;四个区域之间的转换关系&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;/images/gityuanli.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -124,9 +124,9 @@
         <updated>2021-04-27T15:49:38.000Z</updated>
     </entry>
     <entry>
-        <id>https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+        <id>https://codingfxj.github.io/p/caff8000.html</id>
         <title>Git常用命令</title>
-        <link rel="alternate" href="https://codingfxj.github.io/2021/04/15/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+        <link rel="alternate" href="https://codingfxj.github.io/p/caff8000.html"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;p&gt;Git是一个开源的分布式版本控制系统。&lt;/p&gt;
 &lt;p&gt;可以有效、高速地处理从很小到非常大的项目版本管理。&lt;/p&gt;
 &lt;h4 id=&#34;1-区域&#34;&gt;&lt;a href=&#34;#1-区域&#34; class=&#34;headerlink&#34; title=&#34;1. 区域&#34;&gt;&lt;/a&gt;1. 区域&lt;/h4&gt;&lt;p&gt;   工作区 : 本地代码&lt;br&gt;   暂存区 : 暂时先放到这儿&lt;br&gt;   版本库 : 提交后的存储&lt;/p&gt;
