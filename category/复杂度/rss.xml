@@ -7,9 +7,9 @@
         <language>zh-CN</language>
         <pubDate>Sun, 30 May 2021 23:50:58 +0800</pubDate>
         <lastBuildDate>Sun, 30 May 2021 23:50:58 +0800</lastBuildDate>
-        <category>CSS</category>
         <category>AJAX</category>
         <category>jQuery</category>
+        <category>CSS</category>
         <category>css</category>
         <category>JS</category>
         <category>flex布局</category>
@@ -18,13 +18,13 @@
         <category>Github</category>
         <category>Note</category>
         <category>Blog</category>
+        <category>this指向</category>
         <category>ES6</category>
         <category>数组</category>
         <category>时间</category>
-        <category>this指向</category>
+        <category>高阶函数</category>
         <category>闭包</category>
         <category>懒加载</category>
-        <category>高阶函数</category>
         <category>LeetCode</category>
         <category>Vue</category>
         <category>Vuex</category>
@@ -33,8 +33,8 @@
         <category>算法</category>
         <category>扁平化</category>
         <category>复杂度</category>
-        <category>HTTP网络请求</category>
         <category>JAVA</category>
+        <category>HTTP网络请求</category>
         <category>设计模式</category>
         <category>Webpack</category>
         <category>Typora</category>
@@ -46,72 +46,81 @@
             <category>算法</category>
             <category>复杂度</category>
             <pubDate>Sun, 30 May 2021 23:50:58 +0800</pubDate>
-            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;时间复杂度&#34;&gt;&lt;a href=&#34;#时间复杂度&#34; class=&#34;headerlink&#34; title=&#34;时间复杂度&#34;&gt;&lt;/a&gt;时间复杂度&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;算法执行时间与输入值n之间的关系。(算法的执行效率) &lt;/p&gt;
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;h3 id=&#34;时间复杂度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#时间复杂度&#34;&gt;#&lt;/a&gt; 时间复杂度&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;算法执行时间与输入值 n 之间的关系。(算法的执行效率)&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;最坏时间复杂度  &lt;/p&gt;
+&lt;p&gt;最坏时间复杂度&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
 &lt;p&gt;平均时间复杂度&lt;/p&gt;
-&lt;p&gt;计算出T(n)的数量级 : 忽略常量、低次幂和最高次幂的系数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;计算出 T (n) 的数量级：忽略常量、低次幂和最高次幂的系数&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;O(1)(常数阶)&amp;lt; O(logn)(对数阶) &amp;lt; O(n)(线性阶) &amp;lt; O(n2)(平方阶) &amp;lt; O(n3)(立方阶) &amp;lt; O(2^n) (指数阶)&amp;lt;Ο(n!)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;O (1)(常数阶)&amp;lt; O (logn)(对数阶) &amp;lt; O (n)(线性阶) &amp;lt; O (n2)(平方阶) &amp;lt; O (n3)(立方阶) &amp;lt; O (2^n) (指数阶)&amp;lt;Ο(n!)&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;大O符号表示法&lt;/strong&gt;，即 T(n) = O(f(n))，其中f(n) 表示每行代码执行次数之和，而 O 表示正比例关系。&lt;/li&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;大 O 符号表示法&lt;/strong&gt;，即 T (n) = O (f (n))，其中 f (n) 表示每行代码执行次数之和，而 O 表示正比例关系。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;这个公式的全称是：&lt;strong&gt;算法的渐进时间复杂度&lt;/strong&gt;。&lt;/p&gt;
-&lt;ol&gt;
+&lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;常见的时间复杂度量级有：&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt; 上面从上至下依次的时间复杂度越来越大，执行的效率越来越低。&lt;/p&gt;
+&lt;p&gt;上面从上至下依次的时间复杂度越来越大，执行的效率越来越低。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;常数阶O(1)&lt;/li&gt;
-&lt;li&gt;对数阶O(logN)&lt;/li&gt;
-&lt;li&gt;线性阶O(n)&lt;/li&gt;
-&lt;li&gt;线性对数阶O(nlogN)&lt;/li&gt;
-&lt;li&gt;平方阶O(n²)&lt;/li&gt;
-&lt;li&gt;立方阶O(n³)&lt;/li&gt;
-&lt;li&gt;K次方阶O(n^k)&lt;/li&gt;
-&lt;li&gt;指数阶(2^n)&lt;/li&gt;
+&lt;li&gt;常数阶 O (1)&lt;/li&gt;
+&lt;li&gt;对数阶 O (logN)&lt;/li&gt;
+&lt;li&gt;线性阶 O (n)&lt;/li&gt;
+&lt;li&gt;线性对数阶 O (nlogN)&lt;/li&gt;
+&lt;li&gt;平方阶 O (n²)&lt;/li&gt;
+&lt;li&gt;立方阶 O (n³)&lt;/li&gt;
+&lt;li&gt;K 次方阶 O (n^k)&lt;/li&gt;
+&lt;li&gt;指数阶 (2^n)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;常数阶O(1)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;只要是没有循环等复杂结构，消耗的时间并不随着某个变量的增长而增长，那代码的时间复杂度就都是O(1)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;常数阶 O (1)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;只要是没有循环等复杂结构，消耗的时间并不随着某个变量的增长而增长，那代码的时间复杂度就都是 O (1)&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;int i = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int j = &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;++i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;j++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int m = i + j;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;线性阶O(n)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;线性阶 O (n)&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i&amp;lt;=n; ++i)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   j = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   j++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;对数阶O(logN)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对数阶 O (logN)&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;int i = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(i&amp;lt;n)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    i = i * &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//2*x*x*.. == n   ==&amp;gt; x = log2^n&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;线性对数阶O(nlogN)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;将时间复杂度为&lt;code&gt;O(logn)&lt;/code&gt;的代码循环N遍，时间复杂度就是  &lt;code&gt;n * O(logN)==O(nlogN)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;线性对数阶 O (nlogN)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将时间复杂度为 &lt;code&gt;O(logn)&lt;/code&gt;  的代码循环 N 遍，时间复杂度就是   &lt;code&gt; n * O(logN)==O(nlogN)&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(m=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; m&amp;lt;n; m++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    i = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt;(i&amp;lt;n)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        i = i * &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;平方阶O(n²)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;把 O(n) 的代码再嵌套循环一遍，它的时间复杂度就是 O(n²)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;平方阶 O (n²)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;把 O (n) 的代码再嵌套循环一遍，它的时间复杂度就是 O (n²)&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(x=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i&amp;lt;=n; x++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i&amp;lt;=n; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       j = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       j++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;将其中一层循环的n改成m,时间复杂度就变成了 O(m*n)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(x=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i&amp;lt;=m; x++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i&amp;lt;=n; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       j = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       j++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;立方阶O(n³)&lt;/strong&gt;、&lt;strong&gt;K次方阶O(n^k)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;立方阶 O (n³)&lt;/strong&gt;、&lt;strong&gt;K 次方阶 O (n^k)&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;嵌套三层或多层循环&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; n; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (j = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; j &amp;lt; i; j++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;              &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (k = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; k &amp;lt; j; k++)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;              &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                   x++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;              &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;空间复杂度&#34;&gt;&lt;a href=&#34;#空间复杂度&#34; class=&#34;headerlink&#34; title=&#34;空间复杂度&#34;&gt;&lt;/a&gt;空间复杂度&lt;/h3&gt;&lt;p&gt;空间复杂度是对一个算法在运行过程中&lt;strong&gt;临时占用存储空间大小&lt;/strong&gt;的一个量度，用 S(n) 来定义&lt;/p&gt;
+&lt;h3 id=&#34;空间复杂度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#空间复杂度&#34;&gt;#&lt;/a&gt; 空间复杂度&lt;/h3&gt;
+&lt;p&gt;空间复杂度是对一个算法在运行过程中&lt;strong&gt;临时占用存储空间大小&lt;/strong&gt;的一个量度，用 S (n) 来定义&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;空间复杂度 O(1)&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;如果算法执行所需要的临时空间&lt;strong&gt;不随着&lt;/strong&gt;某个变量n的大小而变化，即此算法空间复杂度为一个常量，可表示为 O(1)&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;空间复杂度 O (1)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如果算法执行所需要的临时空间&lt;strong&gt;不随着&lt;/strong&gt;某个变量 n 的大小而变化，即此算法空间复杂度为一个常量，可表示为 O (1)&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;int i = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int j = &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;++i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;j++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;int m = i + j;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;空间复杂度 O(n)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空间复杂度 O (n)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;int[] m = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; int[n]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(i=&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i&amp;lt;=n; ++i)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   j = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   j++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;用递归算法求n的阶乘，递归的深度是n，每一层都会把信息存在递归栈里，空间复杂度O（n）。&lt;/p&gt;
+&lt;p&gt;用递归算法求 n 的阶乘，递归的深度是 n，每一层都会把信息存在递归栈里，空间复杂度 O（n）。&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;int &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;fac&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;int n&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (n &amp;lt;= &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; n;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; fac(n - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)*n;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt; &lt;strong&gt;O(1) &amp;lt; O(n) &amp;lt; O(n^2)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;O(1) &amp;lt; O(n) &amp;lt; O(n^2)&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h3 id=&#34;排序算法复杂度&#34;&gt;&lt;a href=&#34;#排序算法复杂度&#34; class=&#34;headerlink&#34; title=&#34;排序算法复杂度&#34;&gt;&lt;/a&gt;排序算法复杂度&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;/images/paixu.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;排序算法复杂度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#排序算法复杂度&#34;&gt;#&lt;/a&gt; 排序算法复杂度&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;/images/paixu.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
